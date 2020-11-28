@@ -16,8 +16,8 @@
     "stylelint": "./assets/css/src/**/*.scss"
   },
   "scripts": {
-    "build-css": "node-sass --output-style compressed -q ./assets/css/src/main.s**s ./assets/css/main.css",
-    "watch-css": "npm run build-css && node-sass -wq ./assets/css/src/main.s**s ./assets/css/main.css",
+    "build-css": "node-sass --output-style compressed -q ./assets/css/src/main.scss ./assets/css/main.css",
+    "watch-css": "npm run build-css && node-sass -wq ./assets/css/src/main.scss ./assets/css/main.css",
     "stylelint": "stylelint 'assets/css/src/**/*.scss' --syntax scss",
     "start": "npm-watch stylelint"
   },
