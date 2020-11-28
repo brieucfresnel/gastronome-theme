@@ -7,7 +7,7 @@
 </head>
 <body <?php body_class(); ?>>
 <header class="header">
-  <img class="header-logo" src="<?php echo get_template_directory_uri(); ?>/assets/img/logo.png" alt="">
+  <img class="header-logo" src="<?php echo get_template_directory_uri(); ?>/assets/img/logo.png" alt="Gastrono'me">
   <nav>
     <?php 
       wp_nav_menu( array('theme_location' => 'nav_main') );
