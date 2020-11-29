@@ -17,8 +17,6 @@ if ( have_posts() ) {
      * Il existe d'autres méthodes, par exemple pour afficher le Titre du contenu, on peut utiliser la méthode the_title()
      */
     the_content();
-
-
   }
 }
 ?>
