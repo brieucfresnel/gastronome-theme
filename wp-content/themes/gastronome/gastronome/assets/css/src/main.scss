@@ -1,0 +1,19 @@
+////
+/// Import all files
+/// Order do matter
+///
+////
+
+// Import colors and fonts settings first to override Bootstrap variables if needed
+
+/// Settings
+@import 'settings/colors';
+@import 'settings/fonts';
+
+// Deps
+@import '../../../node_modules/bootstrap/scss/bootstrap.scss';
+
+// Components (Header, Footer, Sidebar, etc.)
+
+@import 'components/main-navbar';
+@import 'components/hero';
