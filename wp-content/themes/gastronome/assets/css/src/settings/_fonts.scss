@@ -5,10 +5,15 @@
 ///
 ////
 
+@font-face {
+  font-family: "Helvetica Now Display";
+  font-weight: normal;
+  src: url("../../../fonts/HelveticaNowDisplay-Regular.ttf") format("ttf")
+}
 
 /// Font family
 $arial: Arial, sans-serif;
-$font: $arial;
+$font: "Helvetica Now Display", serif;
 
 /// Fonts weight
 /// They must reflect available weights
