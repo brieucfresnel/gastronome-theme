@@ -13,7 +13,7 @@
   --blue: #007bff;
   --indigo: #6610f2;
   --purple: #6f42c1;
-  --pink: #e83e8c;
+  --pink: #F2ADCB;
   --red: #dc3545;
   --orange: #fd7e14;
   --yellow: #ffc107;
@@ -414,7 +414,7 @@ mark,
 
 code {
   font-size: 87.5%;
-  color: #e83e8c;
+  color: #F2ADCB;
   word-wrap: break-word; }
   a > code {
     color: inherit; }
@@ -7221,5 +7221,38 @@ a.text-dark:hover, a.text-dark:focus {
   width: 70%;
   margin: 200px 0;
   font-size: 45px;
-  color: #151515;
+  color: black;
   font-weight: 500; }
+
+.hero-scroller {
+  font-family: "Helvetica Now Display", serif;
+  color: black;
+  font-weight: 500; }
+  .hero-scroller:hover {
+    color: black; }
+
+.section-txt {
+  width: 70%;
+  font-family: "arial";
+  font-size: 16px;
+  line-height: 125%;
+  margin-top: 150px;
+  color: rgba(21, 21, 21, 0.75); }
+
+.voyage {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 175px; }
+  .voyage-txt {
+    width: 50%;
+    font-family: "Helvetica Now Display";
+    font-size: 16px;
+    line-height: 125%; }
+    .voyage-txt span {
+      color: #F2ADCB; }
+  .voyage-box {
+    padding: 10px 20px 12px;
+    /* Pink */
+    background: #F2ADCB;
+    border-radius: 50px; }

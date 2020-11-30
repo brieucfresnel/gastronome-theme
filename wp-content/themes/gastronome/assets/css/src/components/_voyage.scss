@@ -1,0 +1,25 @@
+.voyage {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 175px;
+    &-txt {
+      width: 50%;
+
+      font-family: "Helvetica Now Display";
+      font-size: 16px;
+      line-height: 125%;
+
+      span {
+        color: $pink;
+      }
+    }
+    &-box{
+      padding: 10px 20px 12px;
+
+      /* Pink */
+
+      background: #F2ADCB;
+      border-radius: 50px;
+    }
+}
