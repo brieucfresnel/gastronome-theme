@@ -11,5 +11,4 @@
             <a href="#" class="hero-scroller">Découvrir</a>
         </div>
     </div>
-
 <?php get_footer(); ?>
