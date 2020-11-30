@@ -11,4 +11,15 @@
             <a href="#" class="hero-scroller">Découvrir</a>
         </div>
     </div>
+
+    <div class="container">
+        <div class="sections">
+            <p class="sections-txt">
+                Vous pensez que vous n’arriverez jamais à faire monter des blancs en neige ou que la gastronomie n’est pratiquée que par les chefs culainaires ?
+
+                Détrompez-vous. La gastronomie est accesible à tous.
+                Il ne vous manque qu’un coup de pouce.
+            </p>
+        </div>
+    </div>
 <?php get_footer(); ?>
