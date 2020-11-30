@@ -7221,13 +7221,5 @@ a.text-dark:hover, a.text-dark:focus {
   width: 70%;
   margin: 200px 0;
   font-size: 45px;
-  color: black;
-  font-weight: 500; }
-
-.sections-txt {
-  font-family: "Helvetica Now Display", serif;
-  width: 70%;
-  margin-top: 20px;
-  font-size: 20px;
-  color: red;
+  color: #151515;
   font-weight: 500; }
