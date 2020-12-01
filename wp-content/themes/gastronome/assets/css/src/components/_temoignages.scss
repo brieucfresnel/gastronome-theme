@@ -1,0 +1,37 @@
+.temoignages {
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 15%;
+  padding-right: 15%;
+
+  &-txt {
+    margin-top: 150px;
+    width: 30%;
+    font-family: "Helvetica Now Display";
+    font-size: 16px;
+    line-height: 125%;
+    color: grey;
+
+    span {
+      color: black;
+      opacity: 100%;
+      font-size: 30px;
+    }
+  }
+  &-txt2{
+    margin-top: 150px;
+    width: 30%;
+    font-family: "Helvetica Now Display";
+    font-size: 16px;
+    line-height: 125%;
+    color: grey;
+
+    span {
+      color: black;
+      opacity: 100%;
+      font-size: 30px;
+    }
+  }
+}

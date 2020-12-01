@@ -4,14 +4,20 @@
   justify-content: space-between;
   padding-top: 175px;
     &-txt {
-      width: 50%;
+      width: 35%;
 
       font-family: "Helvetica Now Display";
       font-size: 16px;
       line-height: 125%;
+      opacity: 75%;
 
       span {
         color: $pink;
+        opacity: 100%;
+      }
+      span3 {
+        color: black;
+        opacity: 100%;
       }
     }
     &-box{
@@ -22,4 +28,14 @@
       background: #F2ADCB;
       border-radius: 50px;
     }
+  &-box1{
+    padding: 10px 20px 12px;
+    color: white;
+
+    /* White */
+
+    background: black;
+    border-radius: 50px;
+  }
+
 }
