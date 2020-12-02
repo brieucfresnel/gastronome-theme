@@ -1,0 +1,50 @@
+.text-button {
+  padding-top: 175px;
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__text {
+    width: 65%;
+    margin: 0;
+    font-size: 36px;
+    font-family: $font;
+    line-height: 125%;
+    color: $gray-500;
+
+    span {
+      font-weight: normal;
+      color: $gray-900;
+    }
+  }
+
+  &__btn-container {
+    margin-top: 12px;
+  }
+
+  &__btn {
+    padding: 8px 16px;
+    white-space: nowrap;
+
+    color: #fff;
+    background: #000;
+    border-radius: 50px;
+    border: 2px solid #000;
+
+    font-size: 14px;
+    text-decoration: none;
+    word-break: keep-all;
+
+    transition: all .3s;
+
+    &:hover {
+      color: #000;
+      background: transparent;
+      text-decoration: none;
+      border-color: #000;
+    }
+  }
+
+}

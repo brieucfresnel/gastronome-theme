@@ -1,0 +1,47 @@
+.hero {
+
+  &-title {
+    font-family: $font;
+    width: 70%;
+    margin: 130px 0;
+    font-size: 45px;
+    color: black;
+    font-weight: 500;
+  }
+
+  &-scroller {
+    display: block;
+    margin-bottom: 130px;
+
+    font-size: 16px;
+    font-family: $font;
+    color: #000;
+    font-weight: 500;
+
+
+    img {
+      width: 10px;
+      height: 35px;
+      margin-right: 8px;
+    }
+
+    &:hover {
+      color: #000;
+    }
+  }
+
+  &-text {
+    font-family: "Helvetica Now Display";
+    width: 70%;
+    font-size: 25px;
+    line-height: 125%;
+    color: #505050;
+
+    &:first-child {
+      margin-top: 150px;
+    }
+    &:last-child {
+      margin-bottom: 150px;
+    }
+  }
+}

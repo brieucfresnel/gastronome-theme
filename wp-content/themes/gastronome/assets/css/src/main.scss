@@ -10,18 +10,24 @@
 @import 'settings/colors';
 @import 'settings/fonts';
 
+// Bootstrap defaults overrides
+$font-family-sans-serif: 'Helvetica Now Display', -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif !default;
+
 // Deps
 @import '../../../node_modules/bootstrap/scss/bootstrap.scss';
 
-// Components (Header, Footer, Sidebar, etc.)
+// Components
 
+@import 'components/contained-image';
 @import 'components/main-navbar';
-@import 'components/hero';
-@import 'components/section';
-@import 'components/voyage';
-@import 'components/recette';
-@import 'components/temoignages';
-@import 'components/explore';
+@import 'components/text-button';
+@import 'components/half-text';
 
+@import 'sections/hero';
+@import 'sections/recettes';
+@import 'sections/temoignages';
 
+body {
+  background: url("/wp-content/themes/gastronome/assets/img/hero-bg.png") center/cover no-repeat;
 
+}

@@ -8,8 +8,8 @@ function gst_enqueue()
     /**
      * Enqueue stylesheets
      */
-    wp_enqueue_style('my-styles', get_template_directory_uri() . '/assets/css/main.css', 1.0);
-    wp_enqueue_style('my-fonts', get_template_directory_uri() . 'https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:ital,wght@0,300;0,400;0,700;1,400&display=swap');
+    wp_enqueue_style('gst_fonts', get_template_directory_uri() . '/assets/css/fonts.css');
+    wp_enqueue_style('gst_styles', get_template_directory_uri() . '/assets/css/main.css');
 
     /**
      * Enqueue JS
@@ -20,7 +20,7 @@ function gst_enqueue()
     wp_register_script('popperjs', get_template_directory_uri() . '/node_modules/@popperjs/core/dist/umd/popper.min.js');
     wp_enqueue_script('bootstrap', get_template_directory_uri() . '/node_modules/bootstrap/dist/js/bootstrap.min.js', array('jquery', 'popperjs'));
     wp_enqueue_script('font-awesome', 'https://use.fontawesome.com/releases/v5.13.0/js/all.js');
-    wp_enqueue_script('my-js', get_template_directory_uri() . '/assets/js/main.js', array(), '1.0.0', true);
+    wp_enqueue_script('gst_js', get_template_directory_uri() . '/assets/js/main.js', array(), '1.0.0', true);
 }
 
 add_action('wp_enqueue_scripts', 'gst_enqueue');

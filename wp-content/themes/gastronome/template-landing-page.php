@@ -1,92 +1,166 @@
 <?php /* Template Name: Landing Page */ ?>
 
 <?php get_header(); ?>
-
-    <div class="container">
-        <div class="hero">
+    <div class="hero">
+        <div class="container">
             <p class="hero-title">
                 A tous les amoureux de la bonne bouffe, aux créatifs, aux traditionnels, à ceux qui reproduisent
                 l'original et à ceux qui le sont, vous êtes la pièce maîtresse qui constitue la grande cuisine.
             </p>
-            <a href="#" class="hero-scroller"><img src="http://localhost/gastronome-theme/wp-content/uploads/2020/11/Vector-144.png">Découvrir</a>
-        </div>
-    </div>
-    <div class="container">
-        <div class="section">
-            <p class="section-txt">
+            <a href="#" class="hero-scroller">
+                <img src="<?= get_template_directory_uri() ?>/assets/icons/down_arrow.svg"/>
+                Découvrir
+            </a>
+            <p class="hero-text">
                 Vous pensez que vous n’arriverez jamais à faire monter des blancs en neige ou que la gastronomie n’est
-                pratiquée que par les chefs culainaires ?
-                <br>
-                <br>
-                Détrompez-vous. La gastronomie est accesible à tous.
-                Il ne vous manque qu’un coup de pouce.
+                pratiquée que par les chefs culinaires ?
+            </p>
+            <p class="hero-text">
+                Détrompez-vous. La gastronomie est accessible à tous. Il ne vous manque qu’un coup de pouce.
             </p>
         </div>
     </div>
 
-        <div class="illustration">
-            <div class="illustration-img">
-                <img class="img-fluid" src="http://localhost/gastronome-theme/wp-content/uploads/2020/11/image1.png" align="center">
+    <div class="section-image">
+        <img class="img-fluid w-100" src="<?= get_template_directory_uri() ?>/assets/img/section-image-bg-1.png"/>
+    </div>
+
+    <div class="text-button">
+        <div class="container">
+            <p class="text-button__text">
+                <span>Vous allez voyager !</span> Redécouvrez les succulantes recettes de grand-mère ou les
+                petites
+                innovations culinaire à vous en mettre plein les papilles.
+            </p>
+
+            <div class="text-button__btn-container">
+                <a href="#" class="text-button__btn">Voir toutes les recettes</a>
             </div>
         </div>
+    </div>
 
-    <div class="container">
-        <div class="voyage">
-            <p class="voyage-txt">
-                <span>Vous allez voyager !</span> Redécouvrez les succulantes recettes de grand-mère ou les petites innovations
-                culinaire à vous en mettre plein les papilles.
-            </p>
-            <p class="voyage-box">
-                Voir toutes les recettes
+    <div class="half-text">
+        <div class="container">
+            <div class="half-text__content">
+                <span>Recettes.</span>
+                Conçues par de grands chefs mais aussi par des amateurs, ces recettes vont vous aider à faire bien et
+                beau, simplement, avec des produits accessibles de qualité.
+            </div>
+        </div>
+    </div>
+
+    <div class="recettes">
+        <div class="container">
+
+            <h3 class="recettes-title">
+                <img src="<?= get_template_directory_uri() ?>/assets/icons/heart.svg"/>
+                La sélection de la semaine
+            </h3>
+            <div class="recettes-grid">
+                <div class="recette">
+                    <img class="recette-img" src="<?= get_template_directory_uri() ?>/assets/img/recette-1.png"
+                         alt="Recette"/>
+                    <div class="recette-content">
+                        <div class="recette-tags">
+                            <span class="recette-tag">Revisite</span>
+                            <span class="recette-tag">Classique</span>
+                        </div>
+
+                        <h4 class="recette-title">Tarte au citron meringuée</h4>
+                        <p class="recette-desc">Découvrez une revisite fraiche et audacieuse de la fameuse
+                            tarte au citron meringuée par un amateur de bonnes choses.
+                        </p>
+                        <a href="#" class="recette-link">
+                            Découvrir la recette
+                            <img src="<?= get_template_directory_uri() ?>/assets/icons/arrow-right.svg"/>
+                        </a>
+                    </div>
+                </div>
+                <div class="recette">
+                    <img class="recette-img" src="<?= get_template_directory_uri() ?>/assets/img/recette-2.png"
+                         alt="Recette"/>
+                    <div class="recette-content">
+                        <div class="recette-tags">
+                            <span class="recette-tag">Revisite</span>
+                            <span class="recette-tag">Classique</span>
+                        </div>
+
+                        <h4 class="recette-title">Tarte au citron meringuée</h4>
+                        <p class="recette-desc">Découvrez une revisite fraiche et audacieuse de la fameuse
+                            tarte au citron meringuée par un amateur de bonnes choses.
+                        </p>
+                        <a href="#" class="recette-link">
+                            Découvrir la recette
+                            <img src="<?= get_template_directory_uri() ?>/assets/icons/arrow-right.svg"/>
+                        </a>
+                    </div>
+                </div>
+                <div class="recette">
+                    <img class="recette-img" src="<?= get_template_directory_uri() ?>/assets/img/recette-3.png"
+                         alt="Recette"/>
+                    <div class="recette-content">
+                        <div class="recette-tags">
+                            <span class="recette-tag">Revisite</span>
+                            <span class="recette-tag">Classique</span>
+                        </div>
+
+                        <h4 class="recette-title">Tarte au citron meringuée</h4>
+                        <p class="recette-desc">Découvrez une revisite fraiche et audacieuse de la fameuse
+                            tarte au citron meringuée par un amateur de bonnes choses.
+                        </p>
+                        <a href="#" class="recette-link">
+                            Découvrir la recette
+                            <img src="<?= get_template_directory_uri() ?>/assets/icons/arrow-right.svg"/>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="section-image">
+        <img class="img-fluid w-100" src="<?= get_template_directory_uri() ?>/assets/img/section-image-bg-2.png"/>
+    </div>
+
+    <div class="text-button">
+        <div class="container">
+            <p class="text-button__text">
+                <span>Vous doutiez de votre talent ?</span> Nous avons tous déjà cuisiné de manière gastronomique. Ou,
+                du moins, essayer. C’est le moment d’en prendre conscience.
             </p>
 
+            <div class="voyage-btn-container">
+                <a href="#" class="text-button__btn">Voir toutes les recettes</a>
+            </div>
         </div>
     </div>
-    <div class="container">
-        <div class="recette">
-            <p class="recette-txt">
-                <span1>Recettes.</span1>  Conçues par de grands chefs mais aussi par des amateurs,
-                ces recettes vont vous aider à faire bien et beau, simplement, avec des produits accessibles de qualité.
-            </p>
+
+    <div class="half-text">
+        <div class="container">
+            <div class="half-text__content">
+                <span>Témoignages.</span> Découvrez les fabuleuses histoires d’Hanaé, de Théophile, de Julien, de
+                Constance et de bien d’autres qui ont trouvés leur passion dans la cuisine.
+            </div>
         </div>
     </div>
-    <div class="illustration">
-        <div class="illustration-img">
-            <img class="img-fluid" src="http://localhost/gastronome-theme/wp-content/uploads/2020/12/chef-preparing-food-in-the-kitchen-chef-cooking-1.png" align="center">
+
+    <div class="contained-image">
+        <div class="container">
+            <div class="contained-image__img">
+                <img class="img-fluid w-100"
+                     src="<?= get_template_directory_uri() ?>/assets/img/temoignages-img.png"/>
+            </div>
         </div>
     </div>
-    <div class="container">
-        <div class="voyage">
-            <p class="voyage-txt">
-                <span3>Vous doutiez de votre talent ?</span3> Nous avons tous déjà cuisiner de façon
-                gastronomique. Ou du moins essayer. C’est le moment d’en prendre conscience.
-            </p>
-            <p class="voyage-box1">
-                Voir tous le témoignages
-            </p>
-        </div>
-    </div>
-    <div class="container">
-        <div class="recette">
-            <p class="recette-txt">
-                <span1>Témoignages.</span1>  Découvrez les fabuleuses histoires d’Hanaé, de Théophile, de
-                Julien, de Constance et de bien d’autres qui ont trouvés leur passion dans la cuisine.
-            </p>
-        </div>
-    </div>
-    <div class="illustration">
-        <div class="illustration-img">
-            <img class="img-fluid" src="http://localhost/gastronome-theme/wp-content/uploads/2020/12/Avis-e1606832178195.png" >
-        </div>
-    </div>
+
     <div class="d-inline-block">
         <div class="temoignages">
-                <p class="temoignages-txt">
-                    <span>Hanaé</span><br><br>
-                    J’ai toujours été passionné de cuisine mais je n’osais pas montrer mes plats car je ne les trouvais pas
-                    à la hauteur. Gastrono’me est là pour nous prouver le contraire.
-                </p>
-            <p class="temoignages-txt2">
+            <p class="temoignages-txt">
+                <span>Hanaé</span><br><br>
+                J’ai toujours été passionné de cuisine mais je n’osais pas montrer mes plats car je ne les trouvais pas
+                à la hauteur. Gastrono’me est là pour nous prouver le contraire.
+            </p>
+            <p class="temoignages-txt">
                 <span>Titouan</span><br><br>
                 J’ai toujours eu un manque de motivation vis à vis de la cuisine car je la trouvais compliquée.
                 Mais grace à Gastrono’me je me suis rendu compte que c’est finalement accessible.
@@ -100,44 +174,43 @@
                 J’adore cuisiner pour mes amis, je suis le cuistot de la bande.
                 Le projet Gastrono’me est génial, j’apprends de nombreuses choses et me perfectionne.
             </p>
-            <p class="temoignages-txt2">
+            <p class="temoignages-txt">
                 <span>Constance</span><br><br>
                 La gastronomie me semblait assez fermée et peu accessible.
                 Maintenant, avec Gastrono'me, je peux enfin découvrir la cuisine et épater ma famille.
             </p>
         </div>
     </div>
-    <br>
-    <br>
-    <br>
-    <br>
-    <div class="illustration">
-        <div class="illustration-img">
-            <img class="img-fluid" src="http://localhost/gastronome-theme/wp-content/uploads/2020/12/meat-tomato-sauce-potato-greens-cucubmer-side-view-1.png" align="center">
-        </div>
+
+    <div class="section-image">
+        <img class="img-fluid w-100" src="<?= get_template_directory_uri() ?>/assets/img/section-image-bg-1.png"/>
     </div>
-    <div class="container">
-        <div class="voyage">
-            <p class="voyage-txt">
-                <span>Articles.</span>  Des papiers qui parlent concretement de
+
+    <div class="text-button">
+        <div class="container">
+            <p class="text-button__text">
+                <span>Articles.</span> Des papiers qui parlent concretement de
                 notre cuisine, son patrimoine et de cet art qu’est la gastronomie. Pour tous.
             </p>
-            <p class="voyage-box1">
-                Voir tous le témoignages
-            </p>
+
+            <div class="text-button__btn-container">
+                <a href="#" class="text-button__btn">Voir toutes les recettes</a>
+            </div>
         </div>
     </div>
-    <div class="container">
-        <div class="explore">
-            <p class="explore-txt">
-                <span>On touche avec les yeux !</span>   Explorez le merveilleux monde de la gastronomie au
-                travers de posts, stories sur nos médias sociaux. Retrouvez-nous sur Instagram, Facebook, Twitter et Pinterest.
-            </p>
-            <br>
-            <br>
-            <a href="#" class="hero-scroller"><img src="http://localhost/gastronome-theme/wp-content/uploads/2020/12/Coeur.png"> Nous suivres</a>
+
+    <div class="half-text">
+        <div class="container">
+            <div class="half-text__content">
+                <span>On touche avec les yeux !</span>
+                Explorez le merveilleux monde de la gastronomie au travers de posts, stories sur nos médias sociaux.
+                Retrouvez-nous sur Instagram, Facebook, Twitter et
+                Pinterest.
+            </div>
         </div>
     </div>
+
+
 
 
 <?php get_footer(); ?>
