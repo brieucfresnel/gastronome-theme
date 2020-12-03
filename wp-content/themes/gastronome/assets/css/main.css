@@ -7264,6 +7264,8 @@ a.text-dark:hover, a.text-dark:focus {
 
 .testimonials {
   padding: 150px 0; }
+  .testimonials .row:last-child .testimonial {
+    margin-bottom: 0; }
 
 .testimonial {
   margin-bottom: 75px; }

@@ -208,7 +208,7 @@
     </div>
 
     <div class="section-image">
-        <img class="img-fluid w-100" src="<?= get_template_directory_uri() ?>/assets/img/section-image-bg-1.png"/>
+        <img class="img-fluid w-100" src="<?= get_template_directory_uri() ?>/assets/img/section-image-bg-3.png"/>
     </div>
 
     <div class="text-button">
