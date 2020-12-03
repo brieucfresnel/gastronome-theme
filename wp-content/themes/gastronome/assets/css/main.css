@@ -7373,4 +7373,4 @@ a.text-dark:hover, a.text-dark:focus {
       font-size: 30px; }
 
 body {
-  background: url("/wp-content/themes/gastronome/assets/img/hero-bg.png") center/cover no-repeat; }
+  background: url("/wp-content/themes/gastronome/assets/img/hero-bg.png") top/contain no-repeat; }
