@@ -257,6 +257,28 @@
         </div>
     </div>
 
+
+
+    <div class="reseau">
+        <div class="container">
+            <h3 class="reseau__title">
+                <img src="<?= get_template_directory_uri() ?>/assets/icons/heart.svg"/>
+                Nous suivre
+            </h3>
+            <div class="reseau__grid">
+                <div class="reseau">
+                    <a href="https://www.instagram.com/gastronome_fr/"><img class="reseau__img" src="<?= get_template_directory_uri() ?>/assets/img/insta.png"
+                         alt="Reseau"/></a>
+                        <a href="https://www.facebook.com/GastronoMefr/"><img class="reseau__img" src="<?= get_template_directory_uri() ?>/assets/img/facebook.png"
+                         alt="Reseau"/></a>
+                            <a href="https://twitter.com/GastronoMe_fr"><img class="reseau__img" src="<?= get_template_directory_uri() ?>/assets/img/twitter.png"
+                         alt="Reseau"/></a>
+                                <a href="https://www.pinterest.fr/GastronoMe_fr/"><img class="reseau__img" src="<?= get_template_directory_uri() ?>/assets/img/pinterest.png"
+                         alt="Reseau"/></a>
+                </div>
+            </div>
+        </div>
+    </div>
 <?php endwhile; endif; ?>
 
 
