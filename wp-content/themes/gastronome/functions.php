@@ -25,7 +25,6 @@ function gst_enqueue()
 
 add_action('wp_enqueue_scripts', 'gst_enqueue');
 
-
 /**
  * Déclaration de menus administrables
  * La clef (nav_main par exemple) correspond à l'identifiant du menu

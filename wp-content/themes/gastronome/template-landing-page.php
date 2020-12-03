@@ -1,6 +1,7 @@
 <?php /* Template Name: Landing Page */ ?>
 
 <?php get_header(); ?>
+<?php if ( have_posts() ): while ( have_posts() ): the_post(); ?>
     <div class="hero">
         <div class="container">
             <p class="hero__title">
@@ -57,7 +58,7 @@
             </h3>
             <div class="recettes__grid">
                 <div class="recette">
-                    <img class="recette__img" src="<?= get_template_directory_uri() ?>/assets/img/recette-1.png"
+                    <img class="recette__img" src="<?= get_template_directory_uri() ?>/assets/img/recette-4.jpg"
                          alt="Recette"/>
                     <div class="recette__content">
                         <div class="recette__tags">
@@ -211,6 +212,7 @@
         <img class="img-fluid w-100" src="<?= get_template_directory_uri() ?>/assets/img/section-image-bg-3.png"/>
     </div>
 
+    <!-- Unused for now.
     <div class="text-button">
         <div class="container">
             <p class="text-button__text">
@@ -220,6 +222,26 @@
 
             <div class="text-button__btn-container">
                 <a href="#" class="text-button__btn">Voir toutes les recettes</a>
+            </div>
+        </div>
+    </div>
+	-->
+
+    <div class="container">
+        <div class="row">
+            <div class="offset-md-2 col-md-8">
+                <div class="newsletter-form">
+                    <div class="newsletter-form__header">
+                        <img class="newsletter-form__icon" src="<?= get_template_directory_uri() ?>/assets/icons/icon-gift.svg"/>
+                        <h3 class="newsletter-form__title">Nous vous avons confectionné un cadeau.</h3>
+                        <p class="newsletter-form__text">
+                            Recevez régulièrement par mail des recettes, article et autres trucs et astuces. Parce que vous
+                            en avez le potentiel, nous souhaitons vous aider dans ce voyage culinaire palpitant.
+                        </p>
+                    </div>
+
+					<?php echo do_shortcode( '[mc4wp_form id="13"]' ); ?>
+                </div>
             </div>
         </div>
     </div>
@@ -234,6 +256,8 @@
             </div>
         </div>
     </div>
+
+<?php endwhile; endif; ?>
 
 
 <?php get_footer(); ?>

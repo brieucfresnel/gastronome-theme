@@ -67,15 +67,11 @@
     }
   }
 
-
-
-
-
-  &-tags {
+  &__tags {
     margin-bottom: 25px;
   }
 
-  &-tag {
+  &__tag {
     padding: 8px;
     background: #000;
     color: #fff;
@@ -83,7 +79,7 @@
     border-radius: 15px;
   }
 
-  &-desc {
+  &__desc {
     color: #8A8A8A;
   }
 

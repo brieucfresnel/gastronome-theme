@@ -7283,6 +7283,53 @@ a.text-dark:hover, a.text-dark:focus {
     .testimonial__link:hover {
       color: #000; }
 
+.newsletter-form {
+  margin-top: 150px;
+  padding: 100px;
+  background: #f4f4f4;
+  backdrop-filter: blur(55px);
+  border-radius: 20px; }
+  .newsletter-form__header {
+    text-align: center; }
+  .newsletter-form__title {
+    font-weight: 700;
+    font-size: 35px;
+    line-height: 40px;
+    color: #151515;
+    margin: 40px 0; }
+  .newsletter-form__text {
+    margin-bottom: 50px; }
+  .newsletter-form__row {
+    display: flex; }
+    .newsletter-form__row input:not(:first-child) {
+      margin-left: 20px; }
+  .newsletter-form .mc4wp-form-fields input {
+    width: 100%;
+    background: transparent;
+    padding-bottom: 7px;
+    color: #151515;
+    border: none;
+    border-bottom: 1px solid #969696;
+    margin-bottom: 50px; }
+    .newsletter-form .mc4wp-form-fields input:invalid {
+      outline: none; }
+  .newsletter-form__footer {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between; }
+  .newsletter-form .mc4wp-form-fields input[type="submit"] {
+    width: auto;
+    display: inline-block;
+    padding: 8px 12px;
+    border-radius: 75px;
+    background: #000;
+    font-size: 15px;
+    color: #fff;
+    margin-bottom: 0;
+    margin-left: 30px; }
+    .newsletter-form .mc4wp-form-fields input[type="submit"]:invalid {
+      outline: none; }
+
 .hero__title {
   font-family: "Helvetica Now Display", serif;
   width: 70%;
@@ -7359,15 +7406,15 @@ a.text-dark:hover, a.text-dark:focus {
   .recette.expand .recette__img {
     border-radius: 20px;
     width: 50%; }
-  .recette-tags {
+  .recette__tags {
     margin-bottom: 25px; }
-  .recette-tag {
+  .recette__tag {
     padding: 8px;
     background: #000;
     color: #fff;
     font-size: 14px;
     border-radius: 15px; }
-  .recette-desc {
+  .recette__desc {
     color: #8A8A8A; }
   .recette__link {
     color: #000;
