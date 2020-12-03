@@ -240,7 +240,7 @@
                         </p>
                     </div>
 
-					<?php echo do_shortcode( '[mc4wp_form id="13"]' ); ?>
+					<?php echo do_shortcode( '[mc4wp_form id="18"]' ); ?>
                 </div>
             </div>
         </div>
@@ -267,19 +267,19 @@
                 <div class="socials__grid">
                     <div class="socials">
                         <a href="https://www.instagram.com/gastronome_fr/">
-                            <img class="socials__img" src="<?= get_template_directory_uri() ?>/assets/img/insta.png"
+                            <img class="socials__img" src="<?= get_template_directory_uri() ?>/assets/icons/insta.png"
                                  alt="socials"/>
                         </a>
                         <a href="https://www.facebook.com/GastronoMefr/">
-                            <img class="socials__img" src="<?= get_template_directory_uri() ?>/assets/img/facebook.png"
+                            <img class="socials__img" src="<?= get_template_directory_uri() ?>/assets/icons/facebook.png"
                                  alt="socials"/>
                         </a>
                         <a href="https://twitter.com/GastronoMe_fr">
-                            <img class="socials__img" src="<?= get_template_directory_uri() ?>/assets/img/twitter.png"
+                            <img class="socials__img" src="<?= get_template_directory_uri() ?>/assets/icons/twitter.png"
                                  alt="socials"/>
                         </a>
                         <a href="https://www.pinterest.fr/GastronoMe_fr/">
-                            <img class="socials__img" src="<?= get_template_directory_uri() ?>/assets/img/pinterest.png"
+                            <img class="socials__img" src="<?= get_template_directory_uri() ?>/assets/icons/pinterest.png"
                                  alt="socials"/>
                         </a>
                     </div>
@@ -288,7 +288,7 @@
                     <div class="presse__btn-container">
                         <h3>Espace presse</h3>
                         <a href="#">
-                            <img class="presse-btn" src="<?= get_template_directory_uri() ?>/assets/img/fleche.png"
+                            <img class="presse-btn" src="<?= get_template_directory_uri() ?>/assets/icons/fleche.png"
                                  alt="socials"/>
                         </a>
                     </div>
