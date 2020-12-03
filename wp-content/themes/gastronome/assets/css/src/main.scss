@@ -18,6 +18,7 @@ $font-family-sans-serif: 'Helvetica Now Display', -apple-system, system-ui, Blin
 
 // Components
 
+@import 'components/header';
 @import 'components/contained-image';
 @import 'components/main-navbar';
 @import 'components/text-button';

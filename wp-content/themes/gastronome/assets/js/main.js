@@ -3,17 +3,33 @@
         //$('.main-navbar-nav').toggleClass('is-open');
     })
 
-    $(function() {
+    $(function () {
+        $recettes = $('.recette')
 
-        $('.recette').addClass('default');
+        $recettes.addClass('default');
+        $recettes.eq(1).removeClass('default');
+        $recettes.eq(1).addClass('expand');
 
-        $('.recette').on('click', function() {
+        $recettes.on('click', function () {
 
             var e = $('.recette');
-            if(e.hasClass('expand')){
+            if (e.hasClass('expand')) {
                 e.removeClass('expand');
+
+                e.addClass('default');
+                e.css({
+                    'width': '30vw'
+                });
+
                 $(this).addClass('expand');
-            } else { $(this).addClass('expand'); }
+                $(this).animate({
+                    'width': '90vw'
+                });
+                 $(this).children().get(1).css({'width': '50%'})
+            } else {
+                $(this).addClass('expand');
+            }
         })
     })
-}(jQuery)
+}
+(jQuery)

@@ -1,6 +1,6 @@
 .hero {
 
-  &-title {
+  &__title {
     font-family: $font;
     width: 70%;
     margin: 130px 0;
@@ -9,7 +9,7 @@
     font-weight: 500;
   }
 
-  &-scroller {
+  &__scroller {
     display: block;
     margin-bottom: 130px;
 
@@ -30,8 +30,7 @@
     }
   }
 
-  &-text {
-    font-family: "Helvetica Now Display";
+  &__text {
     width: 70%;
     font-size: 25px;
     line-height: 125%;

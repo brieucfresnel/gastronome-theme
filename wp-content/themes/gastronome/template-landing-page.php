@@ -3,19 +3,19 @@
 <?php get_header(); ?>
     <div class="hero">
         <div class="container">
-            <p class="hero-title">
+            <p class="hero__title">
                 A tous les amoureux de la bonne bouffe, aux créatifs, aux traditionnels, à ceux qui reproduisent
                 l'original et à ceux qui le sont, vous êtes la pièce maîtresse qui constitue la grande cuisine.
             </p>
-            <a href="#" class="hero-scroller">
+            <a href="#" class="hero__scroller">
                 <img src="<?= get_template_directory_uri() ?>/assets/icons/down_arrow.svg"/>
                 Découvrir
             </a>
-            <p class="hero-text">
+            <p class="hero__text">
                 Vous pensez que vous n’arriverez jamais à faire monter des blancs en neige ou que la gastronomie n’est
                 pratiquée que par les chefs culinaires ?
             </p>
-            <p class="hero-text">
+            <p class="hero__text">
                 Détrompez-vous. La gastronomie est accessible à tous. Il ne vous manque qu’un coup de pouce.
             </p>
         </div>
@@ -52,63 +52,63 @@
     <div class="recettes">
         <div class="container">
 
-            <h3 class="recettes-title">
+            <h3 class="recettes__title">
                 <img src="<?= get_template_directory_uri() ?>/assets/icons/heart.svg"/>
                 La sélection de la semaine
             </h3>
-            <div class="recettes-grid">
+            <div class="recettes__grid">
                 <div class="recette">
-                    <img class="recette-img" src="<?= get_template_directory_uri() ?>/assets/img/recette-1.png"
+                    <img class="recette__img" src="<?= get_template_directory_uri() ?>/assets/img/recette-1.png"
                          alt="Recette"/>
-                    <div class="recette-content">
-                        <div class="recette-tags">
-                            <span class="recette-tag">Revisite</span>
-                            <span class="recette-tag">Classique</span>
+                    <div class="recette__content">
+                        <div class="recette__tags">
+                            <span class="recette__tag">Revisite</span>
+                            <span class="recette__tag">Classique</span>
                         </div>
 
-                        <h4 class="recette-title">Tarte au citron meringuée</h4>
-                        <p class="recette-desc">Découvrez une revisite fraiche et audacieuse de la fameuse
+                        <h4 class="recette__title">Tarte au citron meringuée</h4>
+                        <p class="recette__desc">Découvrez une revisite fraiche et audacieuse de la fameuse
                             tarte au citron meringuée par un amateur de bonnes choses.
                         </p>
-                        <a href="#" class="recette-link">
+                        <a href="#" class="recette__link">
                             Découvrir la recette
                             <img src="<?= get_template_directory_uri() ?>/assets/icons/arrow-right.svg"/>
                         </a>
                     </div>
                 </div>
                 <div class="recette">
-                    <img class="recette-img" src="<?= get_template_directory_uri() ?>/assets/img/recette-2.png"
+                    <img class="recette__img" src="<?= get_template_directory_uri() ?>/assets/img/recette-2.png"
                          alt="Recette"/>
-                    <div class="recette-content">
-                        <div class="recette-tags">
-                            <span class="recette-tag">Revisite</span>
-                            <span class="recette-tag">Classique</span>
+                    <div class="recette__content">
+                        <div class="recette__tags">
+                            <span class="recette__tag">Revisite</span>
+                            <span class="recette__tag">Classique</span>
                         </div>
 
-                        <h4 class="recette-title">Tarte au citron meringuée</h4>
-                        <p class="recette-desc">Découvrez une revisite fraiche et audacieuse de la fameuse
+                        <h4 class="recette__title">Tarte au citron meringuée</h4>
+                        <p class="recette__desc">Découvrez une revisite fraiche et audacieuse de la fameuse
                             tarte au citron meringuée par un amateur de bonnes choses.
                         </p>
-                        <a href="#" class="recette-link">
+                        <a href="#" class="recette__link">
                             Découvrir la recette
                             <img src="<?= get_template_directory_uri() ?>/assets/icons/arrow-right.svg"/>
                         </a>
                     </div>
                 </div>
                 <div class="recette">
-                    <img class="recette-img" src="<?= get_template_directory_uri() ?>/assets/img/recette-3.png"
+                    <img class="recette__img" src="<?= get_template_directory_uri() ?>/assets/img/recette-3.png"
                          alt="Recette"/>
-                    <div class="recette-content">
-                        <div class="recette-tags">
-                            <span class="recette-tag">Revisite</span>
-                            <span class="recette-tag">Classique</span>
+                    <div class="recette__content">
+                        <div class="recette__tags">
+                            <span class="recette__tag">Revisite</span>
+                            <span class="recette__tag">Classique</span>
                         </div>
 
-                        <h4 class="recette-title">Tarte au citron meringuée</h4>
-                        <p class="recette-desc">Découvrez une revisite fraiche et audacieuse de la fameuse
+                        <h4 class="recette__title">Tarte au citron meringuée</h4>
+                        <p class="recette__desc">Découvrez une revisite fraiche et audacieuse de la fameuse
                             tarte au citron meringuée par un amateur de bonnes choses.
                         </p>
-                        <a href="#" class="recette-link">
+                        <a href="#" class="recette__link">
                             Découvrir la recette
                             <img src="<?= get_template_directory_uri() ?>/assets/icons/arrow-right.svg"/>
                         </a>
@@ -209,8 +209,6 @@
             </div>
         </div>
     </div>
-
-
 
 
 <?php get_footer(); ?>
