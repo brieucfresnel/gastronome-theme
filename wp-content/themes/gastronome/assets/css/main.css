@@ -7253,14 +7253,33 @@ a.text-dark:hover, a.text-dark:focus {
       border-color: #000; }
 
 .half-text {
-  margin: 150px 0 100px 0; }
+  margin: 120px 0 100px 0; }
   .half-text__content {
     font: "Helvetica Now Display", serif;
     font-size: 16px;
     color: #8A8A8A;
-    width: 60%; }
+    width: 50%; }
   .half-text span {
     color: #151515; }
+
+.testimonials {
+  padding: 150px 0; }
+
+.testimonial {
+  margin-bottom: 75px; }
+  .testimonial__author {
+    color: #222;
+    opacity: 100%;
+    font-size: 30px;
+    margin-bottom: 15px; }
+  .testimonial__text {
+    font-size: 16px;
+    line-height: 175%;
+    color: #8A8A8A; }
+  .testimonial__link {
+    color: #000; }
+    .testimonial__link:hover {
+      color: #000; }
 
 .hero__title {
   font-family: "Helvetica Now Display", serif;
@@ -7292,7 +7311,7 @@ a.text-dark:hover, a.text-dark:focus {
   .hero__text:first-child {
     margin-top: 150px; }
   .hero__text:last-child {
-    margin-bottom: 150px; }
+    margin-bottom: 100px; }
 
 .recettes {
   margin-bottom: 175px; }
@@ -7354,23 +7373,6 @@ a.text-dark:hover, a.text-dark:focus {
     .recette__link:hover {
       color: #000;
       text-decoration: none; }
-
-.temoignages {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding-left: 15%;
-  padding-right: 15%; }
-  .temoignages-txt {
-    margin-top: 150px;
-    width: 30%;
-    font-size: 16px;
-    line-height: 125%;
-    color: #8A8A8A; }
-    .temoignages-txt span {
-      color: #222;
-      opacity: 100%;
-      font-size: 30px; }
 
 body {
   background: url("/wp-content/themes/gastronome/assets/img/hero-bg.png") top/contain no-repeat; }

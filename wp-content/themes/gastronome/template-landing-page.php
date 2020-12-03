@@ -51,7 +51,6 @@
 
     <div class="recettes">
         <div class="container">
-
             <h3 class="recettes__title">
                 <img src="<?= get_template_directory_uri() ?>/assets/icons/heart.svg"/>
                 La sélection de la semaine
@@ -147,38 +146,64 @@
     <div class="contained-image">
         <div class="container">
             <div class="contained-image__img">
-                <img class="img-fluid w-100"
-                     src="<?= get_template_directory_uri() ?>/assets/img/temoignages-img.png"/>
+                <img class="img-fluid w-100" src="<?= get_template_directory_uri() ?>/assets/img/temoignages-img.png"/>
             </div>
         </div>
     </div>
 
-    <div class="d-inline-block">
-        <div class="temoignages">
-            <p class="temoignages-txt">
-                <span>Hanaé</span><br><br>
-                J’ai toujours été passionné de cuisine mais je n’osais pas montrer mes plats car je ne les trouvais pas
-                à la hauteur. Gastrono’me est là pour nous prouver le contraire.
-            </p>
-            <p class="temoignages-txt">
-                <span>Titouan</span><br><br>
-                J’ai toujours eu un manque de motivation vis à vis de la cuisine car je la trouvais compliquée.
-                Mais grace à Gastrono’me je me suis rendu compte que c’est finalement accessible.
-            </p>
-        </div>
-    </div>
-    <div class="d-inline-block">
-        <div class="temoignages">
-            <p class="temoignages-txt">
-                <span>Julien</span><br><br>
-                J’adore cuisiner pour mes amis, je suis le cuistot de la bande.
-                Le projet Gastrono’me est génial, j’apprends de nombreuses choses et me perfectionne.
-            </p>
-            <p class="temoignages-txt">
-                <span>Constance</span><br><br>
-                La gastronomie me semblait assez fermée et peu accessible.
-                Maintenant, avec Gastrono'me, je peux enfin découvrir la cuisine et épater ma famille.
-            </p>
+    <div class="testimonials">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-sm-6 offset-md-1 col-md-4">
+                    <div class="testimonial">
+                        <h3 class="testimonial__author">Hanaé</h3>
+                        <p class="testimonial__text">J’ai toujours été passionné de cuisine mais je n’osais pas montrer
+                            mes plats car je ne les trouvais pas à la hauteur. Gastrono’me est là pour nous prouver le
+                            contraire.
+                        </p>
+                        <a href="#" class="testimonial__link">
+                            Lire la suite
+                            <img src="<?= get_template_directory_uri() ?>/assets/icons/arrow-right.svg"/>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-6 offset-md-2 col-md-4">
+                    <div class="testimonial">
+                        <h3 class="testimonial__author">Théophile</h3>
+                        <p class="testimonial__text">J’ai toujours eu un manque de motivation vis à vis de la cuisine
+                            car je la trouvais compliquée. Mais grace à Gastrono’me je me suis rendu compte que c’est
+                            finalement accessible. </p>
+                        <a href="#" class="testimonial__link">
+                            Lire la suite
+                            <img src="<?= get_template_directory_uri() ?>/assets/icons/arrow-right.svg"/>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12 col-sm-6 offset-md-1 col-md-4">
+                    <div class="testimonial">
+                        <h3 class="testimonial__author">Julien</h3>
+                        <p class="testimonial__text">J’adore cuisiner pour mes amis, je suis le cuistot de la bande. Le
+                            projet Gastrono’me est génial, j’apprends de nombreuses choses et me perfectionne. </p>
+                        <a href="#" class="testimonial__link">
+                            Lire la suite
+                            <img src="<?= get_template_directory_uri() ?>/assets/icons/arrow-right.svg"/>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-6 offset-md-2 col-md-4">
+                    <div class="testimonial">
+                        <h3 class="testimonial__author"> Constance</h3>
+                        <p class="testimonial__text">La gastronomie me semblait assez fermée et peu accessible.
+                            Maintenant, avec Gastrono'me, je peux enfin découvrir la cuisine et épater ma famille. </p>
+                        <a href="#" class="testimonial__link">
+                            Lire la suite
+                            <img src="<?= get_template_directory_uri() ?>/assets/icons/arrow-right.svg"/>
+                        </a>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 
