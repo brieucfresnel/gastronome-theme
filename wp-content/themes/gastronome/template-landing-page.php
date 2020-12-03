@@ -224,36 +224,56 @@
         </div>
     </div>
 
-    <div class="half-text">
+    <div class="follow-us">
         <div class="container">
-            <div class="half-text__content">
-                <span>On touche avec les yeux !</span>
-                Explorez le merveilleux monde de la gastronomie au travers de posts, stories sur nos médias sociaux.
-                Retrouvez-nous sur Instagram, Facebook, Twitter et
-                Pinterest.
+            <div class="socials">
+                <div class="half-text">
+                    <div class="half-text__content">
+                        <span>On touche avec les yeux !</span>
+                        Explorez le merveilleux monde de la gastronomie au travers de posts, stories sur nos médias
+                        sociaux.
+                        Retrouvez-nous sur Instagram, Facebook, Twitter et
+                        Pinterest.
+                    </div>
+                </div>
             </div>
-        </div>
-    </div>
-
-    <div class="reseau">
-        <div class="container">
-            <h3 class="reseau__title">
-                <img src="<?= get_template_directory_uri() ?>/assets/icons/heart.svg"/>
-                Nous suivre
-            </h3>
-            <div class="reseau__grid">
-                <div class="reseau">
-                    <a href="https://www.instagram.com/gastronome_fr/"><img class="reseau__img" src="<?= get_template_directory_uri() ?>/assets/img/insta.png"
-                         alt="Reseau"/></a>
-                        <a href="https://www.facebook.com/GastronoMefr/"><img class="reseau__img" src="<?= get_template_directory_uri() ?>/assets/img/facebook.png"
-                         alt="Reseau"/></a>
-                            <a href="https://twitter.com/GastronoMe_fr"><img class="reseau__img" src="<?= get_template_directory_uri() ?>/assets/img/twitter.png"
-                         alt="Reseau"/></a>
-                                <a href="https://www.pinterest.fr/GastronoMe_fr/"><img class="reseau__img" src="<?= get_template_directory_uri() ?>/assets/img/pinterest.png"
-                         alt="Reseau"/></a>
+            <div class="container">
+                <h3 class="socials__title">
+                    <img src="<?= get_template_directory_uri() ?>/assets/icons/heart.svg"/>
+                    Nous suivre
+                </h3>
+                <div class="socials__grid">
+                    <div class="socials">
+                        <a href="https://www.instagram.com/gastronome_fr/">
+                            <img class="socials__img" src="<?= get_template_directory_uri() ?>/assets/img/insta.png"
+                                 alt="socials"/>
+                        </a>
+                        <a href="https://www.facebook.com/GastronoMefr/">
+                            <img class="socials__img" src="<?= get_template_directory_uri() ?>/assets/img/facebook.png"
+                                 alt="socials"/>
+                        </a>
+                        <a href="https://twitter.com/GastronoMe_fr">
+                            <img class="socials__img" src="<?= get_template_directory_uri() ?>/assets/img/twitter.png"
+                                 alt="socials"/>
+                        </a>
+                        <a href="https://www.pinterest.fr/GastronoMe_fr/">
+                            <img class="socials__img" src="<?= get_template_directory_uri() ?>/assets/img/pinterest.png"
+                                 alt="socials"/>
+                        </a>
+                    </div>
+                </div>
+                <div class="presse">
+                    <div class="presse__btn-container">
+                        <h3>Espace presse</h3>
+                        <a href="#">
+                            <img class="presse-btn" src="<?= get_template_directory_uri() ?>/assets/img/fleche.png"
+                                 alt="socials"/>
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
+
 
 <?php get_footer(); ?>

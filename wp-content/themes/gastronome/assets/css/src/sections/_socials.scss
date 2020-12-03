@@ -1,4 +1,4 @@
-.reseau {
+.socials {
   margin-bottom: 100px;
 
   &__title {
@@ -20,8 +20,12 @@
     display: flex;
   }
 
+  &__btn {
+    margin-right: 150px;
+  }
+
 }
-.reseau {
+.socials {
   display: flex;
   align-items: center;
   column-gap: 20px;
