@@ -1,15 +1,20 @@
 .presse {
-  column-gap: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  margin-top: 100px;
   margin-left: 20px;
+  column-gap: 20px;
+  padding: 100px;
+
   border-radius: 20px;
   background: linear-gradient(90deg, #C0ADE7 19.68%, #B9D9EB 85.63%);
+
   text-align: center;
-  display: table-cell;
-  vertical-align: middle;
-  height: 100%;
-  width: 25%;
-  &-h3{
-    color: black;
+
+  h3{
+    color: #151515;
   }
 }
 

@@ -232,10 +232,12 @@
             <div class="offset-md-2 col-md-8">
                 <div class="newsletter-form">
                     <div class="newsletter-form__header">
-                        <img class="newsletter-form__icon" src="<?= get_template_directory_uri() ?>/assets/icons/icon-gift.svg"/>
+                        <img class="newsletter-form__icon"
+                             src="<?= get_template_directory_uri() ?>/assets/icons/icon-gift.svg"/>
                         <h3 class="newsletter-form__title">Nous vous avons confectionné un cadeau.</h3>
                         <p class="newsletter-form__text">
-                            Recevez régulièrement par mail des recettes, article et autres trucs et astuces. Parce que vous
+                            Recevez régulièrement par mail des recettes, article et autres trucs et astuces. Parce que
+                            vous
                             en avez le potentiel, nous souhaitons vous aider dans ce voyage culinaire palpitant.
                         </p>
                     </div>
@@ -248,56 +250,63 @@
 
     <div class="follow-us">
         <div class="container">
-            <div class="socials">
-                <div class="half-text">
-                    <div class="half-text__content">
-                        <span>On touche avec les yeux !</span>
-                        Explorez le merveilleux monde de la gastronomie au travers de posts, stories sur nos médias
-                        sociaux.
-                        Retrouvez-nous sur Instagram, Facebook, Twitter et
-                        Pinterest.
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <h3 class="socials__title">
-                    <img src="<?= get_template_directory_uri() ?>/assets/icons/heart.svg"/>
-                    Nous suivre
-                </h3>
-                <div class="socials__grid">
+            <div class="row">
+                <div class="col-xs-12 col-sm-8 col-md-6">
                     <div class="socials">
-                        <a href="https://www.instagram.com/gastronome_fr/">
-                            <img class="socials__img" src="<?= get_template_directory_uri() ?>/assets/icons/insta.png"
-                                 alt="socials"/>
-                        </a>
-                        <a href="https://www.facebook.com/GastronoMefr/">
-                            <img class="socials__img" src="<?= get_template_directory_uri() ?>/assets/icons/facebook.png"
-                                 alt="socials"/>
-                        </a>
-                        <a href="https://twitter.com/GastronoMe_fr">
-                            <img class="socials__img" src="<?= get_template_directory_uri() ?>/assets/icons/twitter.png"
-                                 alt="socials"/>
-                        </a>
-                        <a href="https://www.pinterest.fr/GastronoMe_fr/">
-                            <img class="socials__img" src="<?= get_template_directory_uri() ?>/assets/icons/pinterest.png"
-                                 alt="socials"/>
-                        </a>
+                        <div class="half-text">
+                            <div class="half-text__content">
+                                <span>On touche avec les yeux !</span>
+                                Explorez le merveilleux monde de la gastronomie au travers de posts, stories sur nos médias
+                                sociaux.
+                                Retrouvez-nous sur Instagram, Facebook, Twitter et
+                                Pinterest.
+                            </div>
+                        </div>
+
+                        <h3 class="socials__title">
+                            <img src="<?= get_template_directory_uri() ?>/assets/icons/heart.svg"/>
+                            Nous suivre
+                        </h3>
+
+                        <div class="socials__grid">
+                            <a href="https://www.instagram.com/gastronome_fr/">
+                                <img class="socials__img" src="<?= get_template_directory_uri() ?>/assets/icons/insta.png"
+                                     alt="socials"/>
+                            </a>
+                            <a href="https://www.facebook.com/GastronoMefr/">
+                                <img class="socials__img"
+                                     src="<?= get_template_directory_uri() ?>/assets/icons/facebook.png"
+                                     alt="socials"/>
+                            </a>
+                            <a href="https://twitter.com/GastronoMe_fr">
+                                <img class="socials__img" src="<?= get_template_directory_uri() ?>/assets/icons/twitter.png"
+                                     alt="socials"/>
+                            </a>
+                            <a href="https://www.pinterest.fr/GastronoMe_fr/">
+                                <img class="socials__img"
+                                     src="<?= get_template_directory_uri() ?>/assets/icons/pinterest.png"
+                                     alt="socials"/>
+                            </a>
+                        </div>
+
                     </div>
                 </div>
-                <div class="presse">
-                    <div class="presse__btn-container">
-                        <h3>Espace presse</h3>
-                        <a href="#">
-                            <img class="presse-btn" src="<?= get_template_directory_uri() ?>/assets/icons/fleche.png"
-                                 alt="socials"/>
-                        </a>
+                <div class="col-xs-12 col-sm-4 offset-md-2">
+                    <div class="presse">
+                        <div class="presse__btn-container">
+                            <h3>Espace presse</h3>
+                            <a href="#">
+                                <img class="presse-btn" src="<?= get_template_directory_uri() ?>/assets/icons/fleche.png"
+                                     alt="socials"/>
+                            </a>
+                        </div>
                     </div>
+
                 </div>
             </div>
         </div>
     </div>
 <?php endwhile; endif; ?>
-
 
 
 <?php get_footer(); ?>
