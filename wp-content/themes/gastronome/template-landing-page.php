@@ -304,6 +304,13 @@
 
                 </div>
             </div>
+            <h3 class="socials__title">
+                <img src="<?= get_template_directory_uri() ?>/assets/img/send.png"/>
+                Nous contacter
+            </h3>
+            <a href="mailto:creativeagency@gmail.com">Creativeagency@gmail.com </a>
+            <br>
+            <br>
         </div>
     </div>
 <?php endwhile; endif; ?>
