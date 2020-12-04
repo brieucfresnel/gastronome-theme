@@ -5,25 +5,17 @@
     <div class="hero">
         <div class="container">
             <p class="hero__title">
-                A tous les amoureux de la bonne bouffe, aux créatifs, aux traditionnels, à ceux qui reproduisent
-                l'original et à ceux qui le sont, vous êtes la pièce maîtresse qui constitue la grande cuisine.
+                Chaque petit plat définit la grande cuisine.
             </p>
             <a href="#" class="hero__scroller">
                 <img src="<?= get_template_directory_uri() ?>/assets/icons/down_arrow.svg"/>
                 Découvrir
             </a>
-            <p class="hero__text">
-                Vous pensez que vous n’arriverez jamais à faire monter des blancs en neige ou que la gastronomie n’est
-                pratiquée que par les chefs culinaires ?
-            </p>
-            <p class="hero__text">
-                Détrompez-vous. La gastronomie est accessible à tous. Il ne vous manque qu’un coup de pouce.
-            </p>
         </div>
     </div>
 
     <div class="section-image">
-        <img class="img-fluid w-100" src="<?= get_template_directory_uri() ?>/assets/img/section-image-bg-1.png"/>
+        <img class="img-fluid w-100" src="<?= get_template_directory_uri() ?>/assets/img/mosaique.png"/>
     </div>
 
     <div class="text-button">
