@@ -7172,51 +7172,88 @@ a.text-dark:hover, a.text-dark:focus {
     position: relative;
     width: 30px;
     height: 14px;
-    cursor: pointer; }
+    cursor: pointer;
+    transform: rotate(0deg);
+    transition: .5s ease-in-out; }
     .main-navbar-btn span {
+      display: block;
       position: absolute;
       top: 0;
       left: 0;
       width: 30px;
       height: 2px;
       border-radius: 4px;
-      background: #000; }
-    .main-navbar-btn span:nth-child(2) {
-      top: 10px; }
+      background: #000;
+      opacity: 1;
+      transform: rotate(0deg);
+      -webkit-transition: .25s ease-in-out;
+      -moz-transition: .25s ease-in-out;
+      -o-transition: .25s ease-in-out;
+      transition: .25s ease-in-out; }
+      .main-navbar-btn span:nth-child(2) {
+        top: 10px; }
+    .main-navbar-btn.open span:nth-child(1) {
+      top: 18px;
+      -webkit-transform: rotate(135deg);
+      -moz-transform: rotate(135deg);
+      -o-transform: rotate(135deg);
+      transform: rotate(135deg); }
   .main-navbar-nav {
-    display: none;
-    position: absolute;
+    width: 0;
+    position: fixed;
     top: 0;
     right: 0;
-    bottom: 0;
-    left: 0; }
-    .main-navbar-nav-menus {
-      display: flex; }
-      .main-navbar-nav-menus ul {
-        margin-left: 130px; }
-        .main-navbar-nav-menus ul:first-child {
-          margin-left: 0; }
-    .main-navbar-nav.is-open {
+    background-color: rgba(243, 243, 243, 0.75);
+    height: 100%;
+    transition: 0.5s;
+    display: flex;
+    justify-content: flex-end;
+    overflow: hidden; }
+    .main-navbar-nav__content {
+      background: #fff;
+      width: 60%;
+      height: 100%;
       display: flex;
-      justify-content: center;
-      align-items: center; }
+      flex-direction: column;
+      justify-content: space-between;
+      padding: 200px 100px 120px 100px; }
+    .main-navbar-nav__menus {
+      display: flex; }
+      .main-navbar-nav__menus ul {
+        margin-left: 130px; }
+        .main-navbar-nav__menus ul:first-child {
+          margin-left: 0; }
+    .main-navbar-nav__main-menu div {
+      margin-bottom: 20px; }
+    .main-navbar-nav__main-menu li a {
+      font-size: 48px;
+      color: #151515; }
+    .main-navbar-nav__socials div {
+      margin-bottom: 100px; }
+    .main-navbar-nav__socials li {
+      margin-bottom: 10px;
+      color: #505050; }
+    .main-navbar-nav__menu-title {
+      color: #8A8A8A; }
     .main-navbar-nav ul {
       list-style: none;
       padding: 0; }
     .main-navbar-nav a {
       text-decoration: none;
       color: #000; }
-    .main-navbar-nav-footer {
+    .main-navbar-nav__footer {
       display: flex;
       justify-content: space-between;
       align-items: flex-end; }
-      .main-navbar-nav-footer p {
+      .main-navbar-nav__footer p {
         margin: 0;
         color: #8A8A8A; }
-        .main-navbar-nav-footer p a {
+        .main-navbar-nav__footer p a {
           color: #151515;
           font-size: 18px;
-          line-height: 22.5px; }
+          line-height: 22.5px;
+          padding-bottom: 4px;
+          border-bottom: 1px solid #151515; }
 
 .text-button {
   padding-top: 175px; }
@@ -7457,6 +7494,8 @@ a.text-dark:hover, a.text-dark:focus {
         transform: scale(1.4, 1.4); }
   .socials__btn {
     margin-right: 150px; }
+  .socials .half-text__content {
+    width: 70%; }
 
 .presse {
   display: flex;
@@ -7465,12 +7504,13 @@ a.text-dark:hover, a.text-dark:focus {
   margin-top: 100px;
   margin-left: 20px;
   column-gap: 20px;
-  padding: 100px;
+  padding: 140px 10px 60px 10px;
   border-radius: 20px;
   background: linear-gradient(90deg, #C0ADE7 19.68%, #B9D9EB 85.63%);
   text-align: center; }
   .presse h3 {
-    color: #151515; }
+    color: #151515;
+    margin-bottom: 50px; }
 
 body {
   background: url("/wp-content/themes/gastronome/assets/img/hero-bg.png") top/contain no-repeat; }

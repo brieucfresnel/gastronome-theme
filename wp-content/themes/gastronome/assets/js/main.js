@@ -1,35 +1,50 @@
-{
+$(function () {
+    // Navbar
+
     $('.main-navbar-btn').click(() => {
-        //$('.main-navbar-nav').toggleClass('is-open');
-    })
 
-    $(function () {
-        $recettes = $('.recette')
 
-        $recettes.addClass('default');
-        $recettes.eq(1).removeClass('default');
-        $recettes.eq(1).addClass('expand');
+            let nav = $('.main-navbar-nav')
 
-        $recettes.on('click', function () {
-
-            var e = $('.recette');
-            if (e.hasClass('expand')) {
-                e.removeClass('expand');
-
-                e.addClass('default');
-                e.css({
-                    'width': '30vw'
-                });
-
-                $(this).addClass('expand');
-                $(this).animate({
-                    'width': '90vw'
-                });
-                 $(this).children().get(1).css({'width': '50%'})
-            } else {
-                $(this).addClass('expand');
+            if (nav.width() === 0) {
+                nav.animate({
+                    'width': '100%'
+                }, 300, 'swing')
+            } else if( nav.width() === $('body').width()) {
+                nav.animate({
+                    'width': '0'
+                }, 300, 'swing')
             }
-        })
+            nav.toggleClass('is-open')
+
+
     })
-}
-(jQuery)
+
+    // Recettes
+    $recettes = $('.recette')
+
+    $recettes.addClass('default');
+    $recettes.eq(1).removeClass('default');
+    $recettes.eq(1).addClass('expand');
+
+    $recettes.on('click', function () {
+
+        var e = $('.recette');
+        if (e.hasClass('expand')) {
+            e.removeClass('expand');
+
+            e.addClass('default');
+            e.css({
+                'width': '30vw'
+            });
+
+            $(this).addClass('expand');
+            $(this).animate({
+                'width': '90vw'
+            });
+            $(this).children().get(1).css({'width': '50%'})
+        } else {
+            $(this).addClass('expand');
+        }
+    })
+}(jQuery))
