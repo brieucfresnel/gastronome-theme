@@ -1,6 +1,6 @@
 {
     $('.main-navbar-btn').click(() => {
-        //$('.main-navbar-nav').toggleClass('is-open');
+        $('.main-navbar-nav').toggleClass('is-open');
     })
 
     $(function () {
