@@ -1,7 +1,7 @@
 <?php /* Template Name: Landing Page */ ?>
 
 <?php get_header(); ?>
-<?php if ( have_posts() ): while ( have_posts() ): the_post(); ?>
+<?php if (have_posts()): while (have_posts()): the_post(); ?>
     <div class="hero">
         <div class="container">
             <p class="hero__title">
@@ -21,9 +21,8 @@
     <div class="text-button">
         <div class="container">
             <p class="text-button__text">
-                <span>Vous allez voyager !</span> Redécouvrez les succulantes recettes de grand-mère ou les
-                petites
-                innovations culinaire à vous en mettre plein les papilles.
+                <span>Des petits plats.</span> Redécouvrez les succulantes recettes de grand-mère
+                ou les petites innovations culinaire à vous en mettre plein les papilles.
             </p>
 
             <div class="text-button__btn-container">
@@ -46,7 +45,7 @@
         <div class="container">
             <h3 class="recettes__title">
                 <img src="<?= get_template_directory_uri() ?>/assets/icons/heart.svg"/>
-                La sélection de la semaine
+                Vos meilleurs créations
             </h3>
             <div class="recettes__grid">
                 <div class="recette">
@@ -110,19 +109,15 @@
         </div>
     </div>
 
-    <div class="section-image">
-        <img class="img-fluid w-100" src="<?= get_template_directory_uri() ?>/assets/img/section-image-bg-2.png"/>
-    </div>
-
     <div class="text-button">
         <div class="container">
             <p class="text-button__text">
-                <span>Vous doutiez de votre talent ?</span> Nous avons tous déjà cuisiné de manière gastronomique. Ou,
-                du moins, essayer. C’est le moment d’en prendre conscience.
+                <span>Vous doutiez de votre talent ?</span>  Nous avons tous déjà cuisiner de façon
+                gastronomique. Ou du moins essayer. C’est le moment d’en prendre conscience.
             </p>
 
-            <div class="voyage-btn-container">
-                <a href="#" class="text-button__btn">Voir toutes les recettes</a>
+            <div class="text-button__btn-container">
+                <a href="#" class="text-button__btn">S'inscrire à la newsletter</a>
             </div>
         </div>
     </div>
@@ -200,10 +195,6 @@
         </div>
     </div>
 
-    <div class="section-image">
-        <img class="img-fluid w-100" src="<?= get_template_directory_uri() ?>/assets/img/section-image-bg-3.png"/>
-    </div>
-
     <!-- Unused for now.
     <div class="text-button">
         <div class="container">
@@ -234,7 +225,7 @@
                         </p>
                     </div>
 
-					<?php echo do_shortcode( '[mc4wp_form id="18"]' ); ?>
+                    <?php echo do_shortcode('[mc4wp_form id="18"]'); ?>
                 </div>
             </div>
         </div>
@@ -248,7 +239,8 @@
                         <div class="half-text">
                             <div class="half-text__content">
                                 <span>On touche avec les yeux !</span>
-                                Explorez le merveilleux monde de la gastronomie au travers de posts, stories sur nos médias
+                                Explorez le merveilleux monde de la gastronomie au travers de posts, stories sur nos
+                                médias
                                 sociaux.
                                 Retrouvez-nous sur Instagram, Facebook, Twitter et
                                 Pinterest.
@@ -262,7 +254,8 @@
 
                         <div class="socials__grid">
                             <a href="https://www.instagram.com/gastronome_fr/">
-                                <img class="socials__img-insta" src="<?= get_template_directory_uri() ?>/assets/icons/insta.png"
+                                <img class="socials__img-insta"
+                                     src="<?= get_template_directory_uri() ?>/assets/icons/insta.png"
                                      alt="socials"/>
                             </a>
                             <a href="https://www.facebook.com/GastronoMefr/">
@@ -271,7 +264,8 @@
                                      alt="socials"/>
                             </a>
                             <a href="https://twitter.com/GastronoMe_fr">
-                                <img class="socials__img-twitter" src="<?= get_template_directory_uri() ?>/assets/icons/twitter.png"
+                                <img class="socials__img-twitter"
+                                     src="<?= get_template_directory_uri() ?>/assets/icons/twitter.png"
                                      alt="socials"/>
                             </a>
                             <a href="https://www.pinterest.fr/GastronoMe_fr/">
@@ -288,7 +282,8 @@
                         <div class="presse__btn-container">
                             <h3>Espace presse</h3>
                             <a href="#">
-                                <img class="presse-btn" src="<?= get_template_directory_uri() ?>/assets/icons/fleche.png"
+                                <img class="presse-btn"
+                                     src="<?= get_template_directory_uri() ?>/assets/icons/fleche.png"
                                      alt="socials"/>
                             </a>
                         </div>
