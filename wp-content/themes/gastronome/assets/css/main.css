@@ -7335,7 +7335,7 @@ a.text-dark:hover, a.text-dark:focus {
 .newsletter-form {
   margin-top: 150px;
   padding: 100px;
-  background: #f4f4f4;
+  background: linear-gradient(90deg, #C0ADE7 19.68%, #B9D9EB 85.63%);
   backdrop-filter: blur(55px);
   border-radius: 20px; }
   .newsletter-form__header {
