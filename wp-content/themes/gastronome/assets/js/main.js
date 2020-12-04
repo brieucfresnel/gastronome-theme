@@ -1,24 +1,35 @@
 $(function () {
     // Navbar
 
+    let isAnimating = false;
+
     $('.main-navbar-btn').click(() => {
+        let nav = $('.main-navbar-nav')
+        isAnimating = true;
 
+        if (nav.width() === 0) {
 
-            let nav = $('.main-navbar-nav')
+            nav.animate({
+                'width': '100%'
+            }, 300, 'swing', () => {
+                $('.main-navbar-btn').toggleClass('is-open')
+            })
 
-            if (nav.width() === 0) {
-                nav.animate({
-                    'width': '100%'
-                }, 300, 'swing')
-            } else if( nav.width() === $('body').width()) {
-                nav.animate({
-                    'width': '0'
-                }, 300, 'swing')
-            }
-            nav.toggleClass('is-open')
+        } else if (nav.width() === $('body').width()) {
 
+            nav.animate({
+                'width': '0'
+            }, 300, 'swing', () => {
+                $('.main-navbar-btn').toggleClass('is-open')
+            })
 
+        }
     })
+
+    if ($(window).scrollTop() > 500) {
+        alert('ok');
+        $('.main-navbar-btn').css('position', 'fixed')
+    }
 
     // Recettes
     $recettes = $('.recette')
