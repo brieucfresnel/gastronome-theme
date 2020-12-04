@@ -1,37 +1,28 @@
 <?php /* Template Name: Landing Page */ ?>
 
 <?php get_header(); ?>
-<?php if ( have_posts() ): while ( have_posts() ): the_post(); ?>
+<?php if (have_posts()): while (have_posts()): the_post(); ?>
     <div class="hero">
         <div class="container">
             <p class="hero__title">
-                A tous les amoureux de la bonne bouffe, aux créatifs, aux traditionnels, à ceux qui reproduisent
-                l'original et à ceux qui le sont, vous êtes la pièce maîtresse qui constitue la grande cuisine.
+                Chaque petit plat définit la grande cuisine.
             </p>
             <a href="#" class="hero__scroller">
                 <img src="<?= get_template_directory_uri() ?>/assets/icons/down_arrow.svg"/>
                 Découvrir
             </a>
-            <p class="hero__text">
-                Vous pensez que vous n’arriverez jamais à faire monter des blancs en neige ou que la gastronomie n’est
-                pratiquée que par les chefs culinaires ?
-            </p>
-            <p class="hero__text">
-                Détrompez-vous. La gastronomie est accessible à tous. Il ne vous manque qu’un coup de pouce.
-            </p>
         </div>
     </div>
 
     <div class="section-image">
-        <img class="img-fluid w-100" src="<?= get_template_directory_uri() ?>/assets/img/section-image-bg-1.png"/>
+        <img class="img-fluid w-100" src="<?= get_template_directory_uri() ?>/assets/img/mosaique.png"/>
     </div>
 
     <div class="text-button">
         <div class="container">
             <p class="text-button__text">
-                <span>Vous allez voyager !</span> Redécouvrez les succulantes recettes de grand-mère ou les
-                petites
-                innovations culinaire à vous en mettre plein les papilles.
+                <span>Des petits plats.</span> Redécouvrez les succulantes recettes de grand-mère
+                ou les petites innovations culinaire à vous en mettre plein les papilles.
             </p>
 
             <div class="text-button__btn-container">
@@ -54,7 +45,7 @@
         <div class="container">
             <h3 class="recettes__title">
                 <img src="<?= get_template_directory_uri() ?>/assets/icons/heart.svg"/>
-                La sélection de la semaine
+                Vos meilleurs créations
             </h3>
             <div class="recettes__grid">
                 <div class="recette">
@@ -118,19 +109,15 @@
         </div>
     </div>
 
-    <div class="section-image">
-        <img class="img-fluid w-100" src="<?= get_template_directory_uri() ?>/assets/img/section-image-bg-2.png"/>
-    </div>
-
     <div class="text-button">
         <div class="container">
             <p class="text-button__text">
-                <span>Vous doutiez de votre talent ?</span> Nous avons tous déjà cuisiné de manière gastronomique. Ou,
-                du moins, essayer. C’est le moment d’en prendre conscience.
+                <span>Vous doutiez de votre talent ?</span>  Nous avons tous déjà cuisiner de façon
+                gastronomique. Ou du moins essayer. C’est le moment d’en prendre conscience.
             </p>
 
-            <div class="voyage-btn-container">
-                <a href="#" class="text-button__btn">Voir toutes les recettes</a>
+            <div class="text-button__btn-container">
+                <a href="#" class="text-button__btn">S'inscrire à la newsletter</a>
             </div>
         </div>
     </div>
@@ -208,10 +195,6 @@
         </div>
     </div>
 
-    <div class="section-image">
-        <img class="img-fluid w-100" src="<?= get_template_directory_uri() ?>/assets/img/section-image-bg-3.png"/>
-    </div>
-
     <!-- Unused for now.
     <div class="text-button">
         <div class="container">
@@ -242,7 +225,7 @@
                         </p>
                     </div>
 
-					<?php echo do_shortcode( '[mc4wp_form id="18"]' ); ?>
+                    <?php echo do_shortcode('[mc4wp_form id="18"]'); ?>
                 </div>
             </div>
         </div>
@@ -256,7 +239,8 @@
                         <div class="half-text">
                             <div class="half-text__content">
                                 <span>On touche avec les yeux !</span>
-                                Explorez le merveilleux monde de la gastronomie au travers de posts, stories sur nos médias
+                                Explorez le merveilleux monde de la gastronomie au travers de posts, stories sur nos
+                                médias
                                 sociaux.
                                 Retrouvez-nous sur Instagram, Facebook, Twitter et
                                 Pinterest.
@@ -270,20 +254,22 @@
 
                         <div class="socials__grid">
                             <a href="https://www.instagram.com/gastronome_fr/">
-                                <img class="socials__img" src="<?= get_template_directory_uri() ?>/assets/icons/insta.png"
+                                <img class="socials__img-insta"
+                                     src="<?= get_template_directory_uri() ?>/assets/icons/insta.png"
                                      alt="socials"/>
                             </a>
                             <a href="https://www.facebook.com/GastronoMefr/">
-                                <img class="socials__img"
+                                <img class="socials__img-facebook"
                                      src="<?= get_template_directory_uri() ?>/assets/icons/facebook.png"
                                      alt="socials"/>
                             </a>
                             <a href="https://twitter.com/GastronoMe_fr">
-                                <img class="socials__img" src="<?= get_template_directory_uri() ?>/assets/icons/twitter.png"
+                                <img class="socials__img-twitter"
+                                     src="<?= get_template_directory_uri() ?>/assets/icons/twitter.png"
                                      alt="socials"/>
                             </a>
                             <a href="https://www.pinterest.fr/GastronoMe_fr/">
-                                <img class="socials__img"
+                                <img class="socials__img-pinterest"
                                      src="<?= get_template_directory_uri() ?>/assets/icons/pinterest.png"
                                      alt="socials"/>
                             </a>
@@ -296,7 +282,8 @@
                         <div class="presse__btn-container">
                             <h3>Espace presse</h3>
                             <a href="#">
-                                <img class="presse-btn" src="<?= get_template_directory_uri() ?>/assets/icons/fleche.png"
+                                <img class="presse-btn"
+                                     src="<?= get_template_directory_uri() ?>/assets/icons/fleche.png"
                                      alt="socials"/>
                             </a>
                         </div>
@@ -304,6 +291,13 @@
 
                 </div>
             </div>
+            <h3 class="socials__title">
+                <img src="<?= get_template_directory_uri() ?>/assets/img/send.png"/>
+                Nous contacter
+            </h3>
+            <a href="mailto:creativeagency@gmail.com">Creativeagency@gmail.com </a>
+            <br>
+            <br>
         </div>
     </div>
 <?php endwhile; endif; ?>

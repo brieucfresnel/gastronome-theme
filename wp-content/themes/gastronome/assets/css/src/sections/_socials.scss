@@ -17,11 +17,35 @@
 
   }
 
-  &__img {
+  &__img-insta {
     width: 100%;
     height: 100%;
-    background: #F4F4F4;
-    border: 20px solid #F4F4F4;
+    background: #FCEEA8;
+    border: 20px solid #FCEEA8;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  }
+
+  &__img-facebook {
+    width: 100%;
+    height: 100%;
+    background: #B9D9EB;
+    border: 20px solid #B9D9EB;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  }
+
+  &__img-twitter {
+    width: 100%;
+    height: 100%;
+    background: #BDEDEF;
+    border: 20px solid #BDEDEF;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  }
+
+  &__img-pinterest {
+    width: 100%;
+    height: 100%;
+    background: #F4C3CC;
+    border: 20px solid #F4C3CC;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
   }
 

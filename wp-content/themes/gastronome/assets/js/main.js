@@ -27,7 +27,6 @@ $(function () {
     })
 
     if ($(window).scrollTop() > 500) {
-        alert('ok');
         $('.main-navbar-btn').css('position', 'fixed')
     }
 

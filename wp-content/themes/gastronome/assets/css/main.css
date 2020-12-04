@@ -7335,7 +7335,7 @@ a.text-dark:hover, a.text-dark:focus {
 .newsletter-form {
   margin-top: 150px;
   padding: 100px;
-  background: #f4f4f4;
+  background: linear-gradient(90deg, #C0ADE7 19.68%, #B9D9EB 85.63%);
   backdrop-filter: blur(55px);
   border-radius: 20px; }
   .newsletter-form__header {
@@ -7381,7 +7381,7 @@ a.text-dark:hover, a.text-dark:focus {
 
 .hero__title {
   font-family: "Helvetica Now Display", serif;
-  width: 70%;
+  width: 40%;
   margin: 130px 0;
   font-size: 45px;
   color: black;
@@ -7485,11 +7485,29 @@ a.text-dark:hover, a.text-dark:focus {
       width: 14px;
       height: 14px;
       margin-right: 10px; }
-  .socials__img {
+  .socials__img-insta {
     width: 100%;
     height: 100%;
-    background: #F4F4F4;
-    border: 20px solid #F4F4F4;
+    background: #FCEEA8;
+    border: 20px solid #FCEEA8;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); }
+  .socials__img-facebook {
+    width: 100%;
+    height: 100%;
+    background: #B9D9EB;
+    border: 20px solid #B9D9EB;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); }
+  .socials__img-twitter {
+    width: 100%;
+    height: 100%;
+    background: #BDEDEF;
+    border: 20px solid #BDEDEF;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); }
+  .socials__img-pinterest {
+    width: 100%;
+    height: 100%;
+    background: #F4C3CC;
+    border: 20px solid #F4C3CC;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); }
   .socials__grid {
     display: flex; }
