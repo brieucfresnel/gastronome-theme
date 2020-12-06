@@ -58,11 +58,11 @@
                     </div>
                     <div class="single-recette__data">
                         <span>Facile</span>
-                        <span><?= get_field('recette_data')['people'] ?></span>
+                        <span><?= get_field('recette_data')['difficulty'] ?></span>
                     </div>
                     <div class="single-recette__data">
                         <span>Coût</span>
-                        <span><?= get_field('recette_data')['people'] ?></span>
+                        <span><?= get_field('recette_data')['price'] ?></span>
                     </div>
                 </div>
             </div>
