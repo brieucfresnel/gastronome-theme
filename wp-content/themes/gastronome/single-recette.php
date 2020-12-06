@@ -20,12 +20,12 @@
             </div>
         </div>
 
-        <div class="row">
+        <div class="row mt-5">
             <div class="col-lg-7">
                 <div class="single-recette__header">
                     <div class="single-recette__tags">
                         <?php foreach (get_the_terms(get_the_ID(), 'post_tag') as $tag): ?>
-                            <a href="<?= get_term_link($tag) ?>" class="tag">
+                            <a class="tag" href="<?= get_term_link($tag) ?>" class="tag">
                                 <?= $tag->name ?>
                             </a>
                         <?php endforeach; ?>
@@ -34,16 +34,36 @@
                         <?php the_title(); ?>
                     </h1>
                     <div class="single-recette__times d-flex">
-                        <div>
-                            <img src="<?= get_template_directory_uri() ?>/assets/icons/couverts.png"/>
-                            Préparation : <?= get_field('preparation_time') ?>
+                        <div class="d-flex align-items-center mr-4">
+                            <img class="mr-2" src="<?= get_template_directory_uri() ?>/assets/icons/couverts.png"/>
+                            Préparation : <?= get_field('recette_data')['preparation_time'] ?>
                         </div>
-                        <div>
-                            <img src="<?= get_template_directory_uri() ?>/assets/icons/four.png"/>
-                            Cuisson : <?= get_field('cooking_time') ?>
+                        <div class="d-flex align-items-center">
+                            <img class="mr-2" src="<?= get_template_directory_uri() ?>/assets/icons/four.png"/>
+                            Cuisson : <?= get_field('recette_data')['cooking_time'] ?>
                         </div>
                     </div>
 
+                </div>
+            </div>
+            <div class="col-lg-5 d-flex justify-content-center">
+                <div class="single-recette__datas d-flex">
+                    <div class="single-recette__data">
+                        <span>Temps</span>
+                        <span><?= get_field('recette_data')['total_time'] ?></span>
+                    </div>
+                    <div class="single-recette__data">
+                        <span>Personnes</span>
+                        <span><?= get_field('recette_data')['people'] ?></span>
+                    </div>
+                    <div class="single-recette__data">
+                        <span>Facile</span>
+                        <span><?= get_field('recette_data')['people'] ?></span>
+                    </div>
+                    <div class="single-recette__data">
+                        <span>Coût</span>
+                        <span><?= get_field('recette_data')['people'] ?></span>
+                    </div>
                 </div>
             </div>
         </div>

@@ -26,6 +26,10 @@ $font-family-sans-serif: 'Helvetica Now Display', -apple-system, system-ui, Blin
 @import 'components/testimonials';
 @import 'components/newsletter-form';
 @import 'components/footer';
+@import 'components/tag';
+
+// CPTs
+@import 'components/single-recette';
 
 @import 'sections/hero';
 @import 'sections/recettes';
