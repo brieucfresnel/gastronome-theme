@@ -568,25 +568,25 @@
                     </div>
                 </div>
 				<?php if ( have_rows( 'footer_links' ) ): while ( have_rows( 'footer_links' ) ): the_row(); ?>
-                    <div class="col-xs-12 col-sm-4 offset-md-2">
+                    <div class="col-xs-4 col-sm-4 offset-md-2">
                         <div class="footer-links">
-                            <div class="footer-link-container">
-                                <a class="footer-link" href="<?= esc_url( get_sub_field( 'footer_link_1' )['url'] ) ?>"
-                                   class="footer-link">
+                            <div class="footer-link">
+                                <a href="<?= esc_url( get_sub_field( 'footer_link_1' )['url'] ) ?>">
 									<?= esc_html( get_sub_field( 'footer_link_1' )['title'] ) ?>
                                 </a>
+                                <img src="<?php the_sub_field('footer_icon_1'); ?>" alt="Icone" class="footer-link-icon">
                             </div>
-                            <div class="footer-link-container">
-                                <a class="footer-link" href="<?= esc_url( get_sub_field( 'footer_link_2' )['url'] ) ?>"
-                                   class="footer-link">
+                            <div class="footer-link">
+                                <a href="<?= esc_url( get_sub_field( 'footer_link_2' )['url'] ) ?>">
 									<?= esc_html( get_sub_field( 'footer_link_2' )['title'] ) ?>
                                 </a>
+                                <img src="<?php the_sub_field('footer_icon_2'); ?>" alt="Icone" class="footer-link-icon">
                             </div>
-                            <div class="footer-link-container">
-                                <a class="footer-link" href="<?= esc_url( get_sub_field( 'footer_link_3' )['url'] ) ?>"
-                                   class="footer-link">
+                            <div class="footer-link">
+                                <a href="<?= esc_url( get_sub_field( 'footer_link_3' )['url'] ) ?>">
 									<?= esc_html( get_sub_field( 'footer_link_3' )['title'] ) ?>
                                 </a>
+                                <img src="<?php the_sub_field('footer_icon_3'); ?>" alt="Icone" class="footer-link-icon">
                             </div>
                         </div>
 
