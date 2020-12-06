@@ -30,7 +30,7 @@
   margin-left: 20px;
   border-radius: 20px;
   position: relative;
-  height: 400px;
+  height: 350px;
   transition: all .2s;
 
   :not(.slick-current) .content {
@@ -101,17 +101,21 @@
 
 .slick-dots {
   margin-top: 30px;
+  padding-left: 0;
   list-style: none;
   display: flex;
-  justify-content: center;
   column-gap: 30px;
-  margin-right: 20%;
 
-  li {
-    background: none;
+  button[aria-selected=true] {
+    background: rgba(0, 0, 0, 0.8);
   }
 
   button {
-
+    background: rgba(0, 0, 0, 0.4);
+    border: none;
+    height: 2px;
+    width: 90px;
+    border-radius: 4px;
+    font-size: 0;
   }
 }

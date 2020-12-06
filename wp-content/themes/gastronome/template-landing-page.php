@@ -62,7 +62,100 @@
                 <img src="<?= get_template_directory_uri() ?>/assets/icons/heart.svg"/>
                 Vos meilleurs créations
             </h3>
-            <div class="recettes__grid mb-5">
+            <div class="recettes__grid recettes-slider-1 mb-5">
+                <div class="recette">
+                    <img class="recette__img" src="<?= get_template_directory_uri() ?>/assets/img/recette-4.jpg"
+                         alt="Recette"
+                    />
+                    <div class="recette__content">
+                        <div class="recette__tags">
+                            <span class="recette__tag">Revisite</span>
+                            <span class="recette__tag">Classique</span>
+                        </div>
+
+                        <h4 class="recette__title">Tarte au citron meringuée</h4>
+                        <p class="recette__desc">Découvrez une revisite fraiche et audacieuse de la fameuse
+                            tarte au citron meringuée par un amateur de bonnes choses.
+                        </p>
+                    </div>
+                </div>
+                <div class="recette">
+                    <img class="recette__img" src="<?= get_template_directory_uri() ?>/assets/img/recette-2.png"
+                         alt="Recette"/>
+                    <div class="recette__content">
+                        <div class="recette__tags">
+                            <span class="recette__tag">Revisite</span>
+                            <span class="recette__tag">Classique</span>
+                        </div>
+
+                        <h4 class="recette__title">Tarte au citron meringuée</h4>
+                        <p class="recette__desc">Découvrez une revisite fraiche et audacieuse de la fameuse
+                            tarte au citron meringuée par un amateur de bonnes choses.
+                        </p>
+                    </div>
+                </div>
+                <div class="recette">
+                    <img class="recette__img" src="<?= get_template_directory_uri() ?>/assets/img/recette-2.png"
+                         alt="Recette"/>
+                    <div class="recette__content">
+                        <div class="recette__tags">
+                            <span class="recette__tag">Revisite</span>
+                            <span class="recette__tag">Classique</span>
+                        </div>
+
+                        <h4 class="recette__title">Tarte au citron meringuée</h4>
+                        <p class="recette__desc">Découvrez une revisite fraiche et audacieuse de la fameuse
+                            tarte au citron meringuée par un amateur de bonnes choses.
+                        </p>
+                    </div>
+                </div>
+                <div class="recette">
+                    <img class="recette__img" src="<?= get_template_directory_uri() ?>/assets/img/recette-3.png"
+                         alt="Recette"/>
+                    <div class="recette__content">
+                        <div class="recette__tags">
+                            <span class="recette__tag">Revisite</span>
+                            <span class="recette__tag">Classique</span>
+                        </div>
+
+                        <h4 class="recette__title">Tarte au citron meringuée</h4>
+                        <p class="recette__desc">Découvrez une revisite fraiche et audacieuse de la fameuse
+                            tarte au citron meringuée par un amateur de bonnes choses.
+                        </p>
+                    </div>
+                </div>
+                <div class="recette">
+                    <img class="recette__img" src="<?= get_template_directory_uri() ?>/assets/img/recette-3.png"
+                         alt="Recette"/>
+                    <div class="recette__content">
+                        <div class="recette__tags">
+                            <span class="recette__tag">Revisite</span>
+                            <span class="recette__tag">Classique</span>
+                        </div>
+
+                        <h4 class="recette__title">Tarte au citron meringuée</h4>
+                        <p class="recette__desc">Découvrez une revisite fraiche et audacieuse de la fameuse
+                            tarte au citron meringuée par un amateur de bonnes choses.
+                        </p>
+                    </div>
+                </div>
+                <div class="recette">
+                    <img class="recette__img" src="<?= get_template_directory_uri() ?>/assets/img/recette-3.png"
+                         alt="Recette"/>
+                    <div class="recette__content">
+                        <div class="recette__tags">
+                            <span class="recette__tag">Revisite</span>
+                            <span class="recette__tag">Classique</span>
+                        </div>
+
+                        <h4 class="recette__title">Tarte au citron meringuée</h4>
+                        <p class="recette__desc">Découvrez une revisite fraiche et audacieuse de la fameuse
+                            tarte au citron meringuée par un amateur de bonnes choses.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="recettes__grid recettes-slider-2 mb-5">
                 <div class="recette">
                     <img class="recette__img" src="<?= get_template_directory_uri() ?>/assets/img/recette-4.jpg"
                          alt="Recette"

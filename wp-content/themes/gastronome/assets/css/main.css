@@ -7435,7 +7435,7 @@ a.text-dark:hover, a.text-dark:focus {
   margin-left: 20px;
   border-radius: 20px;
   position: relative;
-  height: 400px;
+  height: 350px;
   transition: all .2s; }
   .recette :not(.slick-current) .content {
     transform: scale(0.9); }
@@ -7478,13 +7478,19 @@ a.text-dark:hover, a.text-dark:focus {
 /* Slick fixes */
 .slick-dots {
   margin-top: 30px;
+  padding-left: 0;
   list-style: none;
   display: flex;
-  justify-content: center;
-  column-gap: 30px;
-  margin-right: 20%; }
-  .slick-dots li {
-    background: none; }
+  column-gap: 30px; }
+  .slick-dots button[aria-selected=true] {
+    background: rgba(0, 0, 0, 0.8); }
+  .slick-dots button {
+    background: rgba(0, 0, 0, 0.4);
+    border: none;
+    height: 2px;
+    width: 90px;
+    border-radius: 4px;
+    font-size: 0; }
 
 .socials {
   margin-bottom: 100px; }

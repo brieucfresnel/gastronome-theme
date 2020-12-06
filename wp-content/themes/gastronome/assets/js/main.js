@@ -1,14 +1,25 @@
 $(function () {
     // Navbar
     $(document).ready(function () {
-        $('.recettes__grid').slick({
-            dots: false,
+        $('.recettes-slider-1').slick({
+            dots: true,
             infinite: true,
-            slidesToShow: 3,
+            slidesToShow: 4,
             slidesToScroll: 1,
             arrows: false,
             autoplay: true,
-            autoplaySpeed: 5000,
+            autoplaySpeed: 1000,
+            draggable: false,
+            focusOnSelect: true,
+        });
+        $('.recettes-slider-2').slick({
+            dots: true,
+            infinite: true,
+            slidesToShow: 4,
+            slidesToScroll: 1,
+            arrows: false,
+            autoplay: true,
+            autoplaySpeed: 1000,
             draggable: false,
             focusOnSelect: true,
         });
