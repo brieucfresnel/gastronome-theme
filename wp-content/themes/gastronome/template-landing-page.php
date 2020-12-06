@@ -81,7 +81,8 @@
                 </div>
                 <div class="recette">
                     <img class="recette__img" src="<?= get_template_directory_uri() ?>/assets/img/500x500/Boeuf_Bourguignon.jpg"
-                         alt="Recette"/>
+                         alt="Recette"
+                    />
                     <div class="recette__content">
                         <div class="recette__tags">
                             <span class="recette__tag">Plat</span>
@@ -346,7 +347,8 @@
                     <div class="slide">
                         <div class="recette">
                             <img class="recette__img" src="<? /*= get_template_directory_uri() */ ?>/assets/img/500x500/cassoulet.jpg"
-                                 alt="Recette"/>
+                                 alt="Recette"
+                            />
                             <div class="recette__content">
                                 <div class="recette__tags">
                                     <span class="recette__tag">Revisite</span>
