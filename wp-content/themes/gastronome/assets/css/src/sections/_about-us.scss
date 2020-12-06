@@ -1,0 +1,25 @@
+.about-us {
+  background: linear-gradient(180deg, #F4C3CC 0%, #FFCFBE 100%);
+
+  .container .row {
+    align-items: center;
+    padding: 80px 0;
+  }
+
+  &__title {
+    font-size: 35px;
+    line-height: 125%;
+    color: #151515;
+    margin-bottom: 20px;
+  }
+
+  &__text {
+    font-size: 16px;
+    line-height: 24px;
+    color: #151515;
+  }
+}
+
+#about-us {
+  scroll-behavior: smooth;
+}

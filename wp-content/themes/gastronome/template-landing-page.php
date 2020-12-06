@@ -1,21 +1,36 @@
 <?php /* Template Name: Landing Page */ ?>
 
 <?php get_header(); ?>
-<?php if (have_posts()): while (have_posts()): the_post(); ?>
+<?php if ( have_posts() ): while ( have_posts() ): the_post(); ?>
     <div class="hero">
         <div class="container">
-            <p class="hero__title">
+            <h1 class="hero__title">
                 Chaque petit plat définit la grande cuisine.
-            </p>
-            <a href="#" class="hero__scroller">
+            </h1>
+            <a href="#about-us" class="hero__scroller">
                 <img src="<?= get_template_directory_uri() ?>/assets/icons/down_arrow.svg"/>
                 Découvrir
             </a>
         </div>
     </div>
 
-    <div class="section-image">
-        <img class="img-fluid w-100" src="<?= get_template_directory_uri() ?>/assets/img/mosaique.png"/>
+    <div id="about-us" class="about-us">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-8 col-md-6 col-lg-5">
+                    <h2 class="about-us__title">
+                        La gastronomie française est une mosaïque composée de la cuisine de chacun
+                    </h2>
+                    <div class="about-us__text">
+                        À tous les amoureux de la bonne bouffe, aux créatifs, aux traditionnels, à ceux qui reproduisent
+                        l'original et à ceux qui le sont, vous êtes la pièce maîtresse qui constitue la grande cuisine
+                    </div>
+                </div>
+                <div class="col-sm-4 col-md-6 col-lg-5 offset-lg-2">
+                    <img class="img-fluid" src="<?= get_template_directory_uri() ?>/assets/img/mosaique.png"/>
+                </div>
+            </div>
+        </div>
     </div>
 
     <div class="text-button">
@@ -47,7 +62,7 @@
                 <img src="<?= get_template_directory_uri() ?>/assets/icons/heart.svg"/>
                 Vos meilleurs créations
             </h3>
-            <div class="recettes__grid">
+            <div class="recettes__grid mb-5">
                 <div class="recette">
                     <img class="recette__img" src="<?= get_template_directory_uri() ?>/assets/img/recette-4.jpg"
                          alt="Recette"/>
@@ -106,13 +121,82 @@
                     </div>
                 </div>
             </div>
+
+           <!-- <div class="slider-outer">
+                <div class="slider-inner">
+                    <div class="slide">
+                        <div class="recette">
+                            <img class="recette__img" src="<?/*= get_template_directory_uri() */?>/assets/img/recette-4.jpg"
+                                 alt="Recette"/>
+                            <div class="recette__content">
+                                <div class="recette__tags">
+                                    <span class="recette__tag">Revisite</span>
+                                    <span class="recette__tag">Classique</span>
+                                </div>
+
+                                <h4 class="recette__title">Tarte au citron meringuée</h4>
+                                <p class="recette__desc">Découvrez une revisite fraiche et audacieuse de la fameuse
+                                    tarte au citron meringuée par un amateur de bonnes choses.
+                                </p>
+                                <a href="#" class="recette__link">
+                                    Découvrir la recette
+                                    <img src="<?/*= get_template_directory_uri() */?>/assets/icons/arrow-right.svg"/>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <div class="recette">
+                            <img class="recette__img" src="<?/*= get_template_directory_uri() */?>/assets/img/recette-2.png"
+                                 alt="Recette"/>
+                            <div class="recette__content">
+                                <div class="recette__tags">
+                                    <span class="recette__tag">Revisite</span>
+                                    <span class="recette__tag">Classique</span>
+                                </div>
+
+                                <h4 class="recette__title">Tarte au citron meringuée</h4>
+                                <p class="recette__desc">Découvrez une revisite fraiche et audacieuse de la fameuse
+                                    tarte au citron meringuée par un amateur de bonnes choses.
+                                </p>
+                                <a href="#" class="recette__link">
+                                    Découvrir la recette
+                                    <img src="<?/*= get_template_directory_uri() */?>/assets/icons/arrow-right.svg"/>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <div class="recette">
+                        <img class="recette__img" src="<?/*= get_template_directory_uri() */?>/assets/img/recette-3.png"
+                             alt="Recette"/>
+                        <div class="recette__content">
+                            <div class="recette__tags">
+                                <span class="recette__tag">Revisite</span>
+                                <span class="recette__tag">Classique</span>
+                            </div>
+
+                            <h4 class="recette__title">Tarte au citron meringuée</h4>
+                            <p class="recette__desc">Découvrez une revisite fraiche et audacieuse de la fameuse
+                                tarte au citron meringuée par un amateur de bonnes choses.
+                            </p>
+                            <a href="#" class="recette__link">
+                                Découvrir la recette
+                                <img src="<?/*= get_template_directory_uri() */?>/assets/icons/arrow-right.svg"/>
+                            </a>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+
+            </div>-->
         </div>
     </div>
 
     <div class="text-button">
         <div class="container">
             <p class="text-button__text">
-                <span>Vous doutiez de votre talent ?</span>  Nous avons tous déjà cuisiner de façon
+                <span>Vous doutiez de votre talent ?</span> Nous avons tous déjà cuisiner de façon
                 gastronomique. Ou du moins essayer. C’est le moment d’en prendre conscience.
             </p>
 
@@ -225,7 +309,7 @@
                         </p>
                     </div>
 
-                    <?php echo do_shortcode('[mc4wp_form id="18"]'); ?>
+					<?php echo do_shortcode( '[mc4wp_form id="18"]' ); ?>
                 </div>
             </div>
         </div>

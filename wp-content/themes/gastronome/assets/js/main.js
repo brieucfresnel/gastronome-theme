@@ -1,60 +1,80 @@
 $(function () {
     // Navbar
+    $(document).ready(function () {
+      /*  $('.slider-inner').slick({
+            dots: true,
+            infinite: true,
+            cssEase: 'linear',
+            slidesToShow: 3,
+            slidesToScroll: 3,
+            arrows: true,
+        });*/
+        // Add smooth scrolling to all links
+        $("a").on('click', function (event) {
 
-    let isAnimating = false;
+            // Make sure this.hash has a value before overriding default behavior
+            if (this.hash !== "") {
+                // Prevent default anchor click behavior
+                event.preventDefault();
 
-    $('.main-navbar-btn').click(() => {
-        let nav = $('.main-navbar-nav')
-        isAnimating = true;
+                // Store hash
+                var hash = this.hash;
 
-        if (nav.width() === 0) {
+                // Using jQuery's animate() method to add smooth page scroll
+                // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+                $('html, body').animate({
+                    scrollTop: $(hash).offset().top
+                }, 800, function () {
 
-            nav.animate({
-                'width': '100%'
-            }, 300, 'swing', () => {
-                $('.main-navbar-btn').toggleClass('is-open')
-            })
+                    // Add hash (#) to URL when done scrolling (default click behavior)
+                    window.location.hash = hash;
+                });
+            } // End if
+        });
 
-        } else if (nav.width() === $('body').width()) {
+        $('.main-navbar-btn').click(() => {
+            let nav = $('.main-navbar-nav')
 
-            nav.animate({
-                'width': '0'
-            }, 300, 'swing', () => {
-                $('.main-navbar-btn').toggleClass('is-open')
-            })
+            if (nav.width() === 0) {
 
-        }
-    })
+                nav.animate({
+                    'width': '100%'
+                }, 300, 'swing', () => {
+                    $('.main-navbar-btn').toggleClass('is-open')
+                })
 
-    if ($(window).scrollTop() > 500) {
-        $('.main-navbar-btn').css('position', 'fixed')
-    }
+            } else if (nav.width() === $('body').width()) {
 
-    // Recettes
-    $recettes = $('.recette')
+                nav.animate({
+                    'width': '0'
+                }, 300, 'swing', () => {
+                    $('.main-navbar-btn').toggleClass('is-open')
+                })
 
-    $recettes.addClass('default');
-    $recettes.eq(1).removeClass('default');
-    $recettes.eq(1).addClass('expand');
+            }
+        })
 
-    $recettes.on('click', function () {
 
-        var e = $('.recette');
-        if (e.hasClass('expand')) {
-            e.removeClass('expand');
+        // Recettes
+        recettes = $('.recette')
 
-            e.addClass('default');
-            e.css({
-                'width': '30vw'
-            });
+        recettes.addClass('default');
+        recettes.eq(1).removeClass('default');
+        recettes.eq(1).addClass('expand');
 
-            $(this).addClass('expand');
-            $(this).animate({
-                'width': '90vw'
-            });
-            $(this).children().get(1).css({'width': '50%'})
-        } else {
-            $(this).addClass('expand');
-        }
-    })
+        recettes.on('click', function (e) {
+
+            var e = $('.recette');
+            if (recettes.hasClass('expand')) {
+                recettes.removeClass('expand');
+
+                $(this).addClass('expand');
+                //$($(e.target).children().get(1)).css({'width': '50%'})
+            } else {
+                $(this).addClass('expand');
+            }
+        })
+
+    });
+
 }(jQuery))

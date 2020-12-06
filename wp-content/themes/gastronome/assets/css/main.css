@@ -7542,5 +7542,23 @@ a.text-dark:hover, a.text-dark:focus {
     color: #151515;
     margin-bottom: 50px; }
 
+.about-us {
+  background: linear-gradient(180deg, #F4C3CC 0%, #FFCFBE 100%); }
+  .about-us .container .row {
+    align-items: center;
+    padding: 80px 0; }
+  .about-us__title {
+    font-size: 35px;
+    line-height: 125%;
+    color: #151515;
+    margin-bottom: 20px; }
+  .about-us__text {
+    font-size: 16px;
+    line-height: 24px;
+    color: #151515; }
+
+#about-us {
+  scroll-behavior: smooth; }
+
 body {
   background: url("/wp-content/themes/gastronome/assets/img/hero-bg.png") top/contain no-repeat; }
