@@ -7461,12 +7461,33 @@ a.text-dark:hover, a.text-dark:focus {
   display: inline-block;
   font-size: 14px;
   color: #000;
-  background: #FFCFBE;
+  background: #ffcfbe;
   padding: 7px 12px;
   border-radius: 15px; }
+  .tag-big {
+    font-size: 17px;
+    padding: 10px 20px; }
   .tag :hover {
     color: #000;
     text-decoration: none; }
+
+.step {
+  list-style: none;
+  display: flex; }
+  .step__number {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
+    font-size: 20px;
+    color: #8A8A8A;
+    min-width: 47px;
+    width: 47px;
+    height: 47px;
+    border-radius: 50%; }
+  .step__text {
+    margin-left: 30px;
+    margin-top: 10px; }
 
 .single-recette__title {
   margin: 15px 0 25px 0;

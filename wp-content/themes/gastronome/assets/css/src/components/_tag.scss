@@ -1,13 +1,18 @@
 .tag {
-    display: inline-block;
-    font-size: 14px;
-    color: #000;
-    background: #FFCFBE;
-    padding: 7px 12px;
-    border-radius: 15px;
+  display: inline-block;
+  font-size: 14px;
+  color: #000;
+  background: #ffcfbe;
+  padding: 7px 12px;
+  border-radius: 15px;
 
-    :hover {
-      color: #000;
-      text-decoration: none;
-    }
+  &-big {
+    font-size: 17px;
+    padding: 10px 20px;
+  }
+
+  :hover {
+    color: #000;
+    text-decoration: none;
+  }
 }
