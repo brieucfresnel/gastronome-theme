@@ -76,8 +76,12 @@
     margin-right: 150px;
   }
 
-  .half-text__content {
-    width: 70%;
+  .half-text {
+    margin-bottom: 50px;
+    &__content {
+      width: 100%;
+    }
+
   }
 
 }
