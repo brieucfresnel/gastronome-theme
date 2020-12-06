@@ -17,6 +17,9 @@ $(function () {
                     settings: {
                         slidesToShow: 2,
                         slidesToScroll: 1,
+                        dots: false,
+                        focusOnSelect: false,
+                        draggable: true
                     }
                 },
         ]
