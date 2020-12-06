@@ -1,0 +1,10 @@
+.container {
+  margin-top: 70px;
+  &__mosaique{
+    float: left;
+  }
+  &__txt{
+    width: 65%;
+    align-content: space-between;
+  }
+}
