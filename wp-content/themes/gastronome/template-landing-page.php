@@ -531,77 +531,7 @@
         </div>
     </div>
 
-    <div class="follow-us">
-        <div class="container">
-            <div class="row">
-                <div class="col-xs-12 col-sm-8 col-md-6">
-                    <div class="socials">
-                        <div class="half-text">
-                            <div class="half-text__content">
-								<?php the_field( 'footer_text' ) ?>
-                            </div>
-                        </div>
 
-                        <div class="socials__grid">
-                            <a href="https://www.instagram.com/gastronome_fr/">
-                                <img class="socials__img-insta"
-                                     src="<?= get_template_directory_uri() ?>/assets/icons/insta.png"
-                                     alt="socials"/>
-                            </a>
-                            <a href="https://www.facebook.com/GastronoMefr/">
-                                <img class="socials__img-facebook"
-                                     src="<?= get_template_directory_uri() ?>/assets/icons/facebook.png"
-                                     alt="socials"/>
-                            </a>
-                            <a href="https://twitter.com/GastronoMe_fr">
-                                <img class="socials__img-twitter"
-                                     src="<?= get_template_directory_uri() ?>/assets/icons/twitter.png"
-                                     alt="socials"/>
-                            </a>
-                            <a href="https://www.pinterest.fr/GastronoMe_fr/">
-                                <img class="socials__img-pinterest"
-                                     src="<?= get_template_directory_uri() ?>/assets/icons/pinterest.png"
-                                     alt="socials"/>
-                            </a>
-                        </div>
-
-                    </div>
-                </div>
-				<?php if ( have_rows( 'footer_links' ) ): while ( have_rows( 'footer_links' ) ): the_row(); ?>
-                    <div class="col-xs-4 col-sm-4 offset-md-2">
-                        <div class="footer-links">
-                            <div class="footer-link">
-                                <a href="<?= esc_url( get_sub_field( 'footer_link_1' )['url'] ) ?>">
-									<?= esc_html( get_sub_field( 'footer_link_1' )['title'] ) ?>
-                                </a>
-                                <img src="<?php the_sub_field('footer_icon_1'); ?>" alt="Icone" class="footer-link-icon">
-                            </div>
-                            <div class="footer-link">
-                                <a href="<?= esc_url( get_sub_field( 'footer_link_2' )['url'] ) ?>">
-									<?= esc_html( get_sub_field( 'footer_link_2' )['title'] ) ?>
-                                </a>
-                                <img src="<?php the_sub_field('footer_icon_2'); ?>" alt="Icone" class="footer-link-icon">
-                            </div>
-                            <div class="footer-link">
-                                <a href="<?= esc_url( get_sub_field( 'footer_link_3' )['url'] ) ?>">
-									<?= esc_html( get_sub_field( 'footer_link_3' )['title'] ) ?>
-                                </a>
-                                <img src="<?php the_sub_field('footer_icon_3'); ?>" alt="Icone" class="footer-link-icon">
-                            </div>
-                        </div>
-
-                    </div>
-				<?php endwhile; endif; ?>
-            </div>
-            <h3 class="socials__title">
-                <img src="<?= get_template_directory_uri() ?>/assets/img/send.png"/>
-                Nous contacter
-            </h3>
-            <a href="mailto:creativeagency@gmail.com">Creativeagency@gmail.com </a>
-            <br>
-            <br>
-        </div>
-    </div>
 <?php endwhile; endif; ?>
 
 
