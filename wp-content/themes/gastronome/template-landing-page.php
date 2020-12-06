@@ -1,21 +1,21 @@
 <?php /* Template Name: Landing Page */ ?>
 
 <?php get_header(); ?>
-<?php if ( have_posts() ): while ( have_posts() ): the_post(); ?>
+<?php if (have_posts()): while (have_posts()): the_post(); ?>
     <div class="hero">
     <div class="container">
         <h1 class="hero__title">
-			<?php the_field( 'header_title' ) ?>
+            <?php the_field('header_title') ?>
         </h1>
 
-		<?php
-		$header_link = get_field( 'header_link' );
-		if ( $header_link ): ?>
-            <a href="<?= esc_url( $header_link['url'] ) ?>" class="hero__scroller">
+        <?php
+        $header_link = get_field('header_link');
+        if ($header_link): ?>
+            <a href="<?= esc_url($header_link['url']) ?>" class="hero__scroller">
                 <img src="<?= get_template_directory_uri() ?>/assets/icons/down_arrow.svg"/>
-				<?= esc_html( $header_link['title'] ) ?>
+                <?= esc_html($header_link['title']) ?>
             </a>
-		<?php endif; ?>
+        <?php endif; ?>
     </div>
 
     <div id="about-us" class="about-us">
@@ -23,10 +23,10 @@
             <div class="row">
                 <div class="col-sm-12 col-md-6 col-lg-5">
                     <h2 class="about-us__title">
-						<?php the_field( 'about_us_title' ) ?>
+                        <?php the_field('about_us_title') ?>
                     </h2>
                     <div class="about-us__text">
-						<?php the_field( 'about_us_text' ) ?>
+                        <?php the_field('about_us_text') ?>
                     </div>
                 </div>
                 <div class="about-us__img col-sm-12 col-md-6 col-lg-5 offset-lg-2">
@@ -39,12 +39,12 @@
     <div class="text-button recipes-header">
         <div class="container">
             <p class="text-button__text">
-				<?php the_field( 'recipes_header_text' ) ?>
+                <?php the_field('recipes_header_text') ?>
             </p>
 
             <div class="text-button__btn-container">
-                <a href="<?= esc_url( get_field( 'recette_header_button' )['url'] ) ?>" class="text-button__btn">
-					<?= esc_html( get_field( 'recette_header_button' )['title'] ) ?>
+                <a href="<?= esc_url(get_field('recette_header_button')['url']) ?>" class="text-button__btn">
+                    <?= esc_html(get_field('recette_header_button')['title']) ?>
                 </a>
             </div>
         </div>
@@ -68,7 +68,8 @@
             </h3>
             <div class="recettes__grid recettes-slider-1 mb-5">
                 <div class="recette">
-                    <img class="recette__img" src="<?= get_template_directory_uri() ?>/assets/img/500x500/Blanquette_De_Veau.jpg"
+                    <img class="recette__img"
+                         data-lazy="<?= get_template_directory_uri() ?>/assets/img/500x500/Blanquette_De_Veau.jpg"
                          alt="Recette"
                     />
                     <div class="recette__content">
@@ -84,7 +85,8 @@
                     </div>
                 </div>
                 <div class="recette">
-                    <img class="recette__img" src="<?= get_template_directory_uri() ?>/assets/img/500x500/Boeuf_Bourguignon.jpg"
+                    <img class="recette__img"
+                         data-lazy="<?= get_template_directory_uri() ?>/assets/img/500x500/Boeuf_Bourguignon.jpg"
                          alt="Recette"
                     />
                     <div class="recette__content">
@@ -100,7 +102,8 @@
                     </div>
                 </div>
                 <div class="recette">
-                    <img class="recette__img" src="<?= get_template_directory_uri() ?>/assets/img/500x500/Bouchee_A_La_Reine.jpg"
+                    <img class="recette__img"
+                         data-lazy="<?= get_template_directory_uri() ?>/assets/img/500x500/Bouchee_A_La_Reine.jpg"
                          alt="Recette"/>
                     <div class="recette__content">
                         <div class="recette__tags">
@@ -115,7 +118,8 @@
                     </div>
                 </div>
                 <div class="recette">
-                    <img class="recette__img" src="<?= get_template_directory_uri() ?>/assets/img/500x500/Bouillabaisse.jpg"
+                    <img class="recette__img"
+                         data-lazy="<?= get_template_directory_uri() ?>/assets/img/500x500/Bouillabaisse.jpg"
                          alt="Recette"/>
                     <div class="recette__content">
                         <div class="recette__tags">
@@ -130,7 +134,8 @@
                     </div>
                 </div>
                 <div class="recette">
-                    <img class="recette__img" src="<?= get_template_directory_uri() ?>/assets/img/500x500/Cassoulet.jpg"
+                    <img class="recette__img"
+                         data-lazy="<?= get_template_directory_uri() ?>/assets/img/500x500/Cassoulet.jpg"
                          alt="Recette"/>
                     <div class="recette__content">
                         <div class="recette__tags">
@@ -145,7 +150,8 @@
                     </div>
                 </div>
                 <div class="recette">
-                    <img class="recette__img" src="<?= get_template_directory_uri() ?>/assets/img/500x500/Crepes_Aux_Fraises.jpg"
+                    <img class="recette__img"
+                         data-lazy="<?= get_template_directory_uri() ?>/assets/img/500x500/Crepes_Aux_Fraises.jpg"
                          alt="Recette"/>
                     <div class="recette__content">
                         <div class="recette__tags">
@@ -160,7 +166,8 @@
                     </div>
                 </div>
                 <div class="recette">
-                    <img class="recette__img" src="<?= get_template_directory_uri() ?>/assets/img/500x500/Omelette_Norvegienne.jpg"
+                    <img class="recette__img"
+                         data-lazy="<?= get_template_directory_uri() ?>/assets/img/500x500/Omelette_Norvegienne.jpg"
                          alt="Recette"/>
                     <div class="recette__content">
                         <div class="recette__tags">
@@ -174,7 +181,8 @@
                     </div>
                 </div>
                 <div class="recette">
-                    <img class="recette__img" src="<?= get_template_directory_uri() ?>/assets/img/500x500/Opera.jpg"
+                    <img class="recette__img"
+                         data-lazy="<?= get_template_directory_uri() ?>/assets/img/500x500/Opera.jpg"
                          alt="Recette"/>
                     <div class="recette__content">
                         <div class="recette__tags">
@@ -185,12 +193,14 @@
 
                         <h4 class="recette__title">Opéra</h4>
                         <p class="recette__desc">Nommé ainsi à cause de sa ressemblance avec la scène de l’Opéra
-                            Garnier, cette suculante patisserie au chocolat et au café s’est exportée dans le monde entier.
+                            Garnier, cette suculante patisserie au chocolat et au café s’est exportée dans le monde
+                            entier.
                         </p>
                     </div>
                 </div>
                 <div class="recette">
-                    <img class="recette__img" src="<?= get_template_directory_uri() ?>/assets/img/500x500/Paris_Brest.jpg"
+                    <img class="recette__img"
+                         data-lazy="<?= get_template_directory_uri() ?>/assets/img/500x500/Paris_Brest.jpg"
                          alt="Recette"/>
                     <div class="recette__content">
                         <div class="recette__tags">
@@ -208,7 +218,8 @@
             </div>
             <div class="recettes__grid recettes-slider-2 mb-5">
                 <div class="recette">
-                    <img class="recette__img" src="<?= get_template_directory_uri() ?>/assets/img/500x500/Croissant.jpg"
+                    <img class="recette__img"
+                         data-lazy="<?= get_template_directory_uri() ?>/assets/img/500x500/Croissant.jpg"
                          alt="Recette"
                     />
                     <div class="recette__content">
@@ -224,7 +235,8 @@
                     </div>
                 </div>
                 <div class="recette">
-                    <img class="recette__img" src="<?= get_template_directory_uri() ?>/assets/img/500x500/Croque_Monsieur.jpg"
+                    <img class="recette__img"
+                         data-lazy="<?= get_template_directory_uri() ?>/assets/img/500x500/Croque_Monsieur.jpg"
                          alt="Recette"/>
                     <div class="recette__content">
                         <div class="recette__tags">
@@ -240,7 +252,8 @@
                     </div>
                 </div>
                 <div class="recette">
-                    <img class="recette__img" src="<?= get_template_directory_uri() ?>/assets/img/500x500/Feuilletes_Aux_Fromage.jpg"
+                    <img class="recette__img"
+                         data-lazy="<?= get_template_directory_uri() ?>/assets/img/500x500/Feuilletes_Aux_Fromage.jpg"
                          alt="Recette"/>
                     <div class="recette__content">
                         <div class="recette__tags">
@@ -256,7 +269,8 @@
                     </div>
                 </div>
                 <div class="recette">
-                    <img class="recette__img" src="<?= get_template_directory_uri() ?>/assets/img/500x500/Fondu.jpg"
+                    <img class="recette__img"
+                         data-lazy="<?= get_template_directory_uri() ?>/assets/img/500x500/Fondu.jpg"
                          alt="Recette"/>
                     <div class="recette__content">
                         <div class="recette__tags">
@@ -271,7 +285,8 @@
                     </div>
                 </div>
                 <div class="recette">
-                    <img class="recette__img" src="<?= get_template_directory_uri() ?>/assets/img/500x500/Kouign_Amann.jpg"
+                    <img class="recette__img"
+                         data-lazy="<?= get_template_directory_uri() ?>/assets/img/500x500/Kouign_Amann.jpg"
                          alt="Recette"/>
                     <div class="recette__content">
                         <div class="recette__tags">
@@ -285,7 +300,8 @@
                     </div>
                 </div>
                 <div class="recette">
-                    <img class="recette__img" src="<?= get_template_directory_uri() ?>/assets/img/500x500/Pate_En_Croute.jpg"
+                    <img class="recette__img"
+                         data-lazy="<?= get_template_directory_uri() ?>/assets/img/500x500/Pate_En_Croute.jpg"
                          alt="Recette"/>
                     <div class="recette__content">
                         <div class="recette__tags">
@@ -300,7 +316,8 @@
                     </div>
                 </div>
                 <div class="recette">
-                    <img class="recette__img" src="<?= get_template_directory_uri() ?>/assets/img/500x500/Poele_De_Legumes.jpg"
+                    <img class="recette__img"
+                         data-lazy="<?= get_template_directory_uri() ?>/assets/img/500x500/Poele_De_Legumes.jpg"
                          alt="Recette"/>
                     <div class="recette__content">
                         <div class="recette__tags">
@@ -314,7 +331,8 @@
                     </div>
                 </div>
                 <div class="recette">
-                    <img class="recette__img" src="<?= get_template_directory_uri() ?>/assets/img/500x500/Puree_A_L_Ancienne.jpg"
+                    <img class="recette__img"
+                         data-lazy="<?= get_template_directory_uri() ?>/assets/img/500x500/Puree_A_L_Ancienne.jpg"
                          alt="Recette"/>
                     <div class="recette__content">
                         <div class="recette__tags">
@@ -330,7 +348,8 @@
                     </div>
                 </div>
                 <div class="recette">
-                    <img class="recette__img" src="<?= get_template_directory_uri() ?>/assets/img/500x500/Tartare_De_Boeuf.jpg"
+                    <img class="recette__img"
+                         data-lazy="<?= get_template_directory_uri() ?>/assets/img/500x500/Tartare_De_Boeuf.jpg"
                          alt="Recette"/>
                     <div class="recette__content">
                         <div class="recette__tags">
@@ -421,12 +440,12 @@
     <div class="text-button recipes-footer">
         <div class="container">
             <p class="text-button__text">
-				<?php the_field( 'recipes_footer_text' ) ?>
+                <?php the_field('recipes_footer_text') ?>
             </p>
 
             <div class="text-button__btn-container">
-                <a href="<?= esc_url( get_field( 'recipes_footer_button' )['url'] ) ?>" class="text-button__btn">
-					<?= esc_html( get_field( 'recipes_footer_button' )['title'] ) ?>
+                <a href="<?= esc_url(get_field('recipes_footer_button')['url']) ?>" class="text-button__btn">
+                    <?= esc_html(get_field('recipes_footer_button')['title']) ?>
                 </a>
             </div>
         </div>
@@ -435,7 +454,7 @@
     <div class="half-text testimonials-header">
         <div class="container">
             <div class="half-text__content">
-				<?php the_field( 'testimonials_header_text' ) ?>
+                <?php the_field('testimonials_header_text') ?>
             </div>
         </div>
     </div>
@@ -443,7 +462,7 @@
     <div class="contained-image">
         <div class="container">
             <div class="contained-image__img">
-                <img class="img-fluid w-100" src="<?= get_field( 'testimonials_header_image' )['url'] ?>"/>
+                <img class="img-fluid w-100" src="<?= get_field('testimonials_header_image')['url'] ?>"/>
             </div>
         </div>
     </div>
@@ -452,65 +471,50 @@
         <div class="container">
             <div class="row">
                 <div class="col-xs-12 col-sm-6 offset-md-1 col-md-4">
-					<?php if ( have_rows( 'testimonial_1' ) ): ?>
-						<?php while ( have_rows( 'testimonial_1' ) ) : the_row(); ?>
+                    <?php if (have_rows('testimonial_1')): ?>
+                        <?php while (have_rows('testimonial_1')) : the_row(); ?>
                             <div class="testimonial">
-                                <h3 class="testimonial__author"><?php the_sub_field( 'testimonial_author' ) ?></h3>
-                                <p class="testimonial__text"><?php the_sub_field( 'testimonial_text' ) ?></p>
+                                <h3 class="testimonial__author"><?php the_sub_field('testimonial_author') ?></h3>
+                                <p class="testimonial__text"><?php the_sub_field('testimonial_text') ?></p>
                             </div>
-						<?php endwhile; ?>
-					<?php endif; ?>
+                        <?php endwhile; ?>
+                    <?php endif; ?>
                 </div>
                 <div class="col-xs-12 col-sm-6 offset-md-2 col-md-4">
-					<?php if ( have_rows( 'testimonial_2' ) ): ?>
-						<?php while ( have_rows( 'testimonial_2' ) ) : the_row(); ?>
+                    <?php if (have_rows('testimonial_2')): ?>
+                        <?php while (have_rows('testimonial_2')) : the_row(); ?>
                             <div class="testimonial">
-                                <h3 class="testimonial__author"><?php the_sub_field( 'testimonial_author' ) ?></h3>
-                                <p class="testimonial__text"><?php the_sub_field( 'testimonial_text' ) ?></p>
+                                <h3 class="testimonial__author"><?php the_sub_field('testimonial_author') ?></h3>
+                                <p class="testimonial__text"><?php the_sub_field('testimonial_text') ?></p>
                             </div>
-						<?php endwhile; ?>
-					<?php endif; ?>
+                        <?php endwhile; ?>
+                    <?php endif; ?>
                 </div>
             </div>
             <div class="row">
                 <div class="col-xs-12 col-sm-6 offset-md-1 col-md-4">
-					<?php if ( have_rows( 'testimonial_3' ) ): ?>
-						<?php while ( have_rows( 'testimonial_3' ) ) : the_row(); ?>
+                    <?php if (have_rows('testimonial_3')): ?>
+                        <?php while (have_rows('testimonial_3')) : the_row(); ?>
                             <div class="testimonial">
-                                <h3 class="testimonial__author"><?php the_sub_field( 'testimonial_author' ) ?></h3>
-                                <p class="testimonial__text"><?php the_sub_field( 'testimonial_text' ) ?></p>
+                                <h3 class="testimonial__author"><?php the_sub_field('testimonial_author') ?></h3>
+                                <p class="testimonial__text"><?php the_sub_field('testimonial_text') ?></p>
                             </div>
-						<?php endwhile; ?>
-					<?php endif; ?>
+                        <?php endwhile; ?>
+                    <?php endif; ?>
                 </div>
                 <div class="col-xs-12 col-sm-6 offset-md-2 col-md-4">
-					<?php if ( have_rows( 'testimonial_4' ) ): ?>
-						<?php while ( have_rows( 'testimonial_4' ) ) : the_row(); ?>
+                    <?php if (have_rows('testimonial_4')): ?>
+                        <?php while (have_rows('testimonial_4')) : the_row(); ?>
                             <div class="testimonial">
-                                <h3 class="testimonial__author"><?php the_sub_field( 'testimonial_author' ) ?></h3>
-                                <p class="testimonial__text"><?php the_sub_field( 'testimonial_text' ) ?></p>
+                                <h3 class="testimonial__author"><?php the_sub_field('testimonial_author') ?></h3>
+                                <p class="testimonial__text"><?php the_sub_field('testimonial_text') ?></p>
                             </div>
-						<?php endwhile; ?>
-					<?php endif; ?>
+                        <?php endwhile; ?>
+                    <?php endif; ?>
                 </div>
             </div>
         </div>
     </div>
-
-    <!-- Unused for now.
-    <div class="text-button">
-        <div class="container">
-            <p class="text-button__text">
-                <span>Articles.</span> Des papiers qui parlent concretement de
-                notre cuisine, son patrimoine et de cet art qu’est la gastronomie. Pour tous.
-            </p>
-
-            <div class="text-button__btn-container">
-                <a href="#" class="text-button__btn">Voir toutes les recettes</a>
-            </div>
-        </div>
-    </div>
-	-->
 
     <div class="container">
         <div class="row">
@@ -519,13 +523,13 @@
                     <div class="newsletter-form__header">
                         <img class="newsletter-form__icon"
                              src="<?= get_template_directory_uri() ?>/assets/icons/icon-gift.svg"/>
-                        <h3 class="newsletter-form__title"><?php the_field( 'newsletter_title' ) ?></h3>
+                        <h3 class="newsletter-form__title"><?php the_field('newsletter_title') ?></h3>
                         <p class="newsletter-form__text">
-							<?php the_field( 'newsletter_text' ) ?>
+                            <?php the_field('newsletter_text') ?>
                         </p>
                     </div>
 
-					<?php echo do_shortcode( '[mc4wp_form id="18"]' ); ?>
+                    <?php echo do_shortcode('[mc4wp_form id="13"]'); ?>
                 </div>
             </div>
         </div>
@@ -533,6 +537,5 @@
 
 
 <?php endwhile; endif; ?>
-
 
 <?php get_footer(); ?>

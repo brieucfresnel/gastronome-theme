@@ -2,6 +2,7 @@ $(function () {
     // Navbar
     $(document).ready(function () {
         $('.recettes-slider-1').slick({
+            lazyLoad: 'ondemand',
             dots: true,
             infinite: true,
             slidesToShow: 4,
@@ -25,6 +26,7 @@ $(function () {
         ]
         });
         $('.recettes-slider-2').slick({
+            lazyLoad: 'ondemand',
             dots: true,
             infinite: true,
             slidesToShow: 4,
