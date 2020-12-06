@@ -45,7 +45,7 @@
         <div class="container">
             <h3 class="recettes__title">
                 <img src="<?= get_template_directory_uri() ?>/assets/icons/heart.svg"/>
-                Vos meilleurs créations
+                Vos meilleures créations
             </h3>
             <div class="recettes__grid">
                 <div class="recette">
@@ -121,6 +121,7 @@
             </div>
         </div>
     </div>
+
 
     <div class="half-text">
         <div class="container">
