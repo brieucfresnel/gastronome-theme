@@ -17,6 +17,22 @@
     font-size: 16px;
     line-height: 24px;
     color: #151515;
+
+    @include media-breakpoint-down(sm) {
+      margin-bottom: 50px;
+    }
+
+  }
+
+  &__img {
+    @include media-breakpoint-down(sm) {
+      display: flex;
+      justify-content: center;
+      img {
+        width: 50%;
+      }
+
+    }
   }
 }
 

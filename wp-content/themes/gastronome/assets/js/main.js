@@ -11,6 +11,15 @@ $(function () {
             autoplaySpeed: 1000,
             draggable: false,
             focusOnSelect: true,
+            responsive: [
+                {
+                    breakpoint: 768,
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 1,
+                    }
+                },
+        ]
         });
         $('.recettes-slider-2').slick({
             dots: true,

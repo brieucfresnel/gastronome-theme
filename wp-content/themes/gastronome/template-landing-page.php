@@ -21,7 +21,7 @@
     <div id="about-us" class="about-us">
         <div class="container">
             <div class="row">
-                <div class="col-sm-8 col-md-6 col-lg-5">
+                <div class="col-sm-12 col-md-6 col-lg-5">
                     <h2 class="about-us__title">
 						<?php the_field( 'about_us_title' ) ?>
                     </h2>
@@ -29,7 +29,7 @@
 						<?php the_field( 'about_us_text' ) ?>
                     </div>
                 </div>
-                <div class="col-sm-4 col-md-6 col-lg-5 offset-lg-2">
+                <div class="about-us__img col-sm-12 col-md-6 col-lg-5 offset-lg-2">
                     <img class="img-fluid" src="<?= get_template_directory_uri() ?>/assets/img/mosaique.png"/>
                 </div>
             </div>
@@ -432,7 +432,7 @@
         </div>
     </div>
 
-    <div class="half-text">
+    <div class="half-text testimonials-header">
         <div class="container">
             <div class="half-text__content">
 				<?php the_field( 'testimonials_header_text' ) ?>
@@ -514,7 +514,7 @@
 
     <div class="container">
         <div class="row">
-            <div class="offset-md-2 col-md-8">
+            <div class="col-xs-12 offset-md-1 col-md-10 offset-lg-2 col-lg-8">
                 <div class="newsletter-form">
                     <div class="newsletter-form__header">
                         <img class="newsletter-form__icon"

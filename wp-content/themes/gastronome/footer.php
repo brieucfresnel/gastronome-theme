@@ -1,7 +1,7 @@
 <div class="footer">
     <div class="container">
         <div class="row">
-            <div class="col-xs-12 col-lg-9 order-xs-2 order-sm-2 order-md-2 order-lg-1">
+            <div class="col-xs-12 col-lg-9 order-2 order-lg-1 footer-contact">
                 <div class="socials">
                     <div class="half-text">
                         <div class="half-text__content">
@@ -47,7 +47,7 @@
 
             </div>
 			<?php if ( have_rows( 'footer_links' ) ): while ( have_rows( 'footer_links' ) ): the_row(); ?>
-                <div class="col-xs-12 order-xs-1 order-sm-1 order-md-1 col-lg-3 order-lg-2">
+                <div class="col-xs-12 col-lg-3 order-1 order-lg-2">
                     <div class="footer-links">
                         <div class="footer-link">
                             <a href="<?= esc_url( get_sub_field( 'footer_link_1' )['url'] ) ?>">
