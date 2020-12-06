@@ -34,5 +34,7 @@ $font-family-sans-serif: 'Helvetica Now Display', -apple-system, system-ui, Blin
 
 
 body {
+  overflow-x: hidden;
+  width: 100%;
   background: url("/wp-content/themes/gastronome/assets/img/hero-bg.png") top/contain no-repeat;
 }

@@ -65,7 +65,8 @@
             <div class="recettes__grid mb-5">
                 <div class="recette">
                     <img class="recette__img" src="<?= get_template_directory_uri() ?>/assets/img/recette-4.jpg"
-                         alt="Recette"/>
+                         alt="Recette"
+                    />
                     <div class="recette__content">
                         <div class="recette__tags">
                             <span class="recette__tag">Revisite</span>
@@ -76,10 +77,6 @@
                         <p class="recette__desc">Découvrez une revisite fraiche et audacieuse de la fameuse
                             tarte au citron meringuée par un amateur de bonnes choses.
                         </p>
-                        <a href="#" class="recette__link">
-                            Découvrir la recette
-                            <img src="<?= get_template_directory_uri() ?>/assets/icons/arrow-right.svg"/>
-                        </a>
                     </div>
                 </div>
                 <div class="recette">
@@ -95,10 +92,21 @@
                         <p class="recette__desc">Découvrez une revisite fraiche et audacieuse de la fameuse
                             tarte au citron meringuée par un amateur de bonnes choses.
                         </p>
-                        <a href="#" class="recette__link">
-                            Découvrir la recette
-                            <img src="<?= get_template_directory_uri() ?>/assets/icons/arrow-right.svg"/>
-                        </a>
+                    </div>
+                </div>
+                <div class="recette">
+                    <img class="recette__img" src="<?= get_template_directory_uri() ?>/assets/img/recette-2.png"
+                         alt="Recette"/>
+                    <div class="recette__content">
+                        <div class="recette__tags">
+                            <span class="recette__tag">Revisite</span>
+                            <span class="recette__tag">Classique</span>
+                        </div>
+
+                        <h4 class="recette__title">Tarte au citron meringuée</h4>
+                        <p class="recette__desc">Découvrez une revisite fraiche et audacieuse de la fameuse
+                            tarte au citron meringuée par un amateur de bonnes choses.
+                        </p>
                     </div>
                 </div>
                 <div class="recette">
@@ -114,19 +122,30 @@
                         <p class="recette__desc">Découvrez une revisite fraiche et audacieuse de la fameuse
                             tarte au citron meringuée par un amateur de bonnes choses.
                         </p>
-                        <a href="#" class="recette__link">
-                            Découvrir la recette
-                            <img src="<?= get_template_directory_uri() ?>/assets/icons/arrow-right.svg"/>
-                        </a>
+                    </div>
+                </div>
+                <div class="recette">
+                    <img class="recette__img" src="<?= get_template_directory_uri() ?>/assets/img/recette-3.png"
+                         alt="Recette"/>
+                    <div class="recette__content">
+                        <div class="recette__tags">
+                            <span class="recette__tag">Revisite</span>
+                            <span class="recette__tag">Classique</span>
+                        </div>
+
+                        <h4 class="recette__title">Tarte au citron meringuée</h4>
+                        <p class="recette__desc">Découvrez une revisite fraiche et audacieuse de la fameuse
+                            tarte au citron meringuée par un amateur de bonnes choses.
+                        </p>
                     </div>
                 </div>
             </div>
 
-           <!-- <div class="slider-outer">
+            <!-- <div class="slider-outer">
                 <div class="slider-inner">
                     <div class="slide">
                         <div class="recette">
-                            <img class="recette__img" src="<?/*= get_template_directory_uri() */?>/assets/img/recette-4.jpg"
+                            <img class="recette__img" src="<? /*= get_template_directory_uri() */ ?>/assets/img/recette-4.jpg"
                                  alt="Recette"/>
                             <div class="recette__content">
                                 <div class="recette__tags">
@@ -140,14 +159,14 @@
                                 </p>
                                 <a href="#" class="recette__link">
                                     Découvrir la recette
-                                    <img src="<?/*= get_template_directory_uri() */?>/assets/icons/arrow-right.svg"/>
+                                    <img src="<? /*= get_template_directory_uri() */ ?>/assets/icons/arrow-right.svg"/>
                                 </a>
                             </div>
                         </div>
                     </div>
                     <div class="slide">
                         <div class="recette">
-                            <img class="recette__img" src="<?/*= get_template_directory_uri() */?>/assets/img/recette-2.png"
+                            <img class="recette__img" src="<? /*= get_template_directory_uri() */ ?>/assets/img/recette-2.png"
                                  alt="Recette"/>
                             <div class="recette__content">
                                 <div class="recette__tags">
@@ -161,14 +180,14 @@
                                 </p>
                                 <a href="#" class="recette__link">
                                     Découvrir la recette
-                                    <img src="<?/*= get_template_directory_uri() */?>/assets/icons/arrow-right.svg"/>
+                                    <img src="<? /*= get_template_directory_uri() */ ?>/assets/icons/arrow-right.svg"/>
                                 </a>
                             </div>
                         </div>
                     </div>
                     <div class="slide">
                         <div class="recette">
-                        <img class="recette__img" src="<?/*= get_template_directory_uri() */?>/assets/img/recette-3.png"
+                        <img class="recette__img" src="<? /*= get_template_directory_uri() */ ?>/assets/img/recette-3.png"
                              alt="Recette"/>
                         <div class="recette__content">
                             <div class="recette__tags">
@@ -182,7 +201,7 @@
                             </p>
                             <a href="#" class="recette__link">
                                 Découvrir la recette
-                                <img src="<?/*= get_template_directory_uri() */?>/assets/icons/arrow-right.svg"/>
+                                <img src="<? /*= get_template_directory_uri() */ ?>/assets/icons/arrow-right.svg"/>
                             </a>
                         </div>
                     </div>

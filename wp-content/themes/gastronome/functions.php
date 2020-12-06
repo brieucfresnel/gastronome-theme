@@ -8,9 +8,9 @@ function gst_enqueue()
     /**
      * Enqueue stylesheets
      */
+	wp_enqueue_style('slick','//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css');
     wp_enqueue_style('gst_fonts', get_template_directory_uri() . '/assets/css/fonts.css');
     wp_enqueue_style('gst_styles', get_template_directory_uri() . '/assets/css/main.css');
-    wp_enqueue_style('slick','//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css');
 
     /**
      * Enqueue JS

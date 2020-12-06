@@ -1,14 +1,17 @@
 $(function () {
     // Navbar
     $(document).ready(function () {
-      /*  $('.slider-inner').slick({
-            dots: true,
+        $('.recettes__grid').slick({
+            dots: false,
             infinite: true,
-            cssEase: 'linear',
             slidesToShow: 3,
-            slidesToScroll: 3,
-            arrows: true,
-        });*/
+            slidesToScroll: 1,
+            arrows: false,
+            autoplay: true,
+            autoplaySpeed: 5000,
+            draggable: false,
+            focusOnSelect: true,
+        });
         // Add smooth scrolling to all links
         $("a").on('click', function (event) {
 
@@ -56,20 +59,16 @@ $(function () {
 
 
         // Recettes
-        recettes = $('.recette')
+        let recettes = $('.recette')
 
-        recettes.addClass('default');
-        recettes.eq(1).removeClass('default');
         recettes.eq(1).addClass('expand');
 
         recettes.on('click', function (e) {
 
-            var e = $('.recette');
             if (recettes.hasClass('expand')) {
                 recettes.removeClass('expand');
 
                 $(this).addClass('expand');
-                //$($(e.target).children().get(1)).css({'width': '50%'})
             } else {
                 $(this).addClass('expand');
             }
