@@ -1,5 +1,6 @@
 .recettes {
   margin-bottom: 50px;
+  margin-top: 100px;
 
   &__title {
     font-size: 14px;
@@ -118,4 +119,14 @@
     border-radius: 4px;
     font-size: 0;
   }
+}
+
+.recettes-slider-2 {
+  @include media-breakpoint-down(sm) {
+    display: none;
+  }
+}
+
+.recipes-footer {
+  padding-top: 60px;
 }

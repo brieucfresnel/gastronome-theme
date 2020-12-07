@@ -1,5 +1,7 @@
 .socials {
-  margin-bottom: 100px;
+  background: #F4F4F4;
+  border-radius: 20px;
+  padding: 50px;
 
   &__title {
     font-size: 14px;
@@ -76,8 +78,14 @@
     margin-right: 150px;
   }
 
-  .half-text__content {
-    width: 70%;
+  .half-text {
+    margin-bottom: 50px;
+    margin-top: 0;
+
+    &__content {
+      font-size: 18px;
+      width: 100%;
+    }
   }
 
 }

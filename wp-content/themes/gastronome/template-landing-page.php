@@ -3,58 +3,62 @@
 <?php get_header(); ?>
 <?php if ( have_posts() ): while ( have_posts() ): the_post(); ?>
     <div class="hero">
-        <div class="container">
-            <h1 class="hero__title">
-                Chaque petit plat définit la grande cuisine.
-            </h1>
-            <a href="#about-us" class="hero__scroller">
+    <div class="container">
+        <h1 class="hero__title">
+			<?php the_field( 'header_title' ) ?>
+        </h1>
+
+		<?php
+		$header_link = get_field( 'header_link' );
+		if ( $header_link ): ?>
+            <a href="<?= esc_url( $header_link['url'] ) ?>" class="hero__scroller">
                 <img src="<?= get_template_directory_uri() ?>/assets/icons/down_arrow.svg"/>
-                Découvrir
+				<?= esc_html( $header_link['title'] ) ?>
             </a>
-        </div>
+		<?php endif; ?>
     </div>
 
     <div id="about-us" class="about-us">
         <div class="container">
             <div class="row">
-                <div class="col-sm-8 col-md-6 col-lg-5">
+                <div class="col-sm-12 col-md-6 col-lg-5">
                     <h2 class="about-us__title">
-                        La gastronomie française est une mosaïque composée de la cuisine de chacun
+						<?php the_field( 'about_us_title' ) ?>
                     </h2>
                     <div class="about-us__text">
-                        À tous les amoureux de la bonne bouffe, aux créatifs, aux traditionnels, à ceux qui reproduisent
-                        l'original et à ceux qui le sont, vous êtes la pièce maîtresse qui constitue la grande cuisine
+						<?php the_field( 'about_us_text' ) ?>
                     </div>
                 </div>
-                <div class="col-sm-4 col-md-6 col-lg-5 offset-lg-2">
+                <div class="about-us__img col-sm-12 col-md-6 col-lg-5 offset-lg-2">
                     <img class="img-fluid" src="<?= get_template_directory_uri() ?>/assets/img/mosaique.png"/>
                 </div>
             </div>
         </div>
     </div>
 
-    <div class="text-button">
+    <div class="text-button recipes-header">
         <div class="container">
             <p class="text-button__text">
-                <span>Des petits plats.</span> Redécouvrez les succulantes recettes de grand-mère
-                ou les petites innovations culinaire à vous en mettre plein les papilles.
+				<?php the_field( 'recipes_header_text' ) ?>
             </p>
 
             <div class="text-button__btn-container">
-                <a href="#" class="text-button__btn">Voir toutes les recettes</a>
+                <a href="<?= esc_url( get_field( 'recette_header_button' )['url'] ) ?>" class="text-button__btn">
+					<?= esc_html( get_field( 'recette_header_button' )['title'] ) ?>
+                </a>
             </div>
         </div>
     </div>
 
-    <div class="half-text">
-        <div class="container">
-            <div class="half-text__content">
-                <span>Recettes.</span>
-                Conçues par de grands chefs mais aussi par des amateurs, ces recettes vont vous aider à faire bien et
-                beau, simplement, avec des produits accessibles de qualité.
-            </div>
-        </div>
-    </div>
+    <!--    <div class="half-text">
+			<div class="container">
+				<div class="half-text__content">
+					<span>Recettes.</span>
+					Conçues par de grands chefs mais aussi par des amateurs, ces recettes vont vous aider à faire bien et
+					beau, simplement, avec des produits accessibles de qualité.
+				</div>
+			</div>
+		</div>-->
 
     <div class="recettes">
         <div class="container">
@@ -81,7 +85,8 @@
                 </div>
                 <div class="recette">
                     <img class="recette__img" src="<?= get_template_directory_uri() ?>/assets/img/500x500/Boeuf_Bourguignon.jpg"
-                         alt="Recette"/>
+                         alt="Recette"
+                    />
                     <div class="recette__content">
                         <div class="recette__tags">
                             <span class="recette__tag">Plat</span>
@@ -346,7 +351,8 @@
                     <div class="slide">
                         <div class="recette">
                             <img class="recette__img" src="<? /*= get_template_directory_uri() */ ?>/assets/img/500x500/cassoulet.jpg"
-                                 alt="Recette"/>
+                                 alt="Recette"
+                            />
                             <div class="recette__content">
                                 <div class="recette__tags">
                                     <span class="recette__tag">Revisite</span>
@@ -412,24 +418,24 @@
         </div>
     </div>
 
-    <div class="text-button">
+    <div class="text-button recipes-footer">
         <div class="container">
             <p class="text-button__text">
-                <span>Vous doutiez de votre talent ?</span> Nous avons tous déjà cuisiner de façon
-                gastronomique. Ou du moins essayer. C’est le moment d’en prendre conscience.
+				<?php the_field( 'recipes_footer_text' ) ?>
             </p>
 
             <div class="text-button__btn-container">
-                <a href="#" class="text-button__btn">S'inscrire à la newsletter</a>
+                <a href="<?= esc_url( get_field( 'recipes_footer_button' )['url'] ) ?>" class="text-button__btn">
+					<?= esc_html( get_field( 'recipes_footer_button' )['title'] ) ?>
+                </a>
             </div>
         </div>
     </div>
 
-    <div class="half-text">
+    <div class="half-text testimonials-header">
         <div class="container">
             <div class="half-text__content">
-                <span>Témoignages.</span> Découvrez les fabuleuses histoires d’Hanaé, de Théophile, de Julien, de
-                Constance et de bien d’autres qui ont trouvés leur passion dans la cuisine.
+				<?php the_field( 'testimonials_header_text' ) ?>
             </div>
         </div>
     </div>
@@ -437,7 +443,7 @@
     <div class="contained-image">
         <div class="container">
             <div class="contained-image__img">
-                <img class="img-fluid w-100" src="<?= get_template_directory_uri() ?>/assets/img/temoignages-img.png"/>
+                <img class="img-fluid w-100" src="<?= get_field( 'testimonials_header_image' )['url'] ?>"/>
             </div>
         </div>
     </div>
@@ -446,53 +452,46 @@
         <div class="container">
             <div class="row">
                 <div class="col-xs-12 col-sm-6 offset-md-1 col-md-4">
-                    <div class="testimonial">
-                        <h3 class="testimonial__author">Hanaé</h3>
-                        <p class="testimonial__text">J’ai toujours été passionné de cuisine mais je n’osais pas montrer
-                            mes plats car je ne les trouvais pas à la hauteur. Gastrono’me est là pour nous prouver le
-                            contraire.
-                        </p>
-                        <a href="#" class="testimonial__link">
-                            Lire la suite
-                            <img src="<?= get_template_directory_uri() ?>/assets/icons/arrow-right.svg"/>
-                        </a>
-                    </div>
+					<?php if ( have_rows( 'testimonial_1' ) ): ?>
+						<?php while ( have_rows( 'testimonial_1' ) ) : the_row(); ?>
+                            <div class="testimonial">
+                                <h3 class="testimonial__author"><?php the_sub_field( 'testimonial_author' ) ?></h3>
+                                <p class="testimonial__text"><?php the_sub_field( 'testimonial_text' ) ?></p>
+                            </div>
+						<?php endwhile; ?>
+					<?php endif; ?>
                 </div>
                 <div class="col-xs-12 col-sm-6 offset-md-2 col-md-4">
-                    <div class="testimonial">
-                        <h3 class="testimonial__author">Théophile</h3>
-                        <p class="testimonial__text">J’ai toujours eu un manque de motivation vis à vis de la cuisine
-                            car je la trouvais compliquée. Mais grace à Gastrono’me je me suis rendu compte que c’est
-                            finalement accessible. </p>
-                        <a href="#" class="testimonial__link">
-                            Lire la suite
-                            <img src="<?= get_template_directory_uri() ?>/assets/icons/arrow-right.svg"/>
-                        </a>
-                    </div>
+					<?php if ( have_rows( 'testimonial_2' ) ): ?>
+						<?php while ( have_rows( 'testimonial_2' ) ) : the_row(); ?>
+                            <div class="testimonial">
+                                <h3 class="testimonial__author"><?php the_sub_field( 'testimonial_author' ) ?></h3>
+                                <p class="testimonial__text"><?php the_sub_field( 'testimonial_text' ) ?></p>
+                            </div>
+						<?php endwhile; ?>
+					<?php endif; ?>
                 </div>
             </div>
             <div class="row">
                 <div class="col-xs-12 col-sm-6 offset-md-1 col-md-4">
-                    <div class="testimonial">
-                        <h3 class="testimonial__author">Julien</h3>
-                        <p class="testimonial__text">J’adore cuisiner pour mes amis, je suis le cuistot de la bande. Le
-                            projet Gastrono’me est génial, j’apprends de nombreuses choses et me perfectionne. </p>
-                        <a href="#" class="testimonial__link">
-                            Lire la suite
-                            <img src="<?= get_template_directory_uri() ?>/assets/icons/arrow-right.svg"/>
-                        </a>
-                    </div>
+					<?php if ( have_rows( 'testimonial_3' ) ): ?>
+						<?php while ( have_rows( 'testimonial_3' ) ) : the_row(); ?>
+                            <div class="testimonial">
+                                <h3 class="testimonial__author"><?php the_sub_field( 'testimonial_author' ) ?></h3>
+                                <p class="testimonial__text"><?php the_sub_field( 'testimonial_text' ) ?></p>
+                            </div>
+						<?php endwhile; ?>
+					<?php endif; ?>
                 </div>
                 <div class="col-xs-12 col-sm-6 offset-md-2 col-md-4">
-                    <div class="testimonial">
-                        <h3 class="testimonial__author"> Constance</h3>
-                        <p class="testimonial__text">La gastronomie me semblait assez fermée et peu accessible.
-                            Maintenant, avec Gastrono'me, je peux enfin découvrir la cuisine et épater ma famille. </p>
-                        <a href="#" class="testimonial__link">
-                            Lire la suite
-                            <img src="<?= get_template_directory_uri() ?>/assets/icons/arrow-right.svg"/>
-                        </a>
-                    </div>
+					<?php if ( have_rows( 'testimonial_4' ) ): ?>
+						<?php while ( have_rows( 'testimonial_4' ) ) : the_row(); ?>
+                            <div class="testimonial">
+                                <h3 class="testimonial__author"><?php the_sub_field( 'testimonial_author' ) ?></h3>
+                                <p class="testimonial__text"><?php the_sub_field( 'testimonial_text' ) ?></p>
+                            </div>
+						<?php endwhile; ?>
+					<?php endif; ?>
                 </div>
             </div>
         </div>
@@ -515,16 +514,14 @@
 
     <div class="container">
         <div class="row">
-            <div class="offset-md-2 col-md-8">
+            <div class="col-xs-12 offset-md-1 col-md-10 offset-lg-2 col-lg-8">
                 <div class="newsletter-form">
                     <div class="newsletter-form__header">
                         <img class="newsletter-form__icon"
                              src="<?= get_template_directory_uri() ?>/assets/icons/icon-gift.svg"/>
-                        <h3 class="newsletter-form__title">Nous vous avons confectionné un cadeau.</h3>
+                        <h3 class="newsletter-form__title"><?php the_field( 'newsletter_title' ) ?></h3>
                         <p class="newsletter-form__text">
-                            Recevez régulièrement par mail des recettes, article et autres trucs et astuces. Parce que
-                            vous
-                            en avez le potentiel, nous souhaitons vous aider dans ce voyage culinaire palpitant.
+							<?php the_field( 'newsletter_text' ) ?>
                         </p>
                     </div>
 
@@ -534,75 +531,7 @@
         </div>
     </div>
 
-    <div class="follow-us">
-        <div class="container">
-            <div class="row">
-                <div class="col-xs-12 col-sm-8 col-md-6">
-                    <div class="socials">
-                        <div class="half-text">
-                            <div class="half-text__content">
-                                <span>On touche avec les yeux !</span>
-                                Explorez le merveilleux monde de la gastronomie au travers de posts, stories sur nos
-                                médias
-                                sociaux.
-                                Retrouvez-nous sur Instagram, Facebook, Twitter et
-                                Pinterest.
-                            </div>
-                        </div>
 
-                        <h3 class="socials__title">
-                            <img src="<?= get_template_directory_uri() ?>/assets/icons/heart.svg"/>
-                            Nous suivre
-                        </h3>
-
-                        <div class="socials__grid">
-                            <a href="https://www.instagram.com/gastronome_fr/">
-                                <img class="socials__img-insta"
-                                     src="<?= get_template_directory_uri() ?>/assets/icons/insta.png"
-                                     alt="socials"/>
-                            </a>
-                            <a href="https://www.facebook.com/GastronoMefr/">
-                                <img class="socials__img-facebook"
-                                     src="<?= get_template_directory_uri() ?>/assets/icons/facebook.png"
-                                     alt="socials"/>
-                            </a>
-                            <a href="https://twitter.com/GastronoMe_fr">
-                                <img class="socials__img-twitter"
-                                     src="<?= get_template_directory_uri() ?>/assets/icons/twitter.png"
-                                     alt="socials"/>
-                            </a>
-                            <a href="https://www.pinterest.fr/GastronoMe_fr/">
-                                <img class="socials__img-pinterest"
-                                     src="<?= get_template_directory_uri() ?>/assets/icons/pinterest.png"
-                                     alt="socials"/>
-                            </a>
-                        </div>
-
-                    </div>
-                </div>
-                <div class="col-xs-12 col-sm-4 offset-md-2">
-                    <div class="presse">
-                        <div class="presse__btn-container">
-                            <h3>Espace presse</h3>
-                            <a href="#">
-                                <img class="presse-btn"
-                                     src="<?= get_template_directory_uri() ?>/assets/icons/fleche.png"
-                                     alt="socials"/>
-                            </a>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-            <h3 class="socials__title">
-                <img src="<?= get_template_directory_uri() ?>/assets/img/send.png"/>
-                Nous contacter
-            </h3>
-            <a href="mailto:creativeagency@gmail.com">Creativeagency@gmail.com </a>
-            <br>
-            <br>
-        </div>
-    </div>
 <?php endwhile; endif; ?>
 
 

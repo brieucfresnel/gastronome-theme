@@ -1,16 +1,17 @@
 .newsletter-form {
-  margin-top: 150px;
+  margin-top: 100px;
   padding: 100px;
   background: linear-gradient(90deg, #C0ADE7 19.68%, #B9D9EB 85.63%);
   backdrop-filter: blur(55px);
   border-radius: 20px;
 
-  &__header {
-    text-align: center;
+ @include media-breakpoint-down(md) {
+    margin-top: 50px;
+
   }
 
-  &__icon {
-
+  &__header {
+    text-align: center;
   }
 
   &__title {

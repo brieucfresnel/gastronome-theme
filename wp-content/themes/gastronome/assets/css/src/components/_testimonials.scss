@@ -1,8 +1,15 @@
 .testimonials {
-  padding: 150px 0;
+  padding-top: 150px;
 
-  .row:last-child .testimonial {
-    margin-bottom: 0;
+  &-header {
+    @include media-breakpoint-down(sm) {
+      margin-top: 100px;
+      margin-bottom: 50px;
+    }
+  }
+
+  @include media-breakpoint-down(sm) {
+    padding-top: 50px;
   }
 }
 
