@@ -7457,6 +7457,62 @@ a.text-dark:hover, a.text-dark:focus {
   .footer-copyright {
     margin-top: 30px; } }
 
+.tag {
+  display: inline-block;
+  font-size: 14px;
+  color: #000;
+  background: #ffcfbe;
+  padding: 7px 12px;
+  border-radius: 15px; }
+  .tag-big {
+    font-size: 17px;
+    padding: 10px 20px; }
+  .tag :hover {
+    color: #000;
+    text-decoration: none; }
+
+.step {
+  list-style: none;
+  display: flex; }
+  .step__number {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
+    font-size: 20px;
+    color: #8A8A8A;
+    min-width: 47px;
+    width: 47px;
+    height: 47px;
+    border-radius: 50%; }
+  .step__text {
+    margin-left: 30px;
+    margin-top: 10px; }
+
+.single-recette__title {
+  margin: 15px 0 25px 0;
+  font-size: 35px; }
+
+.single-recette__times {
+  color: #505050; }
+
+.single-recette__datas {
+  box-shadow: 0px 6px 16px rgba(0, 0, 0, 0.12);
+  padding: 27px 37px;
+  border-radius: 20px; }
+
+.single-recette__data {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center; }
+  .single-recette__data:not(:last-child) {
+    margin-right: 25px; }
+  .single-recette__data span:first-child {
+    font-size: 17px;
+    color: #000;
+    margin-bottom: 12px; }
+
 .hero__title {
   font-family: "Helvetica Now Display", serif;
   width: 40%;
@@ -7698,5 +7754,7 @@ a.text-dark:hover, a.text-dark:focus {
 
 body {
   overflow-x: hidden;
-  width: 100%;
+  width: 100%; }
+
+.home {
   background: url("/wp-content/themes/gastronome/assets/img/hero-bg.png") top/contain no-repeat; }

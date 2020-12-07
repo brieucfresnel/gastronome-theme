@@ -103,6 +103,53 @@ function gst_mime_types($mimes) {
 }
 add_filter('upload_mimes', 'gst_mime_types');
 
+function gst_custom_post_types() {
+
+    // On rentre les différentes dénominations de notre custom post type qui seront affichées dans l'administration
+    $labels = array(
+        // Le nom au pluriel
+        'name'                => _x( 'Recettes', 'gastronome'),
+        // Le nom au singulier
+        'singular_name'       => _x( 'Recette', 'gastronome'),
+        // Le libellé affiché dans le menu
+        'menu_name'           => __( 'Recettes'),
+        // Les différents libellés de l'administration
+        'all_items'           => __( 'Toutes les recettes'),
+        'view_item'           => __( 'Voir les recettes'),
+        'add_new_item'        => __( 'Ajouter une nouvelle recette'),
+        'add_new'             => __( 'Ajouter'),
+        'edit_item'           => __( 'Editer la recette'),
+        'update_item'         => __( 'Modifier la recette'),
+        'search_items'        => __( 'Rechercher une recette'),
+        'not_found'           => __( 'Non trouvée'),
+        'not_found_in_trash'  => __( 'Non trouvée dans la corbeille'),
+    );
+
+    $args = array(
+        'label'               => __( 'Recettes'),
+        'labels'              => $labels,
+        'menu_icon'           => 'dashicons-food',
+        // On définit les options disponibles dans l'éditeur de notre custom post type ( un titre, un auteur...)
+        'supports'            => array( 'title', 'editor', 'excerpt', 'author', 'thumbnail', 'comments', 'revisions', 'custom-fields', ),
+        /*
+        * Différentes options supplémentaires
+        */
+        'show_in_rest' => true,
+        'hierarchical'        => false,
+        'public'              => true,
+        'has_archive'         => true,
+        'taxonomies' => array('post_tag')
+
+    );
+
+
+    register_post_type( 'recette', $args );
+
+}
+
+add_action( 'init', 'gst_custom_post_types', 0 );
+
+
 /**
  * Bootstrap Nav Walker
  * Ce Walker permet de donner les classes Bootstrap 4 au menu principal
@@ -121,41 +168,3 @@ add_filter('upload_mimes', 'gst_mime_types');
  * }
  * add_action( 'after_setup_theme', 'gst_register_navwalker' );
  */
-/* Uncomment in case of ACF use */
-
-/**
- * Ajout des pages de réglages du thème
- *
- * if( function_exists('acf_add_options_page') ) {
- *
- * acf_add_options_page(array(
- * 'page_title'     => 'Réglages Généraux Redtheme',
- * 'menu_title'    => 'Réglages RedTheme',
- * 'menu_slug'     => 'theme-general-settings',
- * 'capability'    => 'edit_posts',
- * 'redirect'        => false
- * ));
- *
- * acf_add_options_sub_page(array(
- * 'page_title'     => 'Options d\'en-tête',
- * 'menu_title'    => 'En-tête',
- * 'parent_slug'    => 'theme-general-settings',
- * ));
- *
- * acf_add_options_sub_page(array(
- * 'page_title'     => 'Options du pied de page',
- * 'menu_title'    => 'Pied de page',
- * 'parent_slug'    => 'theme-general-settings',
- * ));
- *
- * }
- */
-/**
- * ACF Admin Styles
- *
- * function my_acf_admin_head() {
- * ?>
- * <style type="text/css"></style>
- * <?php
- * } */
-// add_action('acf/input/admin_head', 'my_acf_admin_head');
