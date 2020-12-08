@@ -7670,30 +7670,22 @@ a.text-dark:hover, a.text-dark:focus {
       width: 14px;
       height: 14px;
       margin-right: 10px; }
-  .socials__img-insta {
+  .socials__link {
     width: 100%;
     height: 100%;
-    background: #FCEEA8;
-    border: 20px solid #FCEEA8;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); }
-  .socials__img-facebook {
-    width: 100%;
-    height: 100%;
-    background: #B9D9EB;
-    border: 20px solid #B9D9EB;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); }
-  .socials__img-twitter {
-    width: 100%;
-    height: 100%;
-    background: #BDEDEF;
-    border: 20px solid #BDEDEF;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); }
-  .socials__img-pinterest {
-    width: 100%;
-    height: 100%;
-    background: #F4C3CC;
-    border: 20px solid #F4C3CC;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); }
+    .socials__link:nth-child(1) img {
+      background: #FCEEA8;
+      border: 20px solid #FCEEA8; }
+    .socials__link:nth-child(2) img {
+      background: #B9D9EB;
+      border: 20px solid #B9D9EB; }
+    .socials__link:nth-child(3) img {
+      background: #BDEDEF;
+      border: 20px solid #BDEDEF; }
+    .socials__link:nth-child(4) img {
+      background: #F4C3CC;
+      border: 20px solid #F4C3CC; }
   .socials__grid {
     display: flex; }
     .socials__grid a {

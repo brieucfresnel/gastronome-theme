@@ -5,39 +5,27 @@
                 <div class="socials">
                     <div class="half-text">
                         <div class="half-text__content">
-							<?php the_field( 'footer_text' ) ?>
+                            <?php the_field('footer_text', 'option') ?>
                         </div>
                     </div>
 
                     <div class="socials__grid">
-                        <a href="https://www.instagram.com/gastronome_fr/">
-                            <img class="socials__img-insta"
-                                 src="<?= get_template_directory_uri() ?>/assets/icons/insta.png"
-                                 alt="socials"/>
-                        </a>
-                        <a href="https://www.facebook.com/GastronoMefr/">
-                            <img class="socials__img-facebook"
-                                 src="<?= get_template_directory_uri() ?>/assets/icons/facebook.png"
-                                 alt="socials"/>
-                        </a>
-                        <a href="https://twitter.com/GastronoMe_fr">
-                            <img class="socials__img-twitter"
-                                 src="<?= get_template_directory_uri() ?>/assets/icons/twitter.png"
-                                 alt="socials"/>
-                        </a>
-                        <a href="https://www.pinterest.fr/GastronoMe_fr/">
-                            <img class="socials__img-pinterest"
-                                 src="<?= get_template_directory_uri() ?>/assets/icons/pinterest.png"
-                                 alt="socials"/>
-                        </a>
+                        <?php if (have_rows('social_icons', 'option')): ?>
+                            <?php while (have_rows('social_icons', 'option')): the_row(); ?>
+                                <a class="socials__link" href="<?php the_sub_field('footer_social_link') ?>">
+                                    <img src="<?php echo get_sub_field('footer_social_icon')['url'] ?>" alt="socials"
+                                    />
+                                </a>
+                            <?php endwhile; ?>
+                        <?php endif; ?>
                     </div>
                     <div class="footer-bottom">
                         <div class="footer-contact">
                             <h3>
-                                <img src="<?php the_field('contact_icon') ?>"/>
-				                <?php the_field('contact_text') ?>
+                                <img src="<?php echo get_field('contact_icon', 'option')['url'] ?>"/>
+                                <?php the_field('contact_text', 'option') ?>
                             </h3>
-                            <a href="mailto:<?php the_field('contact_mail') ?>"><?php the_field('contact_mail') ?></a>
+                            <a href="mailto:<?php the_field('contact_mail', 'option') ?>"><?php the_field('contact_mail', 'option') ?></a>
                         </div>
                         <div class="footer-copyright">
                             © 2020 Gastrono'me | Tous droits réservés
@@ -46,33 +34,22 @@
                 </div>
 
             </div>
-			<?php if ( have_rows( 'footer_links' ) ): while ( have_rows( 'footer_links' ) ): the_row(); ?>
-                <div class="col-xs-12 col-lg-3 order-1 order-lg-2">
-                    <div class="footer-links">
-                        <div class="footer-link">
-                            <a href="<?= esc_url( get_sub_field( 'footer_link_1' )['url'] ) ?>">
-								<?= esc_html( get_sub_field( 'footer_link_1' )['title'] ) ?>
-                            </a>
-                            <img src="<?php the_sub_field('footer_icon_1'); ?>" alt="Icone" class="footer-link-icon">
-                        </div>
-                        <div class="footer-link">
-                            <a href="<?= esc_url( get_sub_field( 'footer_link_2' )['url'] ) ?>">
-								<?= esc_html( get_sub_field( 'footer_link_2' )['title'] ) ?>
-                            </a>
-                            <img src="<?php the_sub_field('footer_icon_2'); ?>" alt="Icone" class="footer-link-icon">
-                        </div>
-                        <div class="footer-link">
-                            <a href="<?= esc_url( get_sub_field( 'footer_link_3' )['url'] ) ?>">
-								<?= esc_html( get_sub_field( 'footer_link_3' )['title'] ) ?>
-                            </a>
-                            <img src="<?php the_sub_field('footer_icon_3'); ?>" alt="Icone" class="footer-link-icon">
-                        </div>
-                    </div>
 
+            <div class="col-xs-12 col-lg-3 order-1 order-lg-2">
+                <div class="footer-links">
+                    <?php if (have_rows('footer_links', 'option')): while (have_rows('footer_links', 'option')): the_row(); ?>
+                        <div class="footer-link">
+                            <a href="<?= esc_url(get_sub_field('footer_link')) ?>">
+                                <?= esc_html(get_sub_field('footer_link')['title']) ?>
+                            </a>
+                            <img src="<?php echo get_sub_field('footer_link_icon')['url']; ?>" alt="icone" class="footer-link-icon">
+                        </div>
+
+                    <?php endwhile; endif; ?>
                 </div>
-			<?php endwhile; endif; ?>
-        </div>
+            </div>
 
+        </div>
     </div>
 </div>
 
