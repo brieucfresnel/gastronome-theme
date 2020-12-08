@@ -87,6 +87,18 @@
       padding: 200px 100px 120px 100px;
     }
 
+    &__big-links a {
+      font-size: 48px;
+      color: #151515;
+      line-height: 130%;
+    }
+
+    &__small-links a {
+      font-size: 24px;
+      line-height: 175%;
+      color: #909090;
+    }
+
     &__menus {
       display: flex;
 
@@ -99,15 +111,8 @@
       }
     }
 
-    &__main-menu {
-      div {
-        margin-bottom: 20px;
-      }
-
-      li a {
-        font-size: 48px;
-        color: #151515;
-      }
+    &__main-menu div {
+      margin-bottom: 20px;
     }
 
     &__socials {
@@ -121,8 +126,10 @@
       }
     }
 
-    &__menu-title {
-      color: #8A8A8A;
+    &__menu {
+      &-title {
+        color: #8A8A8A;
+      }
     }
 
     ul {
@@ -133,6 +140,7 @@
     a {
       text-decoration: none;
       color: #000;
+      line-height: 150%;
     }
 
     &__footer {

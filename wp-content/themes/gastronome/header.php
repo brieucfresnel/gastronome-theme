@@ -26,35 +26,46 @@
 
                     <ul class="main-navbar-nav__socials">
                         <div class="main-navbar-nav__menu-title">Socials</div>
-                        <li><a href="#">Instagram</a></li>
-                        <li><a href="#">Facebook</a></li>
-                        <li><a href="#">Twitter</a></li>
-                        <li><a href="#">Pinterest</a></li>
+                        <li><a href="https://www.instagram.com/gastronome_fr/">Instagram</a></li>
+                        <li><a href="https://www.facebook.com/GastronoMefr/">Facebook</a></li>
+                        <li><a href="https://twitter.com/GastronoMe_fr">Twitter</a></li>
+                        <li><a href="https://www.pinterest.fr/GastronoMe_fr/">Pinterest</a></li>
                     </ul>
 
                     <ul class="main-navbar-nav__main-menu">
                         <div class="main-navbar-nav__menu-title">Menu</div>
-                        <li class="page_item page-item-7 current_page_item">
-                            <a href="http://localhost:8000/" aria-current="page">Accueil</a>
-                        </li>
-                        <li class="page_item page-item-2">
-                            <a href="#">À propos</a>
-                        </li>
-                        <li class="page_item page-item-3">
-                            <a href="#">Témoignages</a>
-                        </li>
-                        <li class="page_item page-item-4">
-                            <a href="#">Blog</a>
-                        </li>
+                        <div class="main-navbar-nav__big-links">
+                            <li class="page_item page-item-7 current_page_item">
+                                <a href="/" aria-current="page">Accueil</a>
+                            </li>
+                            <li class="page_item page-item-2">
+                                <a href="/qui-sommes-nous">Qui sommes-nous ?</a>
+                            </li>
+                            <li class="page_item page-item-3">
+                                <a href="/recettes">Recettes</a>
+                            </li>
+                        </div>
+                        <div class="main-navbar-nav__small-links">
+                            <li class="page_item page-item-3">
+                                <a href="/">Petits plats</a>
+                            </li>
+
+                            <li class="page_item page-item-3">
+                                <a href="/">Témoignages</a>
+                            </li>
+                            <li class="page_item page-item-3">
+                                <a href="/">Recettes</a>
+                            </li>
+                        </div>
                     </ul>
                 </div>
 
-                <div class="main-navbar-nav__footer">
-                    <p>
-                        Restons en contact sur<br/>
-                        <a href="mailto:creativeagency-studio@gmail.com">creativeagency-studio@gmail.com</a>
-                    </p>
-                    <a href="#">Presse</a>
+                <div class="footer-contact">
+                    <h3>
+                        <img src="<?php the_field('contact_icon') ?>"/>
+                        <?php the_field('contact_text') ?>
+                    </h3>
+                    <a href="mailto:<?php the_field('contact_mail') ?>"><?php the_field('contact_mail') ?></a>
                 </div>
             </div>
         </div>
