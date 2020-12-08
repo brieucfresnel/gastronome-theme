@@ -6,6 +6,8 @@
         <h1 class="container"><?php post_type_archive_title(); ?></h1>
     </header>
 <?php endwhile; endif; ?>
+
+
     <div class="content">
         <div class="container">
             <?php
@@ -19,9 +21,7 @@
             $terms = get_terms($taxonomy,$term_args);
 
             if ($terms) { foreach($terms as $term) {
-                ?>
 
-                <?php
                 $args = array(
                     'post_type' => 'recette',
                     'tax_query' => array(
@@ -33,11 +33,11 @@
                         )
                     )
                 );
-                $my_query = new WP_Query($args); if ($my_query->have_posts()) { ?>
+                $query = new WP_Query($args); if ($query->have_posts()) { ?>
                     <div class="row">
                         <h1 class="term-title"><?php echo $term->name; ?></h1>
 
-                        <?php while ($my_query->have_posts()) : $my_query->the_post(); ?>
+                        <?php while ($query->have_posts()) : $query->the_post(); ?>
                             <div class="col-sm-2">
                                 <?php if (has_post_thumbnail()) : ?>
                                     <?php the_post_thumbnail('thumbnail', array('class' => 'img-responsive aligncenter')); ?>

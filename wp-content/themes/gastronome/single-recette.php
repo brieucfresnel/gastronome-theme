@@ -73,7 +73,6 @@
                     <span class="tag tag-big">Préparation</span>
                 </div>
                 <ul class="col-lg-6 mt-4">
-                    <!--                --><?php /*echo print_r(get_field('step')); */ ?>
                     <?php for ($i = 0; $i < count(get_field('step')); $i++): ?>
                         <li class="step mt-3">
                             <div class="step__number"><?= $i + 1 ?></div>
@@ -81,7 +80,21 @@
                         </li>
                     <?php endfor; ?>
                     <div class="recette-single__step"></div>
+
                 </ul>
+            </div>
+
+            <!-- Ingrédients / ustenciles -->
+            <span class="tag tag-big">Ingrédients</span>
+            <div class="ingredients">
+                <?php if (have_rows('ingredient')): ?>
+                    <?php while (have_rows('ingredient')): the_row(); ?>
+                        <div class="ingredient">
+                            <img class="ingredient__img"/>
+                            <p class="ingredient__text"></p>
+                        </div>
+                    <?php endwhile; ?>
+                <?php endif; ?>
             </div>
         </div>
     </div>
