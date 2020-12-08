@@ -39,7 +39,7 @@
                 <div class="footer-links">
                     <?php if (have_rows('footer_links', 'option')): while (have_rows('footer_links', 'option')): the_row(); ?>
                         <div class="footer-link">
-                            <a href="<?= esc_url(get_sub_field('footer_link')) ?>">
+                            <a href="<?= esc_url(get_sub_field('footer_link')['url']) ?>">
                                 <?= esc_html(get_sub_field('footer_link')['title']) ?>
                             </a>
                             <img src="<?php echo get_sub_field('footer_link_icon')['url']; ?>" alt="icone" class="footer-link-icon">
