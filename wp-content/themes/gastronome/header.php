@@ -1,16 +1,16 @@
 <!DOCTYPE html>
 <html <?php language_attributes(); ?> class="no-js no-svg">
 <head>
-    <meta charset="<?php bloginfo( 'charset' ); ?>">
+    <meta charset="<?php bloginfo('charset'); ?>">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="shortcut icon" type="image/png" href="<?= get_template_directory_uri() ?>/assets/favicon.png">
-	<?php wp_head(); ?>
+    <?php wp_head(); ?>
 </head>
 <body <?php body_class(); ?>>
 <div class="main-navbar">
     <div class="container">
-		<?php the_custom_logo() ?>
-		<?php /*
+        <?php the_custom_logo() ?>
+        <?php /*
             wp_nav_menu(array(
                 'theme_location' => 'nav-main',
                 'depth' => 2, // 1 = no dropdowns, 2 = with dropdowns.
@@ -62,10 +62,12 @@
 
                 <div class="footer-contact">
                     <h3>
-                        <img src="<?php the_field('contact_icon') ?>"/>
-                        <?php the_field('contact_text') ?>
+                        <img src="<?php echo get_field('contact_icon', 'option')['url'] ?>"/>
+                        <?php the_field('contact_text', 'option') ?>
                     </h3>
-                    <a href="mailto:<?php the_field('contact_mail') ?>"><?php the_field('contact_mail') ?></a>
+                    <a href="mailto:<?php the_field('contact_mail', 'option') ?>">
+                        <?php the_field('contact_mail', 'option') ?>
+                    </a>
                 </div>
             </div>
         </div>
