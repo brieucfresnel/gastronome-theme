@@ -11,13 +11,18 @@
             </p>
         </div>
     </div>
+
     <div class="footer-contact">
-        <div class="about-us__img col-sm-12 col-md-6 col-lg-12 offset-lg-9">
-            <h3>
-                <img src="http://gastronome.infinityfreeapp.com/wp-content/uploads/2020/12/SEND.png">
-                Restons en contact </h3>
-            <div class="about-us__img col-sm-12 col-md-6 col-lg-12 offset-lg-0">
-                <a href="mailto:creativeagency-studio@gmail.com">creativeagency-studio@gmail.com</a>
+        <div class="container">
+            <div class="row">
+                <div class="about-us__img col-sm-12 col-md-6 col-lg-12 offset-lg-9">
+                    <h3>
+                        <img src="http://gastronome.infinityfreeapp.com/wp-content/uploads/2020/12/SEND.png">
+                        Restons en contact </h3>
+                    <div class="about-us__img col-sm-12 col-md-6 col-lg-12 offset-lg-0">
+                        <a href="mailto:creativeagency-studio@gmail.com">creativeagency-studio@gmail.com</a>
+                    </div>
+                </div>
             </div>
         </div>
     </div>

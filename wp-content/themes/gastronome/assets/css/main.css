@@ -7764,12 +7764,9 @@ a.text-dark:hover, a.text-dark:focus {
     @media (max-width: 767.98px) {
       .about-us__text {
         margin-bottom: 50px; } }
-  @media (max-width: 767.98px) {
-    .about-us__img {
-      display: flex;
-      justify-content: center; }
-      .about-us__img img {
-        width: 50%; } }
+  .about-us__img {
+    display: flex;
+    justify-content: center; }
 
 #about-us {
   scroll-behavior: smooth; }

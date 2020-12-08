@@ -137,9 +137,9 @@ function gst_custom_post_types() {
         'show_in_rest' => true,
         'hierarchical'        => false,
         'public'              => true,
-        'has_archive'         => true,
-        'taxonomies' => array('post_tag')
-
+        'has_archive'         => 'recettes',
+        'taxonomies' => array('post_tag'),
+        'rewrite' => true
     );
 
 
