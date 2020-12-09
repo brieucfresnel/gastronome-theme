@@ -29,7 +29,7 @@
                         <?php the_field('about_us_text') ?>
                     </div>
                 </div>
-                <div class="about-us__img col-sm-12 col-md-6 col-lg-5 offset-lg-2">
+                <div class="about-us-section__img col-sm-12 col-md-6 col-lg-5 offset-lg-2">
                     <img class="img-fluid" src="<?= get_template_directory_uri() ?>/assets/img/mosaique.png"/>
                 </div>
             </div>

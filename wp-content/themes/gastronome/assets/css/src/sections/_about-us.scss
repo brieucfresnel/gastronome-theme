@@ -82,4 +82,9 @@
     font-size: 25px;
     color: #4F4341;
   }
+  &__img {
+    @include media-breakpoint-down(sm) {
+      margin-top: 50px;
+    }
+  }
 }
