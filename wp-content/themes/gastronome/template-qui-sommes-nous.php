@@ -38,13 +38,13 @@
                         française est reconnue mondialement, beaucoup pensent encore que la cuisine gastronomique n’est
                         exécutable que par de grands chefs. Mais la vérité est toute autre !
                     </div>
-                    <div class="col-sm-12 offset-lg-2 col-lg-4 about-us__img">
+                    <div class="d-none d-lg-block offset-lg-2 col-lg-4 about-us__img">
                         <img class="img-fluid" src="<?= get_template_directory_uri() ?>/assets/img/mosaique1.png"/>
                     </div>
                 </div>
 
                 <div class="row">
-                    <div class="col-xs-12 col-lg-4">
+                    <div class="d-none d-lg-block col-lg-4">
                         <img class="img-fluid" src="<?= get_template_directory_uri() ?>/assets/img/mosaique2.png"/>
                     </div>
 
@@ -63,7 +63,7 @@
                         nous avons créé Gastrono’Me, le dispositif de valorisation de la gastronomie française vu au
                         travers de la mosaïque composée de la cuisine de chacun.
                     </div>
-                    <div class="about-us__img col-xs-12 offset-lg-2 col-lg-4">
+                    <div class="d-none d-lg-block offset-lg-2 col-lg-4">
                         <img class="img-fluid" src="<?= get_template_directory_uri() ?>/assets/img/mosaique3.png"/>
                     </div>
                 </div>
