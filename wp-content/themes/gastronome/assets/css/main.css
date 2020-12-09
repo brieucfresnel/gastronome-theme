@@ -7408,6 +7408,11 @@ a.text-dark:hover, a.text-dark:focus {
     display: flex; }
     .newsletter-form__row input:not(:first-child) {
       margin-left: 20px; }
+    @media (max-width: 767.98px) {
+      .newsletter-form__row {
+        display: block; }
+        .newsletter-form__row input:not(:first-child) {
+          margin-left: 0; } }
   .newsletter-form .mc4wp-form-fields input {
     width: 100%;
     background: transparent;
@@ -7422,6 +7427,9 @@ a.text-dark:hover, a.text-dark:focus {
     display: flex;
     align-items: flex-start;
     justify-content: space-between; }
+    @media (max-width: 767.98px) {
+      .newsletter-form__footer {
+        display: block; } }
   .newsletter-form .mc4wp-form-fields input[type="submit"] {
     width: auto;
     display: inline-block;
@@ -7434,6 +7442,10 @@ a.text-dark:hover, a.text-dark:focus {
     margin-left: 30px; }
     .newsletter-form .mc4wp-form-fields input[type="submit"]:invalid {
       outline: none; }
+    @media (max-width: 767.98px) {
+      .newsletter-form .mc4wp-form-fields input[type="submit"] {
+        margin-top: 30px;
+        margin-left: 0; } }
 
 .footer .container .row {
   align-items: center;

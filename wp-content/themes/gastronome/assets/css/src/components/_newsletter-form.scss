@@ -5,7 +5,7 @@
   backdrop-filter: blur(55px);
   border-radius: 20px;
 
- @include media-breakpoint-down(md) {
+  @include media-breakpoint-down(md) {
     margin-top: 50px;
 
   }
@@ -32,6 +32,14 @@
     input:not(:first-child) {
       margin-left: 20px;
     }
+
+    @include media-breakpoint-down(sm) {
+      display: block;
+
+      input:not(:first-child) {
+        margin-left: 0;
+      }
+    }
   }
 
   .mc4wp-form-fields input {
@@ -42,6 +50,7 @@
     border: none;
     border-bottom: 1px solid #969696;
     margin-bottom: 50px;
+
     &:invalid {
       outline: none;
     }
@@ -51,6 +60,10 @@
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
+
+    @include media-breakpoint-down(sm) {
+      display: block;
+    }
   }
 
   .mc4wp-form-fields input[type="submit"] {
@@ -66,6 +79,11 @@
 
     &:invalid {
       outline: none;
+    }
+
+    @include media-breakpoint-down(sm) {
+      margin-top: 30px;
+      margin-left: 0;
     }
   }
 }
