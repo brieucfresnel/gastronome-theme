@@ -18,14 +18,14 @@
         <?php endif; ?>
     </div>
 
-    <div id="about-us" class="about-us">
+    <div id="about-us" class="about-us-section">
         <div class="container">
             <div class="row">
                 <div class="col-sm-12 col-md-6 col-lg-5">
-                    <h2 class="about-us__title">
+                    <h2 class="about-us-section__title">
                         <?php the_field('about_us_title') ?>
                     </h2>
-                    <div class="about-us__text">
+                    <div class="about-us-section__text">
                         <?php the_field('about_us_text') ?>
                     </div>
                 </div>

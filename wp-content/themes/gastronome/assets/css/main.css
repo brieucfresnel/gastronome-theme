@@ -7809,6 +7809,19 @@ a.text-dark:hover, a.text-dark:focus {
 #about-us {
   scroll-behavior: smooth; }
 
+.about-us-section {
+  background: linear-gradient(180deg, #F4C3CC 0%, #FFCFBE 100%);
+  color: #151515; }
+  .about-us-section .container .row {
+    padding: 80px 0;
+    align-items: center; }
+  .about-us-section__title {
+    font-size: 35px;
+    margin-bottom: 40px; }
+  .about-us-section__text {
+    font-size: 25px;
+    color: #4F4341; }
+
 body {
   overflow-x: hidden;
   width: 100%; }
