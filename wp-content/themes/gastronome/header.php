@@ -60,14 +60,12 @@
                     </ul>
                 </div>
 
-                <div class="footer-contact">
-                    <h3>
-                        <img src="<?php echo get_field('contact_icon', 'option')['url'] ?>"/>
-                        <?php the_field('contact_text', 'option') ?>
-                    </h3>
-                    <a href="mailto:<?php the_field('contact_mail', 'option') ?>">
-                        <?php the_field('contact_mail', 'option') ?>
-                    </a>
+                <div class="contact-cta">
+                    <div class="contact-cta__title">
+                        <img src="http://gastronome.infinityfreeapp.com/wp-content/uploads/2020/12/SEND.png">
+                        <div>Restons en contact</div>
+                    </div>
+                    <a href="mailto:creativeagency-studio@gmail.com">creativeagency-studio@gmail.com</a>
                 </div>
             </div>
         </div>
