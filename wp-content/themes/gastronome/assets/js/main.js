@@ -1,8 +1,8 @@
 $(function () {
     // Navbar
     $(document).ready(function () {
+
         $('.recettes-slider-1').slick({
-            lazyLoad: 'ondemand',
             dots: true,
             infinite: true,
             slidesToShow: 4,
@@ -23,10 +23,10 @@ $(function () {
                         draggable: true
                     }
                 },
-        ]
+            ]
         });
+
         $('.recettes-slider-2').slick({
-            lazyLoad: 'ondemand',
             dots: true,
             infinite: true,
             slidesToShow: 4,
@@ -37,6 +37,7 @@ $(function () {
             draggable: false,
             focusOnSelect: true,
         });
+
         // Add smooth scrolling to all links
         $("a").on('click', function (event) {
 

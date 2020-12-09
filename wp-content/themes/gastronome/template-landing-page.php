@@ -50,16 +50,6 @@
         </div>
     </div>
 
-    <!--    <div class="half-text">
-			<div class="container">
-				<div class="half-text__content">
-					<span>Recettes.</span>
-					Conçues par de grands chefs mais aussi par des amateurs, ces recettes vont vous aider à faire bien et
-					beau, simplement, avec des produits accessibles de qualité.
-				</div>
-			</div>
-		</div>-->
-
     <div class="recettes">
         <div class="container">
             <h3 class="recettes__title">
@@ -69,7 +59,7 @@
             <div class="recettes__grid recettes-slider-1 mb-5">
                 <div class="recette">
                     <img class="recette__img"
-                         data-lazy="<?= get_template_directory_uri() ?>/assets/img/500x500/Blanquette_De_Veau.jpg"
+                         src="<?= get_template_directory_uri() ?>/assets/img/500x500/Blanquette_De_Veau.jpg"
                          alt="Recette"
                     />
                     <div class="recette__content">
@@ -86,7 +76,7 @@
                 </div>
                 <div class="recette">
                     <img class="recette__img"
-                         data-lazy="<?= get_template_directory_uri() ?>/assets/img/500x500/Boeuf_Bourguignon.jpg"
+                         src="<?= get_template_directory_uri() ?>/assets/img/500x500/Boeuf_Bourguignon.jpg"
                          alt="Recette"
                     />
                     <div class="recette__content">
@@ -103,7 +93,7 @@
                 </div>
                 <div class="recette">
                     <img class="recette__img"
-                         data-lazy="<?= get_template_directory_uri() ?>/assets/img/500x500/Bouchee_A_La_Reine.jpg"
+                         src="<?= get_template_directory_uri() ?>/assets/img/500x500/Bouchee_A_La_Reine.jpg"
                          alt="Recette"/>
                     <div class="recette__content">
                         <div class="recette__tags">
@@ -119,7 +109,7 @@
                 </div>
                 <div class="recette">
                     <img class="recette__img"
-                         data-lazy="<?= get_template_directory_uri() ?>/assets/img/500x500/Bouillabaisse.jpg"
+                         src="<?= get_template_directory_uri() ?>/assets/img/500x500/Bouillabaisse.jpg"
                          alt="Recette"/>
                     <div class="recette__content">
                         <div class="recette__tags">
@@ -135,7 +125,7 @@
                 </div>
                 <div class="recette">
                     <img class="recette__img"
-                         data-lazy="<?= get_template_directory_uri() ?>/assets/img/500x500/Cassoulet.jpg"
+                         src="<?= get_template_directory_uri() ?>/assets/img/500x500/Cassoulet.jpg"
                          alt="Recette"/>
                     <div class="recette__content">
                         <div class="recette__tags">
@@ -151,7 +141,7 @@
                 </div>
                 <div class="recette">
                     <img class="recette__img"
-                         data-lazy="<?= get_template_directory_uri() ?>/assets/img/500x500/Crepes_Aux_Fraises.jpg"
+                         src="<?= get_template_directory_uri() ?>/assets/img/500x500/Crepes_Aux_Fraises.jpg"
                          alt="Recette"/>
                     <div class="recette__content">
                         <div class="recette__tags">
@@ -167,7 +157,7 @@
                 </div>
                 <div class="recette">
                     <img class="recette__img"
-                         data-lazy="<?= get_template_directory_uri() ?>/assets/img/500x500/Omelette_Norvegienne.jpg"
+                         src="<?= get_template_directory_uri() ?>/assets/img/500x500/Omelette_Norvegienne.jpg"
                          alt="Recette"/>
                     <div class="recette__content">
                         <div class="recette__tags">
@@ -182,7 +172,7 @@
                 </div>
                 <div class="recette">
                     <img class="recette__img"
-                         data-lazy="<?= get_template_directory_uri() ?>/assets/img/500x500/Opera.jpg"
+                         src="<?= get_template_directory_uri() ?>/assets/img/500x500/Opera.jpg"
                          alt="Recette"/>
                     <div class="recette__content">
                         <div class="recette__tags">
@@ -200,7 +190,7 @@
                 </div>
                 <div class="recette">
                     <img class="recette__img"
-                         data-lazy="<?= get_template_directory_uri() ?>/assets/img/500x500/Paris_Brest.jpg"
+                         src="<?= get_template_directory_uri() ?>/assets/img/500x500/Paris_Brest.jpg"
                          alt="Recette"/>
                     <div class="recette__content">
                         <div class="recette__tags">
@@ -219,7 +209,7 @@
             <div class="recettes__grid recettes-slider-2 mb-5">
                 <div class="recette">
                     <img class="recette__img"
-                         data-lazy="<?= get_template_directory_uri() ?>/assets/img/500x500/Croissant.jpg"
+                         src="<?= get_template_directory_uri() ?>/assets/img/500x500/Croissant.jpg"
                          alt="Recette"
                     />
                     <div class="recette__content">
@@ -236,7 +226,7 @@
                 </div>
                 <div class="recette">
                     <img class="recette__img"
-                         data-lazy="<?= get_template_directory_uri() ?>/assets/img/500x500/Croque_Monsieur.jpg"
+                         src="<?= get_template_directory_uri() ?>/assets/img/500x500/Croque_Monsieur.jpg"
                          alt="Recette"/>
                     <div class="recette__content">
                         <div class="recette__tags">
@@ -253,7 +243,7 @@
                 </div>
                 <div class="recette">
                     <img class="recette__img"
-                         data-lazy="<?= get_template_directory_uri() ?>/assets/img/500x500/Feuilletes_Aux_Fromage.jpg"
+                         src="<?= get_template_directory_uri() ?>/assets/img/500x500/Feuilletes_Aux_Fromage.jpg"
                          alt="Recette"/>
                     <div class="recette__content">
                         <div class="recette__tags">
@@ -270,7 +260,7 @@
                 </div>
                 <div class="recette">
                     <img class="recette__img"
-                         data-lazy="<?= get_template_directory_uri() ?>/assets/img/500x500/Fondu.jpg"
+                         src="<?= get_template_directory_uri() ?>/assets/img/500x500/Fondu.jpg"
                          alt="Recette"/>
                     <div class="recette__content">
                         <div class="recette__tags">
@@ -286,7 +276,7 @@
                 </div>
                 <div class="recette">
                     <img class="recette__img"
-                         data-lazy="<?= get_template_directory_uri() ?>/assets/img/500x500/Kouign_Amann.jpg"
+                         src="<?= get_template_directory_uri() ?>/assets/img/500x500/Kouign_Amann.jpg"
                          alt="Recette"/>
                     <div class="recette__content">
                         <div class="recette__tags">
@@ -301,7 +291,7 @@
                 </div>
                 <div class="recette">
                     <img class="recette__img"
-                         data-lazy="<?= get_template_directory_uri() ?>/assets/img/500x500/Pate_En_Croute.jpg"
+                         src="<?= get_template_directory_uri() ?>/assets/img/500x500/Pate_En_Croute.jpg"
                          alt="Recette"/>
                     <div class="recette__content">
                         <div class="recette__tags">
@@ -317,7 +307,7 @@
                 </div>
                 <div class="recette">
                     <img class="recette__img"
-                         data-lazy="<?= get_template_directory_uri() ?>/assets/img/500x500/Poele_De_Legumes.jpg"
+                         src="<?= get_template_directory_uri() ?>/assets/img/500x500/Poele_De_Legumes.jpg"
                          alt="Recette"/>
                     <div class="recette__content">
                         <div class="recette__tags">
@@ -332,7 +322,7 @@
                 </div>
                 <div class="recette">
                     <img class="recette__img"
-                         data-lazy="<?= get_template_directory_uri() ?>/assets/img/500x500/Puree_A_L_Ancienne.jpg"
+                         src="<?= get_template_directory_uri() ?>/assets/img/500x500/Puree_A_L_Ancienne.jpg"
                          alt="Recette"/>
                     <div class="recette__content">
                         <div class="recette__tags">
@@ -349,7 +339,7 @@
                 </div>
                 <div class="recette">
                     <img class="recette__img"
-                         data-lazy="<?= get_template_directory_uri() ?>/assets/img/500x500/Tartare_De_Boeuf.jpg"
+                         src="<?= get_template_directory_uri() ?>/assets/img/500x500/Tartare_De_Boeuf.jpg"
                          alt="Recette"/>
                     <div class="recette__content">
                         <div class="recette__tags">

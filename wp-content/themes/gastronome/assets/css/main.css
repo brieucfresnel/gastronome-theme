@@ -7477,24 +7477,6 @@ a.text-dark:hover, a.text-dark:focus {
     .footer-bottom {
       display: block; } }
 
-.footer-contact {
-  font-size: 18px; }
-  .footer-contact img {
-    width: 22px;
-    height: 22px;
-    margin-right: 5px; }
-  .footer-contact h3 {
-    font-size: 18px;
-    display: flex;
-    align-items: center;
-    margin-bottom: 0; }
-  .footer-contact a {
-    color: #8A8A8A;
-    text-decoration: underline; }
-  @media (max-width: 991.98px) {
-    .footer-contact {
-      margin-top: 50px; } }
-
 @media (max-width: 991.98px) {
   .footer-copyright {
     margin-top: 30px; } }
@@ -7530,6 +7512,27 @@ a.text-dark:hover, a.text-dark:focus {
   .step__text {
     margin-left: 30px;
     margin-top: 10px; }
+
+.contact-cta {
+  font-size: 18px; }
+  .contact-cta__title {
+    display: flex;
+    align-items: center; }
+    .contact-cta__title img {
+      width: 22px;
+      height: 22px;
+      margin-right: 5px; }
+    .contact-cta__title div {
+      font-size: 18px;
+      display: flex;
+      align-items: center;
+      margin-bottom: 0; }
+  .contact-cta a {
+    color: #8A8A8A;
+    text-decoration: underline; }
+  @media (max-width: 991.98px) {
+    .contact-cta {
+      margin-top: 50px; } }
 
 .single-recette__title {
   margin: 15px 0 25px 0;
@@ -7759,26 +7762,49 @@ a.text-dark:hover, a.text-dark:focus {
     color: #151515;
     margin-bottom: 50px; }
 
-.about-us {
-  background: linear-gradient(180deg, #F4C3CC 0%, #FFCFBE 100%); }
-  .about-us .container .row {
-    align-items: center;
-    padding: 80px 0; }
-  .about-us__title {
-    font-size: 35px;
-    line-height: 125%;
-    color: #151515;
-    margin-bottom: 20px; }
-  .about-us__text {
-    font-size: 16px;
-    line-height: 24px;
+.about-us .text-button {
+  padding-top: 50px; }
+
+.about-us__header {
+  padding: 80px 0;
+  display: flex;
+  align-items: flex-end; }
+
+.about-us__content .row:first-child {
+  padding-top: 80px; }
+
+.about-us__content .row:nth-child(2) {
+  align-items: center;
+  font-weight: 400; }
+
+.about-us__content .row:nth-child(3) {
+  align-items: flex-end; }
+
+.about-us__title {
+  font-size: 35px;
+  line-height: 125%;
+  color: #151515;
+  margin-bottom: 20px; }
+
+.about-us__text {
+  font-size: 16px;
+  line-height: 24px;
+  color: #151515; }
+  @media (max-width: 767.98px) {
+    .about-us__text {
+      margin-bottom: 50px; } }
+
+.about-us__separator {
+  display: flex;
+  align-items: center; }
+
+.about-us__text {
+  font-size: 25px;
+  line-height: 31.25px;
+  color: #8A8A8A;
+  font-weight: 500; }
+  .about-us__text span {
     color: #151515; }
-    @media (max-width: 767.98px) {
-      .about-us__text {
-        margin-bottom: 50px; } }
-  .about-us__img {
-    display: flex;
-    justify-content: center; }
 
 #about-us {
   scroll-behavior: smooth; }

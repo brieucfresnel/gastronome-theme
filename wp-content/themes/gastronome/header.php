@@ -42,7 +42,7 @@
                                 <a href="/qui-sommes-nous">Qui sommes-nous ?</a>
                             </li>
                             <li class="page_item page-item-3">
-                                <a href="/recettes">Recettes</a>
+                                <a href="/recette">Recettes</a>
                             </li>
                         </div>
                         <div class="main-navbar-nav__small-links">
