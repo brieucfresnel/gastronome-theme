@@ -15,7 +15,7 @@ if (!defined('ABSPATH')) die('Restricted Area'); ?>
             <div class="row">
                 <?php
                 $args = array(
-                    'tag' => strtolower(get_the_title()),
+                    'tag' => strtolower(single_tag_title('', false)),
                     'post_type' => 'recette',
                     'posts_per_page' => 30,
                 );
