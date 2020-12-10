@@ -45,18 +45,6 @@
                                 <a href="/recette">Recettes</a>
                             </li>
                         </div>
-                        <div class="main-navbar-nav__small-links">
-                            <li class="page_item page-item-3">
-                                <a href="/">Petits plats</a>
-                            </li>
-
-                            <li class="page_item page-item-3">
-                                <a href="/">Témoignages</a>
-                            </li>
-                            <li class="page_item page-item-3">
-                                <a href="/">Recettes</a>
-                            </li>
-                        </div>
                     </ul>
                 </div>
 
