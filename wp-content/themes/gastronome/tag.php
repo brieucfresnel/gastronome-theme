@@ -1,11 +1,15 @@
-<?php if (!defined('ABSPATH')) die('Restricted Area'); ?>
+<?php
+/*
+Template Name: Tag Archive
+*/
+if (!defined('ABSPATH')) die('Restricted Area'); ?>
 
 <?php get_header(); ?>
 
     <div class="container">
         <div class="archive-recette">
 
-            <h1><?php post_type_archive_title(); ?></h1>
+            <h1><?php single_tag_title() ?></h1>
 
             <!-- Les recettes sont dans cette boucle -->
             <div class="row">
@@ -19,7 +23,7 @@
                         <div class="recette-preview__body text-center">
                             <div class="recette-preview__tags">
                                 <?php foreach (get_the_terms(get_the_ID(), 'post_tag') as $tag): ?>
-                                    <a class="tag-btn" href="<?= get_term_link($tag) ?>">
+                                    <a class="tag" href="<?= get_term_link($tag) ?>">
                                         <?= $tag->name ?>
                                     </a>
                                 <?php endforeach; ?>
@@ -36,5 +40,6 @@
             </div>
         </div>
     </div>
+
 
 <?php get_footer(); ?>

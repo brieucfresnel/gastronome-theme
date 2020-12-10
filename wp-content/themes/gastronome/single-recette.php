@@ -23,9 +23,9 @@
             <div class="row mt-5">
                 <div class="col-lg-7">
                     <div class="single-recette__header">
-                        <div class="single-recette__tags">
+                        <div class="single-recette__tag-btns">
                             <?php foreach (get_the_terms(get_the_ID(), 'post_tag') as $tag): ?>
-                                <a class="tag" href="<?= get_term_link($tag) ?>" class="tag">
+                                <a class="tag-btn" href="<?= get_term_link($tag) ?>">
                                     <?= $tag->name ?>
                                 </a>
                             <?php endforeach; ?>
@@ -70,7 +70,7 @@
 
             <div class="row mt-5">
                 <div class="col-12 mt-5">
-                    <span class="tag tag-big">Préparation</span>
+                    <span class="tag-btn tag-btn-big">Préparation</span>
                 </div>
                 <ul class="col-lg-6 mt-4">
                     <?php for ($i = 0; $i < count(get_field('step')); $i++): ?>
@@ -79,13 +79,11 @@
                             <p class="step__text"><?= get_field('step')[$i]['step_text'] ?></p>
                         </li>
                     <?php endfor; ?>
-                    <div class="recette-single__step"></div>
-
                 </ul>
             </div>
 
             <!-- Ingrédients / ustenciles -->
-            <span class="tag tag-big">Ingrédients</span>
+            <span class="tag-btn tag-btn-big">Ingrédients</span>
             <div class="ingredients">
                 <?php if (have_rows('ingredient')): ?>
                     <?php while (have_rows('ingredient')): the_row(); ?>

@@ -1,4 +1,4 @@
-.tag {
+.tag-btn {
   display: inline-block;
   font-size: 14px;
   color: #000;
@@ -11,7 +11,7 @@
     padding: 10px 20px;
   }
 
-  :hover {
+  &:hover {
     color: #000;
     text-decoration: none;
   }
