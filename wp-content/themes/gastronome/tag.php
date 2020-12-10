@@ -13,8 +13,16 @@ if (!defined('ABSPATH')) die('Restricted Area'); ?>
 
             <!-- Les recettes sont dans cette boucle -->
             <div class="row">
-                <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
-                    <div class="recette-preview col-12 col-sm-3 col-md-4 col-lg-3">
+                <?php
+                $args = array(
+                    'tag' => strtolower(get_the_title()),
+                    'post_type' => 'recette',
+                    'posts_per_page' => 30,
+                );
+                $query = new WP_Query($args);
+                ?>
+                <?php if ($query->have_posts()) : while ($query->have_posts()) : $query->the_post(); ?>
+                    <div class="recette-preview col-12 col-sm-6 col-md-4 col-lg-3">
                         <a class="recette-preview__header" href="<?php echo get_permalink() ?>">
                             <img class="img-fluid recette-preview__thumbnail"
                                  src="<?= get_the_post_thumbnail_url() ?>"/>
@@ -23,7 +31,7 @@ if (!defined('ABSPATH')) die('Restricted Area'); ?>
                         <div class="recette-preview__body text-center">
                             <div class="recette-preview__tags">
                                 <?php foreach (get_the_terms(get_the_ID(), 'post_tag') as $tag): ?>
-                                    <a class="tag" href="<?= get_term_link($tag) ?>">
+                                    <a class="tag-btn" href="<?= get_term_link($tag) ?>">
                                         <?= $tag->name ?>
                                     </a>
                                 <?php endforeach; ?>
@@ -37,6 +45,22 @@ if (!defined('ABSPATH')) die('Restricted Area'); ?>
                         </div>
                     </div>
                 <?php endwhile; endif; ?>
+            </div>
+            <div class="row">
+                <div class="col-xs-12 offset-md-1 col-md-10 offset-lg-2 col-lg-8">
+                    <div class="newsletter-form">
+                        <div class="newsletter-form__header">
+                            <img class="newsletter-form__icon"
+                                 src="<?= get_template_directory_uri() ?>/assets/icons/icon-gift.svg"/>
+                            <h3 class="newsletter-form__title"><?php the_field('newsletter_title') ?></h3>
+                            <p class="newsletter-form__text">
+                                <?php the_field('newsletter_text') ?>
+                            </p>
+                        </div>
+
+                        <?php echo do_shortcode('[mc4wp_form id="13"]'); ?>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
