@@ -7567,9 +7567,11 @@ a.text-dark:hover, a.text-dark:focus {
   color: #505050; }
 
 .single-recette__datas {
+  width: 100%;
   box-shadow: 0px 6px 16px rgba(0, 0, 0, 0.12);
   padding: 27px 37px;
-  border-radius: 20px; }
+  border-radius: 20px;
+  justify-content: center; }
 
 .single-recette__data {
   display: flex;
@@ -7582,6 +7584,39 @@ a.text-dark:hover, a.text-dark:focus {
     font-size: 17px;
     color: #000;
     margin-bottom: 12px; }
+
+.single-recette ul {
+  padding: 0; }
+
+.single-recette__go-back {
+  display: flex;
+  align-items: center;
+  color: #505050;
+  margin-top: 25px; }
+  .single-recette__go-back img {
+    transform: rotate(180deg);
+    object-fit: cover; }
+  .single-recette__go-back:hover {
+    color: #505050;
+    text-decoration: none; }
+
+.ingredients {
+  box-shadow: 0px 6px 16px rgba(0, 0, 0, 0.12);
+  border-radius: 20px;
+  padding: 50px; }
+  .ingredients ul {
+    padding-top: 10px; }
+
+.ingredient {
+  display: flex;
+  align-items: center; }
+  .ingredient__image {
+    width: 60px;
+    height: 60px; }
+  .ingredient__text {
+    margin-left: 6px;
+    font-size: 16px;
+    color: #404040; }
 
 .hero__title {
   font-family: "Helvetica Now Display", serif;
